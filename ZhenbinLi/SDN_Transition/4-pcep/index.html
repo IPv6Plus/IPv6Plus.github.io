@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PCEP | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/4-pcep/">
+    <meta property="og:title" content="PCEP">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="PCEP"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/4-pcep/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">PCEP</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <h2 id="pce-bfd">PCE BFD</h2>
+<p><strong>1. PCEP Extensions for Bidirectional Forwarding Detection</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2016-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-bfd-00">https://tools.ietf.org/html/draft-li-pce-bfd-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes the extensions to the PCEP to notify BFD
+   parameters for LSPs from PCE to PCC for PCE-initiated LSP.  The
+   extensions include BFD protocol parameters and allow PCC to support
+   BFD for PCE-Initiated LSP whose BFD session is a bi-directional co-
+   routed channel.</p>
+
+<h2 id="pce-ip-tunnel">PCE IP Tunnel</h2>
+
+<p><strong>1. PCE-initiated IP Tunnel</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-09</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-chen-pce-pce-initiated-ip-tunnel-00">https://tools.ietf.org/html/draft-chen-pce-pce-initiated-ip-tunnel-00</a></p>
+
+<p>Description:</p>
+
+<p>This document specifies a set of extensions to PCEP to support PCE-
+   initiated IP Tunnel to satisfy the requirement which is introduced in
+   [I-D.li-spring-tunnel-segment].  The extensions include the setup,
+   maintenance and teardown of PCE-initiated IP Tunnels, without the
+   need for local configuration on the PCC.</p>
+
+<h2 id="pce-ls">PCE-LS</h2>
+
+<p><strong>1. PCEP Link-State extensions for Segment Routing</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-11</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-pcep-ls-sr-extension-00">https://tools.ietf.org/html/draft-li-pce-pcep-ls-sr-extension-00</a></p>
+
+<p>Description:</p>
+
+<p>Segment Routing leverages source routing.  A node steers a packet
+   through a controlled set of instructions, called segments, by
+   prepending the packet with an SR header.  A segment can represent any
+   instruction, topological or service-based.  SR allows to enforce a
+   flow through any topological path and service chain while maintaining
+   per-flow state only at the ingress node of the SR domain.</p>
+
+<p>IGP protocols have been extended to advertise the segments.  Because
+   of IGP’s propagation scope limitation, it is not suited for IGP to
+   signal paths that span across AS borders.  This document introduces
+   extensions of PCEP-LS to solve the problem without the similar
+   limitation.</p>
+
+<h2 id="pcecc">PCECC</h2>
+
+<p><strong>1. PCEP Procedures and Protocol Extensions for Using PCE as a Central Controller (PCECC) of LSPs</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2018-11</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-pce-pcep-extension-for-pce-controller-00">https://tools.ietf.org/html/draft-ietf-pce-pcep-extension-for-pce-controller-00</a></p>
+
+<p>Description:</p>
+
+<p>The Path Computation Element (PCE) is a core component of Software-
+   Defined Networking (SDN) systems.  It can compute optimal paths for
+   traffic across a network and can also update the paths to reflect
+   changes in the network or traffic demands.
+   PCE was developed to derive paths for MPLS Label Switched Paths
+   (LSPs), which are supplied to the head end of the LSP using the Path
+   Computation Element Communication Protocol (PCEP).  But SDN has a
+   broader applicability than signaled (G)MPLS traffic-engineered (TE)
+   networks, and the PCE may be used to determine paths in a range of
+   use cases.  PCEP has been proposed as a control protocol for use in
+   these environments to allow the PCE to be fully enabled as a central
+   controller.
+   A PCE-based central controller (PCECC) can simplify the processing of
+   a distributed control plane by blending it with elements of SDN and
+   without necessarily completely replacing it.  Thus, the LSP can be
+   calculated/setup/initiated and the label forwarding entries can also
+   be downloaded through a centralized PCE server to each network
+   devices along the path while leveraging the existing PCE technologies
+   as much as possible.
+   This document specifies the procedures and PCEP protocol extensions
+   for using the PCE as the central controller.</p>
+
+<p><strong>2. PCEP Procedures and Protocol Extensions for Using PCE as a Central Controller (PCECC) of SR-LSPs</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2017-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhao-pce-pcep-extension-pce-controller-sr-00">https://tools.ietf.org/html/draft-zhao-pce-pcep-extension-pce-controller-sr-00</a></p>
+
+<p>Description:</p>
+
+<p>In certain networks deployment scenarios, service providers would
+   like to keep all the existing MPLS functionalities in both MPLS and
+   GMPLS while removing the complexity of existing signalling protocols
+   such as LDP and RSVP-TE.  PCE has been proposed to be used as a
+   central controller (PCECC) so that LSP can be calculated/setup/
+   initiated and label forwarding entries are downloaded through a
+   centralized PCE server to each network devices along the path while
+   leveraging the existing PCE technologies as much as possible.
+   This document specifies the procedures and PCEP protocol extensions
+   when the PCE functions as one of the central controller components in
+   Segment Routing(SR).</p>
+
+<p><strong>3. PCEP Procedures and Protocol Extensions for Using PCE as a Central Controller (PCECC) for P2MP LSPs</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dhody-pce-pcep-extension-pce-controller-p2mp-00">https://tools.ietf.org/html/draft-dhody-pce-pcep-extension-pce-controller-p2mp-00</a></p>
+
+<p>Description:</p>
+
+<p>The Path Computation Element (PCE) is a core component of Software-
+   Defined Networking (SDN) systems.  It can compute optimal paths for
+   traffic across a network and can also update the paths to reflect
+   changes in the network or traffic demands.
+   The PCE has been identified as an appropriate technology for the
+   determination of the paths of point- to-multipoint (P2MP) TE Label
+   Switched Paths (LSPs).
+   PCE was developed to derive paths for MPLS P2MP LSPs, which are
+   supplied to the head end (root) of the LSP using PCEP.  PCEP has been
+   proposed as a control protocol to allow the PCE to be fully enabled
+   as a central controller.
+   A PCE-based central controller (PCECC) can simplify the processing of
+   a distributed control plane by blending it with elements of SDN and
+   without necessarily completely replacing it.  Thus, the P2MP LSP can
+   be calculated/setup/initiated and the label forwarding entries can
+   also be downloaded through a centralized PCE server to each network
+   devices along the P2MP path while leveraging the existing PCE
+   technologies as much as possible.
+   This document specifies the procedures and PCEP protocol extensions
+   for using the PCE as the central controller for P2MP TE LSP.</p>
+
+<p><strong>4. PCE Controlled ID Space</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-controlled-id-space-00">https://tools.ietf.org/html/draft-li-pce-controlled-id-space-00</a></p>
+
+<p>Description:</p>
+
+<p>The Path Computation Element Communication Protocol (PCEP) provides
+   mechanisms for Path Computation Elements (PCEs) to perform path
+   computations in response to Path Computation Clients (PCCs) requests.
+   The Stateful PCE extensions allow stateful control of Multiprotocol
+   Label Switching (MPLS) Traffic Engineering (TE) Label Switched Paths
+   (LSPs) using PCEP.  Furthermore, PCEP can be used for computing paths
+   in SR networks.
+   Stateful PCE provide active control of MPLS-TE LSPs via PCEP, for a
+   model where the PCC delegates control over one or more locally
+   configured LSPs to the PCE.  Further, stateful PCE could also create
+   and delete PCE-initiated LSPs itself.  A PCE-based central controller
+   (PCECC) simplify the processing of a distributed control plane by
+   blending it with elements of Software-Defined Networking (SDN) and
+   without necessarily completely replacing it.
+   In some use cases, such as PCECC, Binding Segment Identifier (SID),
+   SR Path Identification, there is a requirement for a stateful PCE to
+   make allocation of labels, SID, Path-ID respectively.  These use
+   cases require for the PCE to be aware of the various identifier space
+   from which to make allocations on behalf of PCC.  This documents
+   specify a mechanism for a PCC to inform the PCE of the identifier
+   space under its control via PCEP.  The identifier could be MPLS
+   label, SID, Path ID or another future identifier to be allocated by a
+   PCE.</p>
+
+<h2 id="pce-flowspec">PCE Flowspec</h2>
+
+<p><strong>1. PCEP Extension for Flow Specification</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2018-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-pce-pcep-flowspec-00">https://tools.ietf.org/html/draft-ietf-pce-pcep-flowspec-00</a></p>
+
+<p>Description:</p>
+
+<p>The Path Computation Element (PCE) is a functional component capable
+   of selecting the paths through a traffic engineered network.  These
+   paths may be supplied in response to requests for computation, or may
+   be unsolicited directions issued by the PCE to network elements.
+   Both approaches use the PCE Communication Protocol (PCEP) to convey
+   the details of the computed path.</p>
+
+<p>Traffic flows may be categorized and described using “Flow
+   Specifications”.  RFC 5575 defines the Flow Specification and
+   describes how it may be distributed in BGP to allow specific traffic
+   flows to be associated with routes.</p>
+
+<p>This document specifies a set of extensions to PCEP to support
+   dissemination of Flow Specifications.  This allows a PCE to indicate
+   what traffic should be placed on each path that it is aware of.</p>
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

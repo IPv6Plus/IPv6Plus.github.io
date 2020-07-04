@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Control Plane Telemetry | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/Telemetry/3-control-plane-telemetry/">
+    <meta property="og:title" content="Control Plane Telemetry">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Control Plane Telemetry"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/Telemetry/3-control-plane-telemetry/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">Control Plane Telemetry</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <h2 id="pmp">PMP</h2>
+
+<p><strong>1. Network Monitoring Protocol (NMP)</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-gu-network-monitoring-protocol-00">https://tools.ietf.org/html/draft-gu-network-monitoring-protocol-00</a></p>
+
+<p>Description:</p>
+
+<p>To evolve towards automated network OAM (Operations, administration
+   and management), the monitoring of control plane protocols is a
+   fundamental necessity.  In this document, a network monitoring
+   protocol (NMP) is proposed to provision the running status
+   information of control plane protocols, e.g., IGP (Interior Gateway
+   Protocol) and other protocols.  By collecting the protocol monitoring
+   data and reporting it to the NMP monitoring server in real-time, NMP
+   can facilitate network troubleshooting.  In this document, NMP for
+   IGP troubleshooting are illustrated to showcase the necessity of NMP.
+   IS-IS is used as the demonstration protocol, and the case of OSPF
+   (Open Shortest Path First) and other control protocols will be
+   elaborated in the future versions.  The operations of NMP are
+   described, and the NMP message types and message formats are defined
+   in the document.</p>
+
+<p><strong>2. Network-wide Protocol Monitoring (NPM): Use Cases</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-chen-npm-use-cases-00">https://tools.ietf.org/html/draft-chen-npm-use-cases-00</a></p>
+
+<p>Description:</p>
+
+<p>As networks continue to scale, we need a coordinated effort for
+   diagnosing control plane health issues in heterogeneous environments.
+   Traditionally, operators developed internal solutions to address the
+   identification and remediation of control plane health issues, but as
+   networks increase in size, speed and dynamicity, new methods and
+   techniques will be required.</p>
+
+<p>This document highlights key network health issues, as well as
+   network planning requirements, identified by leading network
+   operators.  It also provides an overview of current art and
+   techniques that are used, but highlights key deficiencies and areas
+   for improvement.</p>
+
+<p>This document proposes a unified management framework for
+   coordinating diagnostics of control plane problems and optimization
+   of network design.  Furthermore, it outlines requirements for
+   collecting, storing and analyzing control plane data, to minimise or
+   negate control plane problems that may significantly affect overall
+   network performance and to optimize path/peering/policy planning for
+   meeting application-specific demands.</p>
+
+<h2 id="pap">PAP</h2>
+
+<p><strong>1. Protocol Assisted Protocol (PAP)</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-rtgwg-protocol-assisted-protocol-02">https://tools.ietf.org/html/draft-li-rtgwg-protocol-assisted-protocol-02</a></p>
+
+<p>Description:</p>
+
+<p>For routing protocol troubleshooting, different approaches exibit
+   merits w.r.t. different situations.  They can be generally divided
+   into two categories, the distributive way and the centralized way.  A
+   very commonly used distributive approach is to log in possiblly all
+   related devices one by one to check massive data via CLI.  Such
+   approach provides very detailed device information, however it
+   requires operators with high NOC (Network Operation Center)
+   experience and suffers from low troubleshooting efficiency and high
+   cost.  The centralized approach is realized by collecting data from
+   devices via approaches, like the streaming Telemetry or BMP(BGP
+   Monitoring Protocol) RFC7854 [RFC7854], for the centralized server to
+   analyze all gathered data.  Such approach allows a comprehensive view
+   fo the whole network and facilitates automated troubleshooting, but
+   is limited by the data collection boundary set by different
+   management domains, as well as high network bandwidth and CPU
+   computation costs.</p>
+
+<p>This document proposes a semi-distributive and semi-centralized
+   approach for fast routing protocol troubleshooting, localizing the
+   target device and possibly the root cause, more precisely.  It
+   defines a new protocol, called the PAP (Protocol assisted Protocol),
+   for devices to exchange protocol related information between each
+   other in both active and on-demand manners.  It allow devices to
+   request specific information from other devices and receive replies
+   to the requested data.  It also allows actively transmission of
+   information without request to inform other devices to better react
+   w.r.t. network issues.</p>
+
+<h2 id="bmp">BMP</h2>
+
+<p><strong>1. BGP Route Policy and Attribute Trace Using BMP</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xu-grow-bmp-route-policy-attr-trace-00">https://tools.ietf.org/html/draft-xu-grow-bmp-route-policy-attr-trace-00</a></p>
+
+<p>Description:</p>
+
+<p>The generation of BGP adj-rib-in, local-rib or adj-rib-out comes from
+   BGP protocol communication, and route policy processing.  BGP
+   Monitoring Protocol (BMP) provides the monitoring of BGP adj-rib-in
+   [RFC7854], BGP local-rib [I-D.ietf-grow-bmp-local-rib] and BGP adj-
+   rib-out [I-D.ietf-grow-bmp-adj-rib-out].  However, there lacks
+   monitoring of how BGP routes are transformed from adj-rib-in into
+   local-rib and then adj-rib-out (i.e., the BGP route policy processing
+   procedures).  This document describes a method of using BMP to trace
+   the change of BGP routes in correlation with responsible route
+   policies.</p>
+
+<p><strong>2. VPN Traffic Engineering Using BMP</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-gu-grow-bmp-vpn-te-00">https://tools.ietf.org/html/draft-gu-grow-bmp-vpn-te-00</a></p>
+
+<p>Description:</p>
+
+<p>The BGP Monitoring Protocol (BMP) is designed to monitor BGP running
+   status, such as BGP peer relationship establishment and termination
+   and route updates.  This document provides a traffic engineering (TE)
+   method in the VPN (Virtual Private Network) scenario using BMP.</p>
+
+<p><strong>3. VPN Label Monitoring Using BMP</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-gu-grow-bmp-vpn-label-00">https://tools.ietf.org/html/draft-gu-grow-bmp-vpn-label-00</a></p>
+
+<p>Description:</p>
+
+<p>The BGP Monitoring Protocol (BMP) is designed to monitor BGP running
+   status, such as BGP peer relationship establishment and termination
+   and route updates.  This document provides a method of collecting the
+   VPN label using BMP, as well as an implementation example.</p>
+
+<p><strong>4. Monitoring BGP Capabilities Using BMP</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2017-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhuang-grow-monitoring-bgp-capabilities-00">https://tools.ietf.org/html/draft-zhuang-grow-monitoring-bgp-capabilities-00</a></p>
+
+<p>Description:</p>
+
+<p>The BGP Monitoring Protocol (BMP) [RFC7854] is designed to monitor
+   BGP [RFC4271] running status, such as BGP peer relationship
+   establishment and termination and route updates.
+   This document provides a use case that the BMP station can get all
+   BGP capability information of the monitored network device via BMP.</p>
+
+<h2 id="bgp-recording">BGP Recording</h2>
+
+<p><strong>1. Record NEXTHOP_PATH ATTIBUTE for BGP</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hares-idr-nexthop-path-record-00">https://tools.ietf.org/html/draft-hares-idr-nexthop-path-record-00</a></p>
+
+<p>Description:</p>
+
+<p>In some BGP deployments, BGP next hops may use a set or tunnels or
+   run across converged networks such as seamless MPLS.  This document
+   describes a new optional transitive path attribute, NEXTHOP_PATH
+   ATTRIBUTE for BGP that records the next hop path which can be used by
+   BGP network management to monitor and manage the BGP infrastructure
+   via management interfaces (such as I2RS).</p>
+
+<p><strong>2. BGP Path Record Attribute</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2014-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-raszuk-idr-bgp-pr-00">https://tools.ietf.org/html/draft-raszuk-idr-bgp-pr-00</a></p>
+
+<p>Description:</p>
+
+<p>BGP protocol today contains number of build in mechanisms which
+   record critical for its loop free operation data along the path of
+   BGP message propagation.  Those are encoded in AS_PATH, CLUSTER_LIST
+   or ORIGINATOR_ID attributes.  However in the same time there is no
+   provisioning to record other useful information along the path which
+   can be helpful to the operator in order to enhance end to end
+   visibility of BGP control plane.
+   In order to solve this problem this document proposes a new single
+   BGP attribute designed as an generic and extensible container to
+   carry number of new optional information corresponding to the BGP
+   speakers given BGP advertisement (or withdraw) message traverses.</p>
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

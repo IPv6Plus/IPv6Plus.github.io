@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>VPN+ / VTN | IPv6+</title>
+    <meta name="description" content="Provide IP Network Slicing via VPN and TE Enhancements.">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/Phase2/VTN/">
+    <meta property="og:title" content="VPN+ / VTN">
+
+    <meta property="og:description" content="Provide IP Network Slicing via VPN and TE Enhancements.">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="VPN+ / VTN"/>
+    <meta itemprop="description" content="Provide IP Network Slicing via VPN and TE Enhancements.">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/Phase2/VTN/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/">
+            <h1 class="post-title" itemprop="name">VPN+ / VTN</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;">Provide IP Network Slicing via VPN and TE Enhancements.</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p>VPN+ provides a layered architecture and the set of technologies in different layers to provide enhanced VPN services. It is based on existing VPN and Traffic Engineering (TE) technologies with necessary extensions to meet the emerging and stringent service requirement such as 5G. Network slicing is one typical use case of VPN+.</p>
+
+<div id="Tutorial"></div>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p><strong>1. VPN+ Introduction</strong></p>
+
+<p>Publication URL: <a href="/resources/VTN/SRv6-based-Network-Slicing_MPLS-Congress-2019.pdf">PDF - VPN+ Introduction in MPLS Congress 2019</a></p>
+
+<div id="IETF"></div>
+
+<h2 id="ietf">IETF</h2>
+
+<h3 id="1-vpn-framework">1. VPN+ Framework</h3>
+
+<p><strong>A Framework for VPN+ Services</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-teas-enhanced-vpn">A Framework for VPN+ Services</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the framework for Enhanced Virtual Private Network (VPN+) service.  The purpose is to support the needs of new
+applications, particularly applications that are associated with 5G services, by utilizing an approach that is based on existing VPN and
+TE technologies and adds features that specific services require over and above traditional VPNs.</p>
+
+<p><strong>Scalability Considerations for VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-teas-enhanced-vpn-vtn-scalability">VTN Scalability Considerations for VPN+</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the scalability considerations in the control plane and data plane to enable VPN+ services, some optimization mechanisms are also described.</p>
+
+<h3 id="2-vpn-data-plane">2. VPN+ Data Plane</h3>
+
+<p><strong>Segment Routing Extensions for VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-spring-sr-for-enhanced-vpn">Segment Routing for Resource Guaranteed Virtual Networks</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the mechanism to associate Segment Routing Identifiers (SIDs) with network resource attributes. These SIDs can be used to build SR paths with reserved network resources.  In addition, these SID can
+also be used to build SR based virtual networks, which provide the network topology and resource attributes required by particular
+services.  The proposed mechanism is applicable to both segment routing with MPLS data plane (SR-MPLS) and segment routing with IPv6
+data plane (SRv6).</p>
+
+<p><strong>IPv6 Extensions for VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-6man-enhanced-vpn-vtn-id">Carrying VTN-ID in IPv6 Extension Header for VPN+</a></p>
+
+<p>Introduction:</p>
+
+<p>This document proposes a new option type to carry virtual transport network identifier (VTN ID) in the IPv6 extensions headers to
+identify the virtual transport network the packet belongs to. The procedure of processing the VTN option is also specified. This provides a scalable solution for data plane encapsulation of
+enhanced VPN (VPN+).</p>
+
+<h3 id="3-vpn-control-plane">3. VPN+ Control Plane</h3>
+
+<p><strong>IGP Extensions for SR based VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-lsr-sr-enhanced-vpn">IGP Extensions for SR based VPN+</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies the IGP mechanisms with necessary extensions to build a set of Segment Routing (SR) based VTNs.  The VTNs could be
+used as the underlay of enhanced VPN service.  The proposed mechanism is applicable to both Segment Routing with MPLS data plane (SR-MPLS)
+and segment routing with IPv6 data plane (SRv6).</p>
+
+<p><strong>BGP-LS Extensions for SR based VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-idr-bgpls-sr-enhanced-vpn">BGP-LS Extensions for SR based VPN+</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies the BGP-LS mechanisms with necessary extensions to advertise the information of Segment Routing (SR) based VTNs.  The proposed mechanism is applicable to both segment routing with MPLS data plane (SR-MPLS) and segment routing with IPv6 data
+plane (SRv6).</p>
+
+<p><strong>Using IGP Flex-Algo for SR based VTN</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhu-lsr-isis-sr-vtn-flexalgo">Using Flex-Algo for SR based VTN</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a simplified mechanism to build the SR based VTNs using SR Flex-Algo with minor extensions to IGP L2 bundle.</p>
+
+<p><strong>BGP-LS with Flex-Algo for SR based VTN</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo">BGP-LS with Flex-Algo for SR based VTN</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a simplified mechanism to distribute the information of SR based VTNs using BGP-LS with Flex-Algo.</p>
+
+<p><strong>Using Multi-Topology for SR based VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-lsr-isis-sr-vtn-mt">Using IS-IS Multi-Topology for SR based VTN</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a simplified mechanism to build the SR based VTNs using IGP multi-topology together with other well-defined IS-IS extensions.</p>
+
+<p><strong>BGP-LS with Multi-Topology for SR based VPN+</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-idr-bgpls-sr-vtn-mt">BGP-LS with Multi-Topology for SR based VTN</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a simplified mechanism to distribute the information of SR based VTNs using BGP-LS with Multi-Topology.</p>
+
+<div id="CCSA"></div>
+
+<h2 id="ccsa">CCSA</h2>
+
+<p><strong>1. Technical requirement of VPN+ for supporting IP network slicing</strong></p>
+
+<p>Introduction:</p>
+
+<p>This is the standard project in CCSA which defines the VPN+ framework and SR based VPN+ technology and procedure.</p>
+
+<div id="Demo"></div>
+
+<h2 id="demo">Demo</h2>
+
+<div id="OpenSource"></div>
+
+<h2 id="opensource">OpenSource</h2>
+
+<div id="News"></div>
+
+<h2 id="news">News</h2>
+
+
+            </article>
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

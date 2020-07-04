@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IFIT | IPv6+</title>
+    <meta name="description" content="New fashion data plane telemetry technique and framework.">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/Phase2/IFIT/">
+    <meta property="og:title" content="IFIT">
+
+    <meta property="og:description" content="New fashion data plane telemetry technique and framework.">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="IFIT"/>
+    <meta itemprop="description" content="New fashion data plane telemetry technique and framework.">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/Phase2/IFIT/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/">
+            <h1 class="post-title" itemprop="name">IFIT</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;">New fashion data plane telemetry technique and framework.</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p>In-situ Flow Information Telemetry (IFIT) is a new fashion data plane telemetry technique. Different from the active and passive OAM schemes, IFIT will not generate additional test traffic, but to insert the telemetry instruction into the user traffic, and measure the real user traffic.</p>
+
+<div id="Tutorial"></div>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p><strong>1. IFIT Framework [EN]</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-song-opsawg-ifit-framework">https://tools.ietf.org/html/draft-song-opsawg-ifit-framework</a></p>
+
+<p>Introduction:</p>
+
+<p>Efficient network operation increasingly relies on high-quality data-plane telemetry to provide the necessary visibility. Traditional Operation, Administration and Maintenance (OAM) methods, which include proactive and reactive techniques, running both active and passive modes, are no longer sufficient to meet the monitoring and measurement requirements.  The complexity of today’s networks and service quality requirements demand new high-precision and real-time techniques.</p>
+
+<p>We used to apply active OAM tools for data plane test. Like Ping, and TWAMP. They will generate test traffic and measure the delay, loss of the test traffic to simulate the user traffic. Now there is a trend to apply the IFIT techniques. They will not generate additional test traffic, but to insert the telemetry instruction into the user traffic, and measure the real user traffic. So there are many advantages:</p>
+
+<ul>
+  <li>It can provide fine grained flow SLA monitoring. Active OAM can only provide the path level precision.</li>
+  <li>It can measure the real user traffic. Not the simulation way.</li>
+  <li>It can monitor very packet behavior in the network. So we can see the sequence of devices the packet visited along its path. The time the packet spent buffered in every switch. The set of rules the packet matched at every device along the way. The flows that the packet shared each queue with. And so IFIT can provide abundant data plane information to enable big data and AI.</li>
+</ul>
+
+<div id="IETF"></div>
+
+<h2 id="ietf">IETF</h2>
+
+<h3 id="1-ifit-data-plane">1. IFIT Data Plane</h3>
+
+<p><strong>IPv6 Application of the Alternate Marking Method</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-6man-ipv6-alt-mark">https://tools.ietf.org/html/draft-ietf-6man-ipv6-alt-mark</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes how the Alternate Marking Method can be used as the passive performance measurement tool in an IPv6 domain and reports implementation considerations. It proposes how to define a new Extension Header Option to encode alternate marking technique and both Hop-by-Hop Options Header and Destination Options Header are considered.</p>
+
+<p><strong>Encapsulation For MPLS Performance Measurement with Alternate Marking Method</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-cheng-mpls-inband-pm-encapsulation">https://tools.ietf.org/html/draft-cheng-mpls-inband-pm-encapsulation</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines the encapsulation for MPLS performance measurement with alternate marking method, which performs flow-based packet loss, delay, and jitter measurements on live traffic.</p>
+
+<p><strong>Enhanced Alternate Marking Method</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhou-ippm-enhanced-alternate-marking">https://tools.ietf.org/html/draft-zhou-ippm-enhanced-alternate-marking</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines data fields for the alternate marking with enough space.  The main idea is that more information can be considered within the alternate marking field to facilitate the efficiency and ease the deployment.  The definition aims to be general, even if for some protocols there can be dedicated solutions</p>
+
+<p><strong>Data Fields for In-situ OAM</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-ippm-ioam-data">https://tools.ietf.org/html/draft-ietf-ippm-ioam-data</a></p>
+
+<p>Introduction:</p>
+
+<p>In-situ Operations, Administration, and Maintenance (IOAM) records operational and telemetry information in the packet while the packet traverses a path between two points in the network.  This document discusses the data fields and associated data types for in-situ OAM. In-situ OAM data fields can be encapsulated into a variety of protocols such as NSH, Segment Routing, Geneve, IPv6 (via extension header), or IPv4. In-situ OAM can be used to complement OAM mechanisms based on e.g. ICMP or other types of probe packets.</p>
+
+<p><strong>In-situ OAM Direct Exporting</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-ippm-ioam-direct-export">https://tools.ietf.org/html/draft-ietf-ippm-ioam-direct-export</a></p>
+
+<p>Introduction:</p>
+
+<p>IOAM allows telemetry data to be pushed into data packets while they traverse the network. This document introduces a new IOAM option type called the Direct Export (DEX) option, which is used as a trigger for IOAM data to be directly exported without being pushed into in-flight data packets.</p>
+
+<p><strong>In-situ OAM Flags</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-ippm-ioam-flags">https://tools.ietf.org/html/draft-ietf-ippm-ioam-flags</a></p>
+
+<p>Introduction:</p>
+
+<p>This document presents new flags in the IOAM Trace Option headers. Specifically, the document defines the Loopback and Active flags.</p>
+
+<p><strong>In-situ OAM IPv6 Options</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-ippm-ioam-ipv6-options">https://tools.ietf.org/html/draft-ietf-ippm-ioam-ipv6-options</a></p>
+
+<p>Introduction:</p>
+
+<p>This document outlines how IOAM data fields are encapsulated in IPv6.</p>
+
+<p><strong>Inband Flow Analyzer</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-kumar-ippm-ifa">https://tools.ietf.org/html/draft-kumar-ippm-ifa</a></p>
+
+<p>Introduction:</p>
+
+<p>In-band Flow Analyzer (IFA) records flow specific information from an end station and/or switches across a network. This document discusses the method to collect data on a per hop basis across a network and perform localized or end to end analytics operations on the data. This document also describes a transport-agnostic header definition that may be used for tunneled and non-tunneled flows alike.</p>
+
+<h3 id="2-ifit-control-plane">2. IFIT Control Plane</h3>
+
+<p><strong>BGP SR Policy Extensions to Enable IFIT</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-qin-idr-sr-policy-ifit">https://tools.ietf.org/html/draft-qin-idr-sr-policy-ifit</a></p>
+
+<p>Introduction:</p>
+
+<p>Segment Routing (SR) policy is a set of candidate SR paths consisting of one or more segment lists and necessary path attributes. It enables instantiation of an ordered list of segments with a specific intent for traffic steering.  In-situ Flow Information Telemetry (IFIT) provides a reference framework that supports network OAM applications to apply dataplane on-path telemetry techniques acquiring data about a packet on its forwarding path.  This document defines extensions to BGP to distribute SR policies carrying IFIT information. So that IFIT behavior can be enabled automatically when the SR policy is applied.</p>
+
+<p><strong>PCEP SR Policy Extensions to Enable IFIT</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-chen-pce-sr-policy-ifit">https://tools.ietf.org/html/draft-chen-pce-sr-policy-ifit</a></p>
+
+<p>Introduction:</p>
+
+<p>Segment Routing (SR) policy is a set of candidate SR paths consisting of one or more segment lists and necessary path attributes. It enables instantiation of an ordered list of segments with a specific intent for traffic steering. In-situ Flow Information Telemetry (IFIT) provides a reference framework that supports network OAM applications to apply dataplane on-path telemetry techniques acquiring data about a packet on its forwarding path.  This document defines extensions to PCEP to distribute SR policies carrying IFIT information. So that IFIT behavior can be enabled automatically when the SR policy is applied.</p>
+
+<p><strong>In-situ Flow Information Telemetry (IFIT) Node Capability Advertisement</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-wang-lsr-ifit-node-capability-advertisement">https://tools.ietf.org/html/draft-wang-lsr-ifit-node-capability-advertisement</a></p>
+
+<p>Introduction:</p>
+
+<p>For advertising In-situ Flow Information Telemetry (IFIT) node capabilities within the entire routing domain, this document extends a new optional TLV to the OSPF RI Opaque LSA, a new optional sub-TLV to the IS-IS Router CAPABILITY TLV, and a new Node Attribute TLV that is encoded in the BGP-LS attribute with Node NLRIs to carry IFIT node capabilities information.  Such advertisement allows entities (e.g. a centralized controller) to determine whether a particular IFIT functionality can be supported in a given network.</p>
+
+<h3 id="3-ifit-management-plane">3. IFIT Management Plane</h3>
+
+<p><strong>A YANG Data Model for In-Situ OAM</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhou-ippm-ioam-yang">https://tools.ietf.org/html/draft-zhou-ippm-ioam-yang</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a YANG module for the IOAM function.</p>
+
+<p><strong>UDP based Publication Channel for Streaming Telemetry</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-unyte-netconf-udp-pub-channel">https://tools.ietf.org/html/draft-unyte-netconf-udp-pub-channel</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a UDP-based publication channel for streaming telemetry use to collect data from devices.  A new shim header is proposed to facilitate the distributed data collection mechanism which directly pushes data from line cards to the collector. Because of the lightweight UDP encapsulation, higher frequency and better transit performance can be achieved.</p>
+
+<p><strong>Subscription to Multiple Stream Originators</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-unyte-netconf-multi-stream-originators">https://tools.ietf.org/html/draft-unyte-netconf-multi-stream-originators</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the distributed data export mechanism that allows multiple data streams to be managed by using a single subscription. Specifically, device can decide to decompse one subscription into multiple subscriptions to the line-cards. So that each line-card can directly push data to the collector without passing through a broker for internal consolidation. And the device can indicate the subscription decomposition result to the receiver to check the data integrity.</p>
+
+<div id="CCSA"></div>
+
+<h2 id="ccsa">CCSA</h2>
+
+<p><strong>1. Technical requirement of automatic In-situ Flow Information Telemetry (IFIT) for carrier network</strong></p>
+
+<div id="Demo"></div>
+
+<h2 id="demo">Demo</h2>
+
+<p><strong>1. IFIT: Intelligent Flow Information Telemetry</strong></p>
+
+<p>Publication URL: <a href="https://dl.acm.org/doi/pdf/10.1145/3342280.3342292">https://dl.acm.org/doi/pdf/10.1145/3342280.3342292</a></p>
+
+<p>Introduction:</p>
+
+<p>This is short paper accepted by the SIGCOMM2019 Posters and Demos session.</p>
+
+<div id="OpenSource"></div>
+
+<h2 id="opensource">OpenSource</h2>
+
+<div id="News"></div>
+
+<h2 id="news">News</h2>
+
+<p><strong>1. Beijing Unicom and Huawei successfully complete the pilot of IFIT solution on the 5G transport network [EN]</strong></p>
+
+<p>Publication URL: <a href="https://www.techgenyz.com/2019/06/28/beijing-unicom-and-huawei-ifit-solution-on-the-5g-transport-network">https://www.techgenyz.com/2019/06/28/beijing-unicom-and-huawei-ifit-solution-on-the-5g-transport-network</a></p>
+
+<p><strong>2. Huawei’s IFIT Solution Wins Best of Show Award Special Prize at Interop Tokyo 2019 [EN]</strong></p>
+
+<p>Publication URL: <a href="https://www.capacitymedia.com/articles/3823905/huaweis-ifit-solution-wins-best-of-show-award-special-prize-at-interop-tokyo-2019">https://www.capacitymedia.com/articles/3823905/huaweis-ifit-solution-wins-best-of-show-award-special-prize-at-interop-tokyo-2019</a></p>
+
+<p><strong>3. Huawei launches NetEngine 8000 series of routers [EN]</strong></p>
+
+<p>Publication URL: <a href="https://www.lightreading.com/huawei-launches-netengine-8000-series-of-routers/d/d-id/757743">https://www.lightreading.com/huawei-launches-netengine-8000-series-of-routers/d/d-id/757743</a></p>
+
+
+            </article>
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

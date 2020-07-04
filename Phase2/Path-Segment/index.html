@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Path Segment | IPv6+</title>
+    <meta name="description" content="Path Segment identifies an/a set of SR/SRv6 Path.">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/Phase2/Path-Segment/">
+    <meta property="og:title" content="Path Segment">
+
+    <meta property="og:description" content="Path Segment identifies an/a set of SR/SRv6 Path.">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Path Segment"/>
+    <meta itemprop="description" content="Path Segment identifies an/a set of SR/SRv6 Path.">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/Phase2/Path-Segment/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/">
+            <h1 class="post-title" itemprop="name">Path Segment</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;">Path Segment identifies an/a set of SR/SRv6 Path.</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p>A Segment Routing (SR) path is identified by an SR segment list, one or partial segments of the list cannot uniquely identify the SR path. Path identification is a pre-requisite for various use-cases such as performance measurement (PM) of an SR path.</p>
+
+<p>Path Segment is used to identify an SR path.  When used, it is inserted at the ingress node of the SR path. Path Segment can be used by the egress node to implement path identification hence to support various use-cases including SR path PM, end-to-end 1+1 SR path protection and bidirectional SR paths correlation.</p>
+
+<div id="Tutorial"></div>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p><strong>1. SRv6 Path Segment for efficient PM, OAM and IOAM</strong></p>
+
+<p>Publication URL: <a href="/resources/Path_Segment/SRv6 Path Segment for efficient PM, OAM and IOAM.pdf">PDF - SRv6 Path Segment for efficient PM, OAM and IOAM</a></p>
+
+<p>Introduction:</p>
+
+<p>This document introduce the definition and usages of SRv6 Path Segment. SRv6 Path Segment can be used for efficient Performance measurement, OAM nad IOAM.</p>
+
+<p><strong>2. SR-TP OAM enhancement for SR</strong></p>
+
+<p>Publication URL: <a href="/resources/Path_Segment/SR-TP OAM enhancement for SR-v1.3.pdf">PDF - SR-TP OAM enhancement for SR</a></p>
+
+<p>Introduction:</p>
+
+<p>This document introduce the definition and usages of SR-MPLS Path Segment. SR-MPLS Path Segment can be used for efficient Performance measurement, OAM nad IOAM.</p>
+
+<p><strong>3. IETF105 side meeting-SRv6 Path Segment Encap</strong></p>
+
+<p>Publication URL: <a href="/resources/Path_Segment/IETF105 side meeting-SRv6 Path Segment Encap-v1.1.pdf">PDF - IETF105 side meeting-SRv6 Path Segment Encap</a></p>
+
+<p>Introduction:</p>
+
+<p>This document introduce the encapsulation of SRv6 Path Segment.</p>
+
+<p><strong>4. IETF103 Path Segment in PCEP</strong></p>
+
+<p>Publication URL: <a href="/resources/Path_Segment/IETF-103-PCE-Path-Segment-in-PCEP.pdf">PDF - IETF-103-PCE-Path-Segment-in-PCEP</a></p>
+
+<p>Introduction:</p>
+
+<p>This document introduce the PCEP extension for Path Segment.</p>
+
+<div id="IETF"></div>
+
+<h2 id="ietf">IETF</h2>
+
+<p><strong>1. Path Segment in MPLS Based Segment Routing Network</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-mpls-path-segment">https://tools.ietf.org/html/draft-ietf-spring-mpls-path-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a new type of segment that is referred to as Path Segment, which is used to identify an SR path in an SR-MPLS network.  When used, it is inserted by the ingress node of the SR path and immediately follows the last segment identifier in the segment list of the SR path.  The Path Segment will not be popped off until it reaches the egress node of the SR path.  The Path Segment then can be used by the egress node to implement SR path identification and correlation.</p>
+
+<p><strong>2. Path Segment for SRv6 (Segment Routing in IPv6)</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-spring-srv6-path-segment">https://tools.ietf.org/html/draft-li-spring-srv6-path-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>Similar to SR-MPLS, this document defines the Path Segment in SRv6 networks in order to identify an SRv6 path.</p>
+
+<p><strong>3. Encapsulation of Path Segment in SRv6</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-6man-srv6-path-segment-encap">https://tools.ietf.org/html/draft-li-6man-srv6-path-segment-encap</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines the encoding and processing of Path Segment in SRv6 networks.</p>
+
+<p><strong>4. SR Policy Extensions for Path Segment and Bidirectional Path</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-idr-sr-policy-path-segment">https://tools.ietf.org/html/draft-ietf-idr-sr-policy-path-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines extensions to BGP to distribute SR policies carrying Path Segment and bidirectional path information.</p>
+
+<p><strong>5. SR Policies Extensions for Path Segment and Bidirectional Path in BGP-LS</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-idr-bgp-ls-sr-policy-path-segment">https://tools.ietf.org/html/draft-ietf-idr-bgp-ls-sr-policy-path-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies the way of collecting configuration and states of SR policies carrying Path Segment and bidirectional path information by using BPG-LS.  Such information can be used by external conponents for many use cases such as performance measurement, path re-optimization and end-to-end protection.</p>
+
+<p><strong>6. Path Computation Element Communication Protocol (PCEP) Extension for Path Segment in Segment Routing (SR)</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-pce-sr-path-segment">https://tools.ietf.org/html/draft-ietf-pce-sr-path-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies extensions to the Path Computation Element Communication Protocol (PCEP) to support requesting, replying, reporting and updating the Path Segment ID (Path SID) between PCEP speakers.</p>
+
+<p><strong>7. PCEP Extensions for Associated Bidirectional Segment Routing (SR) Paths</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-pce-sr-bidir-path">https://tools.ietf.org/html/draft-ietf-pce-sr-bidir-path</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines PCEP extensions for grouping two unidirectional SR Paths (one in each direction in the network) into a single Associated Bidirectional SR Path.  The mechanisms defined in this document can also be applied using a Stateful PCE for both PCE-Initiated and PCC-Initiated LSPs, as well as when using a Stateless PCE.</p>
+
+<p><strong>8. PCE Controlled ID Space</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-controlled-id-space">https://tools.ietf.org/html/draft-li-pce-controlled-id-space</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a mechanism for PCC to inform the PCE of the identifier space under its control via PCEP.  The identifier could be MPLS label, SID or any other to-be-defined identifier to be allocated by a PCE.</p>
+
+<div id="CCSA"></div>
+
+<h2 id="ccsa">CCSA</h2>
+
+<div id="Demo"></div>
+
+<h2 id="demo">Demo</h2>
+
+<div id="OpenSource"></div>
+
+<h2 id="opensource">OpenSource</h2>
+
+<div id="News"></div>
+
+<h2 id="news">News</h2>
+
+<p><strong>1. China Mobile leads the Path Segment series standards [CN]</strong></p>
+
+<p>Publication URL: <a href="https://www.c114.com.cn/news/118/a1123293.html">https://www.c114.com.cn/news/118/a1123293.html</a></p>
+
+
+            </article>
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

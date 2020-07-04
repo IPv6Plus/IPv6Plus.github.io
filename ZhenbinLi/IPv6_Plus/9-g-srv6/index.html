@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>G-SRv6 | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/9-g-srv6/">
+    <meta property="og:title" content="G-SRv6">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="G-SRv6"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/9-g-srv6/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">G-SRv6</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p><strong>1. Shorter SRv6 SID Requirements</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-cheng-spring-shorter-srv6-sid-requirement-01">https://tools.ietf.org/html/draft-cheng-spring-shorter-srv6-sid-requirement-01</a></p>
+
+<p>Description:</p>
+
+<p>This document describes a list of requirements for the use of a
+   shortened identifier in a segment routing network with the IPv6 data
+   plane.</p>
+
+<p><strong>2. Compressed SRv6 Network Programming</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-spring-compressed-srv6-np-00">https://tools.ietf.org/html/draft-li-spring-compressed-srv6-np-00</a></p>
+
+<p>Description:</p>
+
+<p>Segment Routing can be applied to the IPv6 data plane by leveraging a
+   new type of Routing Extension Header, called Segment Routing
+   Header(SRH).  However, the overhead introduced by SRH may be a
+   challenge for the current hardware capability, which would have much
+   effect on the forwarding performance and the payload efficiency.
+   This document defines a compressed SRv6 network programming mechanism
+   in order to reduce the overhead of SRv6 by introducing the Compressed
+   Segment Identifier(C-SID) and the Compressed SRH(C-SRH).  The C-SRH
+   can be a new Routing Header or an enhancement of SRH, which is
+   compatible with SRH well.</p>
+
+<p><strong>3. SRv6 Network Programming extension: the Variable Length SID flavor</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-01</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-decraene-spring-srv6-vlsid-00">https://tools.ietf.org/html/draft-decraene-spring-srv6-vlsid-00</a></p>
+
+<p>Description:</p>
+
+<p>This document proposes an extension to Segment Routing IPv6 (SRv6)
+   Network Programming to allow for SRv6 Segment Identifier (SID) of
+   variable length.  The use of smaller SRv6 SID reduces the size the
+   SRv6 Header (SRH).  This reduces the overhead for both the traffic
+   volume and the network processor.  This document is aligned with the
+   SR architecture and does not change the SRH.</p>
+
+<p><strong>4. Generalized SRv6 Network Programming</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-np-00">https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-np-00</a></p>
+
+<p>Description:</p>
+
+<p>As the deployment of SRv6, some new requirements are proposed, such
+   as SRv6 compression, transporting over SR-MPLS/MPLS and IPv4 domains.
+   Therefore, it is necessary to consider other types of segments or
+   sub-paths in the end-to-end SRv6 network programming.
+   This document proposes Generalized Segment Routing over IPv6 (G-SRv6)
+   Networking Programming, which supports to encode multiple types of
+   Segments in a SRH, called Generalized SRH (G-SRH).  These Segments
+   can be called Generalized Segment, and the ID can be Generalized
+   Segment Identifier (G-SID), which may include an SRv6 SID(128 bits),
+   C-SIDs, MPLS labels, or IPv4 tunnel information.
+   This document also defines the mechanisms of Generalized SRv6
+   Networking Programming and the requirements of related protocol
+   extensions of control plane and data plane.</p>
+
+<p><strong>5. Generalized Segment Routing Header</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-lc-6man-generalized-srh-00">https://tools.ietf.org/html/draft-lc-6man-generalized-srh-00</a></p>
+
+<p>Description:</p>
+
+<p>Generalized SRv6 network programming defines the enhanced mechanisms
+   of SRv6 to encode SRv6 SIDs, Compressed SIDs and even the MPLS labels
+   or IPv4 tunnel information in a single SRH.  This type of SRH is
+   called Generalized SRH (G-SRH), which can reduce the overhead of SRv6
+   and also provide more flexibility for network programming.  This
+   document defines the encapsulation and packet processing of G-SRH.</p>
+
+<p><strong>6. Compressed SRv6 Segment List Encoding in SRH</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-05</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-filsfilscheng-spring-srv6-srh-comp-sl-enc-01">https://tools.ietf.org/html/draft-filsfilscheng-spring-srv6-srh-comp-sl-enc-01</a></p>
+
+<p>Description:</p>
+
+<p>This document defines a compressed SRv6 Segment List Encoding in the
+   SRH.  This solution does not require any SRH data plane change nor
+   any SRv6 control plane change.  This solution leverages the SRv6
+   Network Programming model.</p>
+
+<p><strong>7. Generalized SRv6 Network Programming for SRv6 Compression</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-05</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-for-cmpr-01">https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-for-cmpr-01</a></p>
+
+<p>Description:</p>
+
+<p>This document proposes Generalized Segment Routing over IPv6 (G-SRv6)
+   Networking Programming for SRv6 compression.</p>
+
+<p>G-SRv6 can reduce the overhead of SRv6 by encoding the Generalized
+   SIDs(G-SID) in SID list, and it also supports to program SRv6 SIDs
+   and G-SIDs in a single SRH to support incremental deployment and
+   smooth upgrade.</p>
+
+<p>G-SRv6 is fully compatible with SRv6 with no modification of SRH, no
+   new address consumption, no new route creation, and even no
+   modification of control plane.</p>
+
+<p>G-SRv6 for Compression is designed based on the Compressed SRv6
+   Segment List Encoding in SRH
+   [I-D.filsfilscheng-spring-srv6-srh-comp-sl-enc] framework.</p>
+
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

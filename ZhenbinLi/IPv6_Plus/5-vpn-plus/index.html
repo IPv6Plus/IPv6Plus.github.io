@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>VPN+ | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/5-vpn-plus/">
+    <meta property="og:title" content="VPN+">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="VPN+"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/5-vpn-plus/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">VPN+</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p><strong>1. Virtual Transport Network (VTN) Scalability Considerations for Enhanced VPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-teas-enhanced-vpn-vtn-scalability-00">https://tools.ietf.org/html/draft-dong-teas-enhanced-vpn-vtn-scalability-00</a></p>
+
+<p>Description:</p>
+
+<p>Enhanced VPN (VPN+) is an enhancement to VPN services to support the
+   needs of new applications, particularly including the applications
+   that are associated with 5G services.  An enhanced VPN could be used
+   for transport network slicing in 5G, and will also be of use in more
+   generic scenarios.  I-D.ietf-teas-enhanced-vpn describes the
+   framework and candidate component technologies for providing
+   enhanced VPN services.  This document describes the scalability
+   considerations in the control plane and data plane to enable VPN+
+   services, some optimization mechanisms are also described.</p>
+
+<p><strong>2. Carrying Virtual Transport Network (VTN) Identifier in IPv6 Extensison Header for Enhanced VPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-6man-enhanced-vpn-vtn-id-00">https://tools.ietf.org/html/draft-dong-6man-enhanced-vpn-vtn-id-00</a></p>
+
+<p>Description:</p>
+
+<p>This document proposes a new option type to carry virtual transport
+   network identifier (VTN ID) in the IPv6 extensions headers to
+   identify the virtual transport network the packet belongs to. The
+   procedure of processing the VTN option is also specified. This
+   provides a scalable solution for data plane encapsulation of
+   enhanced VPN (VPN+) as described in I-D.ietf-teas-enhanced-vpn. One
+   typical use case of VPN+ is to provide transport network slicing in
+   5G, while it could also be used in more general cases.</p>
+
+<p><strong>3. IGP Extensions for Segment Routing based Enhanced VPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-lsr-sr-enhanced-vpn-00">https://tools.ietf.org/html/draft-dong-lsr-sr-enhanced-vpn-00</a></p>
+
+<p>Description:</p>
+
+<p>Enhanced VPN (VPN+) is an enhancement to VPN services to support the
+   needs of new applications, particularly including the applications
+   that are associated with 5G services.  These applications require
+   better isolation and have more stringent performance requirements
+   than that can be provided with traditional overlay VPNs.  An enhanced
+   VPN may form the underpin of 5G transport network slicing, and will
+   also be of use in its own right.  This document describes how Multi-
+   Topology Routing (MTR) as described in RFC 5120 and RFC 4915, can be
+   extended to signal the resources allocated in the underlay network to
+   construct the virtual networks for enhanced VPN services, together
+   with the Segment Routing Identifiers (SIDs) used to identify and
+   access the network resources allocated for the virtual networks in
+   the data plane.</p>
+
+<p><strong>4. BGP-LS Extensions for Segment Routing based Enhanced VPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2011-11</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-idr-bgpls-sr-enhanced-vpn-00">https://tools.ietf.org/html/draft-dong-idr-bgpls-sr-enhanced-vpn-00</a></p>
+
+<p>Description:</p>
+
+<p>Enhanced VPN (VPN+) is an enhancement to VPN services to support the
+   needs of new applications, particularly including the applications
+   that are associated with 5G services.  These applications require
+   better isolation and have more stringent performance requirements
+   than that can be provided with traditional overlay VPNs.  An enhanced
+   VPN may be used for 5G transport network slicing, and will also be of
+   use in more generic scenarios.  This document specifies BGP-LS based
+   mechanism with necessary extensions to advertise the information of
+   Segment Routing (SR) based virtual networks.  These virtual networks
+   could be used as the underlay of enhanced VPN service.  The proposed
+   mechanism is applicable to both segment routing with MPLS data plane
+   (SR-MPLS) and segment routing with IPv6 data plane (SRv6).</p>
+
+<p><strong>5. Using IS-IS Multi-Topology (MT) for Segment Routing based Virtual Transport Network</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-lsr-isis-sr-vtn-mt-00">https://tools.ietf.org/html/draft-xie-lsr-isis-sr-vtn-mt-00</a></p>
+
+<p>Description:</p>
+
+<p>Enhanced VPN (VPN+) as defined in I-D.ietf-teas-enhanced-vpn aims to
+   provide enhanced VPN service to support some applications’s needs of
+   enhanced isolation and stringent performance requirements.  VPN+
+   requries integration between the overlay VPN and the underlay
+   network.  A Virtual Transport Network (VTN) is a virtual network
+   which consists of a subset of the network toplogy and network
+   resources allocated from the underlay network.  A VTN could be used
+   as the underlay for one or a group of VPN+ services.
+   I-D.dong-lsr-sr-enhanced-vpn defines the IGP extensions to build a
+   set of Segment Routing (SR) based VTNs.  This document describes a
+   simplified mechanism to build the SR based VTNs using IGP multi-
+   topology together with other well-defined IS-IS extensions.</p>
+
+<p><strong>6. BGP-LS with Multi-topology for Segment Routing based Virtual Transport Networks</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-idr-bgpls-sr-vtn-mt-00">https://tools.ietf.org/html/draft-xie-idr-bgpls-sr-vtn-mt-00</a></p>
+
+<p>Description:</p>
+
+<p>Enhanced VPN (VPN+) as defined in I-D.ietf-teas-enhanced-vpn aims to
+   provide enhanced VPN service to support applications’s needs of
+   enhanced isolation and stringent performance requirements.  VPN+
+   requries integration between the overlay VPN and the underlay
+   network.  A Virtual Transport Network (VTN) is a virtual network
+   which consists of a subset of the network toplogy and network
+   resources allocated from the underlay network.  A VTN could be used
+   as the underlay for one or a group of VPN+ services.
+   I-D.dong-idr-bgpls-sr-enhanced-vpn defines the BGP-LS extensions to
+   distribute the information of Segment Routing (SR) based VTNs to
+   external entities, such as the network controllers.  This document
+   describes a simplified mechanism to distribute the information of SR
+   based VTNs using BGP-LS with Multi-Topology.</p>
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IFIT | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/4-ifit/">
+    <meta property="og:title" content="IFIT">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="IFIT"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/4-ifit/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">IFIT</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <h2 id="framework">Framework</h2>
+
+<p><strong>1. In-situ Flow Information Telemetry Framework</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-song-opsawg-ifit-framework-00">https://tools.ietf.org/html/draft-song-opsawg-ifit-framework-00</a></p>
+
+<p>Description:</p>
+
+<p>In-situ Flow Information Telemetry (iFIT) is a framework for applying
+   techniques such as In-situ OAM (iOAM) and Postcard-Based Telemetry
+   (PBT) in networks.  It enumerates several key components and
+   describes how these components can be assembled to achieve a complete
+   working solution for user traffic telemetry in carrier networks.</p>
+
+<h2 id="ioam">IOAM</h2>
+
+<p><strong>1. Export User Flow Telemetry Data by Postcard Packets</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-song-ippm-postcard-based-telemetry-00">https://tools.ietf.org/html/draft-song-ippm-postcard-based-telemetry-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes a proposal which allows network OAM
+   applications to collect telemetry data about any user packet.  Unlike
+   similar techniques such as INT and in-situ OAM, the Postcard-Based
+   Telemetry (PBT) does not require inserting telemetry data into user
+   packets, but directly exports the telemetry data to a collector
+   through separated OAM packets called postcards.  Two variations of
+   PBT are described in this document: one requires inserting an
+   instruction header to user packets to guide the data collection and
+   the other only marks the user packets to invoke the data collection.
+   Each has its own pros and cons.  Either way, the postcards for a
+   single user packet are from multiple devices and need to be
+   correlated at the collector, which is a unique issue pertaining to
+   PBT.  Whereas, PBT provides an alternative to INT and address several
+   implementation and deployment challenges of the INT-based solutions.</p>
+
+<p><strong>2. In-situ OAM Direct Exporting</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2020-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-ippm-ioam-direct-export-00">https://tools.ietf.org/html/draft-ietf-ippm-ioam-direct-export-00</a></p>
+
+<p>Description:</p>
+
+<p>In-situ Operations, Administration, and Maintenance (IOAM) is used
+   for recording and collecting operational and telemetry information.
+   Specifically, IOAM allows telemetry data to be pushed into data
+   packets while they traverse the network.  This document introduces a
+   new IOAM option type called the Direct Export (DEX) option, which is
+   used as a trigger for IOAM data to be directly exported without being
+   pushed into in-flight data packets.</p>
+
+<p><strong>3. Approaches on Supporting IOAM in IPv6</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2020-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-song-ippm-ioam-ipv6-support-00">https://tools.ietf.org/html/draft-song-ippm-ioam-ipv6-support-00</a></p>
+
+<p>Description:</p>
+
+<p>It has been proposed to encapsulate IOAM tracing option data fields
+   in IPv6 HbH options header.  However, due to size of the trace data
+   and its location in the IPv6 header packets, this arrangement creates
+   practical challenges for implementation, especially when other
+   extension headers, such as routing header, also exist and require in-
+   network processing.  We propose several alternative approaches to
+   address this challenge, including separating the IOAM trace data to a
+   different extension header, using the postcard-based telemetry (e.g.,
+   IOAM DEX) instead, and applying the segment IOAM trace export scheme,
+   based on the network scenario and application requirements.  We
+   discuss the pros and cons of each approach and foster standard
+   convergence and industry adoption.</p>
+
+<p><strong>4. In-situ OAM Processing in Tunnels</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-song-ippm-ioam-tunnel-mode-00">https://tools.ietf.org/html/draft-song-ippm-ioam-tunnel-mode-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes the In-situ OAM (iOAM) processing behavior in
+   a network with tunnels.  Specifically, the iOAM processing in tunnels
+   with the uniform model and the pipe model is discussed.  The
+   procedure is applicable to different type of tunnel protocols.</p>
+
+<h2 id="alternate-marking">Alternate Marking</h2>
+
+<p><strong>1. Enhanced Alternate Marking Method</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhou-ippm-enhanced-alternate-marking-00">https://tools.ietf.org/html/draft-zhou-ippm-enhanced-alternate-marking-00</a></p>
+
+<p>Description:</p>
+
+<p>This document proposes several ways to encapsulate the alternate
+   marking field with enough space.  More information can be considered
+   within the alternate marking field to facilitate the efficiency and
+   ease the deployment.</p>
+
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

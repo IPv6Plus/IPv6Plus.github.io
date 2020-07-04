@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EVPN | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/2-evpn/">
+    <meta property="og:title" content="EVPN">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="EVPN"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/2-evpn/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">EVPN</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p><strong>1. Using BGP between PE and CE in EVPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhuang-bess-evpn-pe-ce-00">https://tools.ietf.org/html/draft-zhuang-bess-evpn-pe-ce-00</a></p>
+
+<p>Description:</p>
+
+<p>This document identifies the possible applications which can benefit
+   from MAC learning through the control plane between PEs and CEs.
+   Then this document specifies protocols and procedures of using BGP as
+   PE-CE control protocol for carrying customer MAC routing information.</p>
+
+<p><strong>2. Selective Multicast in EVPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhang-l2vpn-evpn-selective-mcast-00">https://tools.ietf.org/html/draft-zhang-l2vpn-evpn-selective-mcast-00</a></p>
+
+<p>Description:</p>
+
+<p>[I-D.ietf-l2vpn-evpn] describes a solution of carrying multicast
+   traffic using replication ingress and inclusive trees (P2MP LSPs).
+   It does not provide the usage of selective trees for carrying
+   multicast traffic.  This document provides protocols and procedures
+   by which an selective tree can be used to carry traffic belonging
+   only to a specified set of IP multicast streams from one or more EVPN
+   instances.</p>
+
+<p><strong>3. Multicast State Advertisement in E-VPN</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-l2vpn-evpn-mcast-state-ad-00">https://tools.ietf.org/html/draft-li-l2vpn-evpn-mcast-state-ad-00</a></p>
+
+<p>Description:</p>
+
+<p>The document defines a new extended community to advertise the active
+   or inactive state for multicast along with the Inclusive Multicast
+   Ethernet Tag route or Ethernet A-D route in E-VPN.  The multicast
+   state advertised can help optimization of multicast process in E-VPN
+   to reduce unnecessary traffic replication for the broadcast, unknown
+   unicast and multicast (BUM) traffic.</p>
+
+<p><strong>4. Segment-Based EVPN(S-EVPN)</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-l2vpn-segment-evpn-00">https://tools.ietf.org/html/draft-li-l2vpn-segment-evpn-00</a></p>
+
+<p>Description:</p>
+
+<p>This document proposes an enhanced EVPN mechanism, segment-based EVPN
+   (S-EVPN).  It satisfies the requirements of PBB-EVPN but does not
+   require PBB implementation on PE.  The solution uses a global label
+   for each Ethernet Segment (ES) in an EVPN.  It inserts the source ES
+   label into packets at ingress PE and learns C-MAC and source ES label
+   binding at egress PE.  The solution makes the implementation easier
+   and closer to EVPN’s compared to PBB-EVPN but has the PBB-EVPN
+   benefits.</p>
+
+<p><strong>5. MVPN/EVPN Tunnel Aggregation with Common Labels</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2019-10</p>
+
+<p>Publication URL: <a href="draft-ietf-bess-mvpn-evpn-aggregation-label-03">draft-ietf-bess-mvpn-evpn-aggregation-label-03</a></p>
+
+<p>Description:</p>
+
+<p>The MVPN specifications allow a single Point-to-Multipoint (P2MP)
+   tunnel to carry traffic of multiple VPNs.  The EVPN specifications
+   allow a single P2MP tunnel to carry traffic of multiple Broadcast
+   Domains (BDs).  These features require the ingress router of the P2MP
+   tunnel to allocate an upstream-assigned MPLS label for each VPN or
+   for each BD.  A packet sent on a P2MP tunnel then carries the label
+   that is mapped to its VPN or BD.  (In some cases, a distinct
+   upstream-assigned is needed for each flow.)  Since each ingress
+   router allocates labels independently, with no coordination among the
+   ingress routers, the egress routers may need to keep track of a large
+   number of labels.  The number of labels may need to be as large (or
+   larger) than the product of the number of ingress routers times the
+   number of VPNs or BDs.  However, the number of labels can be greatly
+   reduced if the association between a label and a VPN or BD is made by
+   provisioning, so that all ingress routers assign the same label to a
+   particular VPN or BD.  New procedures are needed in order to take
+   advantage of such provisioned labels.  These new procedures also
+   apply to Multipoint-to-Multipoint (MP2MP) tunnels.  This document
+   updates RFCs 6514, 7432 and 7582 by specifying the necessary
+   procedures.</p>
+
+<p><strong>6. A Framework for E-VPN Performance Monitoring</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zheng-l2vpn-evpn-pm-framework-00">https://tools.ietf.org/html/draft-zheng-l2vpn-evpn-pm-framework-00</a></p>
+
+<p>Description:</p>
+
+<p>The capability of Ethernet VPN performance monitoring (PM) is
+   important to meet the Service Level Agreement(SLA) for the service
+   beared.  Since multipoint-to-point or multipoint-to-multipoint
+   (MP2MP) network model applies, flow identifying is a big challenge
+   for E-VPN PM.  This document specifies the framework and mechanisms
+   for the application of E-VPN PM.</p>
+
+<p><strong>7. EVPN All Active Usage Enhancement</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-eastlake-bess-enhance-evpn-all-active-00">https://tools.ietf.org/html/draft-eastlake-bess-enhance-evpn-all-active-00</a></p>
+
+<p>Description:</p>
+
+<p>A principal feature of EVPN is the ability to support multihoming
+   from a customer equipment (CE) to multiple provider edge equipment
+   (PE) active with all-active links. This draft specifies an
+   improvement to load balancing such links.</p>
+
+<p><strong>8. EVPN VXLAN Bypass VTEP</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-11-04</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-eastlake-bess-evpn-vxlan-bypass-vtep-04">https://tools.ietf.org/html/draft-eastlake-bess-evpn-vxlan-bypass-vtep-04</a></p>
+
+<p>Description:</p>
+
+<p>A principal feature of EVPN is the ability to support multihoming
+   from a customer equipment (CE) to multiple provider edge equipment
+   (PE) with all-active links. This draft specifies a mechanism to
+   simplify PEs used with VXLAN tunnels and enhance VXLAN Active-Active
+   reliability.</p>
+
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

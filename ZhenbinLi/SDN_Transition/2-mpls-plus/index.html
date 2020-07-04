@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MPLS+ | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/2-mpls-plus/">
+    <meta property="og:title" content="MPLS+">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="MPLS+"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/2-mpls-plus/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">MPLS+</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <h2 id="basics">Basics</h2>
+
+<p><strong>1. MPLS Label Forwarding with No Swapping</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-fang-mpls-label-forwarding-no-swap-00">https://tools.ietf.org/html/draft-fang-mpls-label-forwarding-no-swap-00</a></p>
+
+<p>Description:</p>
+
+<p>This document defines MPLS label forwarding operation with no label
+   swapping as a new MPLS label operation extension to the existing
+   basic forwarding operation of label push, pop, and swap.</p>
+
+<h2 id="sfl">SFL</h2>
+
+<p><strong>1. MultiProtocol Label Switching (MPLS) Source Label</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-chen-mpls-source-label-00">https://tools.ietf.org/html/draft-chen-mpls-source-label-00</a></p>
+
+<p>Description:</p>
+
+<p>An MultiProtocol Label Switching (MPLS) label is originally defined
+   to identify a Forwarding Equivalence Class (FEC), a packet is
+   assigned to a specific FEC based on its network layer destination
+   address.  It’s difficult or even impossible to derive the source
+   information from the label.  For some applications, source
+   identification is a critical requirement.  For example, performance
+   monitoring, traffic matrix measurement and collection, where the
+   monitoring node needs to identify where a packet was sent from.</p>
+
+<p>This document introduces the concept of Source Label (SL) that is
+   carried in the label stack and used to identify the ingress Label
+   Switching Router (LSR) of an Label Switched Path (LSP).</p>
+
+<p><strong>2. MPLS Flow Identification Considerations</strong></p>
+
+<p>Publication: IETF RFC</p>
+
+<p>Publication History: 2018-05</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/rfc8372">https://tools.ietf.org/html/rfc8372</a></p>
+
+<p>Description:</p>
+
+<p>This document discusses aspects to consider when developing a
+   solution for MPLS flow identification.  The key application that
+   needs this solution is in-band performance monitoring of MPLS flows
+   when MPLS is used to encapsulate user data packets.</p>
+
+<p><strong>3. Synonymous Flow Label Framework</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2018-12</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-mpls-sfl-framework-04">https://tools.ietf.org/html/draft-ietf-mpls-sfl-framework-04</a></p>
+
+<p>Description:</p>
+
+<p>RFC 8372 describes the requirement for introducing flow identities
+   within the MPLS architecture.  This document describes a method of
+   accomplishing this by using a technique called Synonymous Flow Labels
+   in which labels which mimic the behaviour of other labels provide the
+   identification service.  These identifiers can be used to trigger
+   per-flow operations on the on the packet at the receiving label
+   switching router.</p>
+
+<p><strong>4. RFC6374 Synonymous Flow Labels</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2017-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-mpls-rfc6374-sfl-00">https://tools.ietf.org/html/draft-ietf-mpls-rfc6374-sfl-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes a method of making RFC6374 performance
+   measurements on flows carried over an MPLS Label Switched path.  This
+   allows loss and delay measurements to be made on multi-point to point
+   LSPs and allows the measurement of flows within an MPLS construct
+   using RFC6374.</p>
+
+<h2 id="aggregation-label">Aggregation Label</h2>
+
+<p><strong>1. MVPN/EVPN Tunnel Aggregation with Common Labels</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2018-11</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-bess-mvpn-evpn-aggregation-label-00">https://tools.ietf.org/html/draft-ietf-bess-mvpn-evpn-aggregation-label-00</a></p>
+
+<p>Description:</p>
+
+<p>The MVPN specifications allow a single Point-to-Multipoint (P2MP)
+   tunnel to carry traffic of multiple VPNs.  The EVPN specifications
+   allow a single P2MP tunnel to carry traffic of multiple Broadcast
+   Domains (BDs).  These features require the ingress router of the P2MP
+   tunnel to allocate an upstream-assigned MPLS label for each VPN or
+   for each BD.  A packet sent on a P2MP tunnel then carries the label
+   that is mapped to its VPN or BD.  (In some cases, a distinct
+   upstream-assigned is needed for each flow.)  Since each ingress
+   router allocates labels independently, with no coordination among the
+   ingress routers, the egress routers may need to keep track of a large
+   number of labels.  The number of labels may need to be as large (or
+   larger) than the product of the number of ingress routers times the
+   number of VPNs or BDs.  However, the number of labels can be greatly
+   reduced if the association between a label and a VPN or BD is made by
+   provisioning, so that all ingress routers assign the same label to a
+   particular VPN or BD.  New procedures are needed in order to take
+   advantage of such provisioned labels.  These new procedures also
+   apply to Multipoint-to-Multipoint (MP2MP) tunnels.  This document
+   updates RFCs 6514, 7432 and 7582 by specifying the necessary
+   procedures.</p>
+
+<h2 id="tunnel-segment">Tunnel Segment</h2>
+
+<p><strong>1. Tunnel Segment in Segment Routing</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-09</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-spring-tunnel-segment-00">https://tools.ietf.org/html/draft-li-spring-tunnel-segment-00</a></p>
+
+<p>Description:</p>
+
+<p>This document introduces a new type of segment, Tunnel Segment, for
+   the segment routing (SR).  Tunnel segment can be used to reduce SID
+   stack depth of SR path, span the non-SR domain or provide
+   differentiated services.  Forwarding mechanisms and requirements of
+   control plane and data models for tunnel segments are also defined.</p>
+
+<p><strong>2. PCEP Extensions for Tunnel Segment</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-09</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-tunnel-segment-00">https://tools.ietf.org/html/draft-li-pce-tunnel-segment-00</a></p>
+
+<p>Description:</p>
+
+<p>[I-D.li-spring-tunnel-segment] introduces a new type of segment,
+   Tunnel Segment, for the segment routing.  Tunnel segment can be used
+   to reduce SID stack depth of SR path, span the non-SR domain or
+   provide differentiated services.  A binding label can be assigned to
+   tunnel segment.  An upstream node can use such a binding label for
+   steering traffic into the appropriate tunnel.  This document
+   specifies a set of extensions to PCEP to support that PCC reports
+   binding label of tunnel to PCE and that PCE allocates label for
+   tunnel and updates label binding of tunnel to PCC.</p>
+
+<h2 id="mt-segment">MT Segment</h2>
+
+<p><strong>1. Multi-Topology (MT) Segment in Segment Routing</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2016-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-spring-multi-topology-segment-00">https://tools.ietf.org/html/draft-li-spring-multi-topology-segment-00</a></p>
+
+<p>Description:</p>
+
+<p>Multi-Topologies (MTs) can be used for computing different paths for
+   unicast traffic, multicast traffic, different classes of service
+   based on flexible criteria, or an in-band network management
+   topology.  This document proposes the multi-topology segment for
+   segment routing.  MRT FRR using multi-topology segment is described
+   as the use case to explains the procedures of the forwarding plane
+   and the control plane for multi-topology segment.</p>
+
+<p><strong>2. IS-IS Extensions for MPLS Multi-Topology</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-isis-mpls-multi-topology-00">https://tools.ietf.org/html/draft-li-isis-mpls-multi-topology-00</a></p>
+
+<p>Description:</p>
+
+<p>MPLS plays a key role in the process of implementing network
+   virtualization.  [I-D.li-mpls-network-virtualization-framework]
+   proposes the framework to implement MPLS virtual network basedn on
+   the architecture of central controller IGP.  This document defines
+   the corresponding IS-IS protocol extension and procedures to support
+   MPLS Multi-Topology.</p>
+
+<h2 id="bandwidth-guaranteed-sr">Bandwidth-Guaranteed SR</h2>
+
+<p><strong>1. IS-IS Extensions for MPLS Virtual Nodes and Virtual Links</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-isis-mpls-vnode-vlink-00">https://tools.ietf.org/html/draft-li-isis-mpls-vnode-vlink-00</a></p>
+
+<p>Description:</p>
+
+<p>MPLS plays a key role in the process of implementing network
+   virtualization.  [I-D.li-mpls-network-virtualization-framework]
+   proposes the framework to implement MPLS virtual network based on the
+   architecture of central controller IGP.  This document defines the
+   corresponding IS-IS protocol extension and procedures to implement
+   virtual nodes node and virtual link based on MPLS global label.</p>
+
+<h2 id="mpls-path-programming">MPLS Path Programming</h2>
+
+<p><strong>1. BGP Extensions for Service-Oriented MPLS Path Programming (MPP)</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2014-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-idr-mpls-path-programming-00">https://tools.ietf.org/html/draft-li-idr-mpls-path-programming-00</a></p>
+
+<p>Description:</p>
+
+<p>Service-oriented MPLS programming is to provide customized service
+   process based on flexible label combinations.  BGP will play an
+   important role for MPLS path programming to allocate MPLS segment,
+   download programmed MPLS path and the mapping of the service path to
+   the transport path.  This document defines BGP extensions to support
+   service-oriented MPLS path programming.</p>
+
+<h2 id="segment-path-programming">Segment Path Programming</h2>
+
+<p><strong>1. IS-IS Extensions for Segment Path Programming</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2016-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-isis-spp-extensions-00">https://tools.ietf.org/html/draft-li-isis-spp-extensions-00</a></p>
+
+<p>Description:</p>
+
+<p>Segment Routing (SR) facilitates the steering of unicast traffic
+   through leveraging the source routing paradigm.  As introduced in
+   Segment Path Programming (SPP), the concept of segment could be used
+   in a more generalized manner that may be beyond reachability.  This
+   document describes the necessary IS-IS extensions for those cases.</p>
+
+<h2 id="sfc">SFC</h2>
+
+<p><strong>1. Service Function Chaining Use Case</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2014-04</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xu-spring-sfc-use-case-00">https://tools.ietf.org/html/draft-xu-spring-sfc-use-case-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes a particular use case for SPRING where the
+   Segment Routing mechanism is leveraged to realize the service path
+   layer functionality of the Service Function Chaining (i.e, steering
+   traffic through the service function path).</p>
+
+<h2 id="big-label">Big Label</h2>
+
+<p><strong>1. MPLS Deployments and Use Cases That Cannot be Solved By Using 20-bit Label</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2014-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-lzl-mpls-ucase-n-20bit-label-limitation-00">https://tools.ietf.org/html/draft-lzl-mpls-ucase-n-20bit-label-limitation-00</a></p>
+
+<p>Description:</p>
+
+<p>The MPLS label format and encoding method are specified in
+   [RFC3032], the label value is represented using the 20-bit space and
+   supports up to 1 million of instances. As exponential Internet growth
+   continues there are specific network deployment scenarios where a
+   clear need to represent more than one million entities is required.
+   This document describes the MPLS deployment scenarios, use
+   cases, and requirements, where the current 20-bit label will no
+   longer be sufficient.</p>
+
+<p><strong>2. Mega Label - Expansion of MPLS Label Range</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-mpls-mega-label-00">https://tools.ietf.org/html/draft-li-mpls-mega-label-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes the requirement scenarios for expansion of
+   MPLS label range.  This document also introduce a framework for
+   expansion of MPLS label range-“Mega Label” and the corresponding
+   protocol extensions.  This document will update RFC 3032, 5036, 3209
+   and 3107 if approved.</p>
+
+<h2 id="label-stack-distribution">Label Stack Distribution</h2>
+
+<p><strong>1. LDP and RSVP-TE Extensions for Label Stack Distribution</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2013-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-mpls-label-stack-distribution-00">https://tools.ietf.org/html/draft-li-mpls-label-stack-distribution-00</a></p>
+
+<p>Description:</p>
+
+<p>This document defines the necessary extension for LDP and RSVP-TE to
+   distribute more than one label (label stack) for specific FEC between
+   label distribution peers.</p>
+
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

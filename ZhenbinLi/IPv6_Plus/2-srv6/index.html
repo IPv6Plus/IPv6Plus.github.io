@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SRv6 | IPv6+</title>
+    <meta name="description" content="IPv6+">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6/">
+    <meta property="og:title" content="SRv6">
+
+    <meta property="og:description" content="IPv6+">
+    <meta property="og:site_name" content="IPv6+">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="SRv6"/>
+    <meta itemprop="description" content="IPv6+">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+" href="https://www.ipv6plus.net/feed.xml" />
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/ZhenbinLi">
+            <h1 class="post-title" itemprop="name">SRv6</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;"></p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <h2 id="framework">Framework</h2>
+
+<p><strong>1. SRv6 Network Programming</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2020-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-srv6-network-programming-15">https://tools.ietf.org/html/draft-ietf-spring-srv6-network-programming-15</a></p>
+
+<p>Description:</p>
+
+<p>The SRv6 Network Programming framework enables a network operator or
+   an application to specify a packet packet processing program by
+   encoding a sequence of instructions in the IPv6 packet header.</p>
+
+<p>Each instruction is implemented on one or several nodes in the
+   network and identified by an SRv6 Segment Identifier in the packet.</p>
+
+<p>This document defines the SRv6 Network Programming concept and
+   specifies the base set of SRv6 behaviors that enables the creation of
+   interoperable overlays with underlay optimization (Service Level
+   Agreements).</p>
+
+<p><strong>2. Illustrations for SRv6 Network Programming</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-filsfils-spring-srv6-net-pgm-illustration-00">https://tools.ietf.org/html/draft-filsfils-spring-srv6-net-pgm-illustration-00</a></p>
+
+<p>Description:</p>
+
+<p>This document illustrates how SRv6 Network Programming
+   [I-D.filsfils-spring-srv6-network-programming] can be used to create
+   interoperable and protected overlays with underlay optimization and
+   service programming.</p>
+
+<p><strong>3. SRv6 NET-PGM extension: Insertion</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-09</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-filsfils-spring-srv6-net-pgm-insertion-00">https://tools.ietf.org/html/draft-filsfils-spring-srv6-net-pgm-insertion-00</a></p>
+
+<p>Description:</p>
+
+<p>Traffic traversing an SR domain is encapsulated in an outer IPv6
+   header for its journey through the SR domain.
+   To implement transport services strictly within the SR domain, the SR
+   domain may require insertion or deletion of an SRH after the outer
+   IPv6 header of the SR domain.  Any segment within the SRH is strictly
+   contained within the SR domain.
+   This document extends SRv6 Network Programming
+   [I-D.ietf-spring-srv6-network-programming] with new SR endpoint and
+   transit behaviors to be performed only within the SR domain in any
+   packet owned by the domain.</p>
+
+<h2 id="igp">IGP</h2>
+
+<p><strong>1. OSPFv3 Extensions for SRv6</strong></p>
+
+<p>Publication: IETF WG Draft</p>
+
+<p>Publication History: 2020-02</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-lsr-ospfv3-srv6-extensions-00">https://tools.ietf.org/html/draft-ietf-lsr-ospfv3-srv6-extensions-00</a></p>
+
+<p>Description:</p>
+
+<p>Segment Routing (SR) allows for a flexible definition of end-to-end
+   paths by encoding paths as sequences of topological sub-paths, called
+   “segments”.  Segment Routing architecture can be implemented over an
+   MPLS data plane as well as an IPv6 data plane.  This draft describes
+   the OSPFv3 extensions required to support Segment Routing over an
+   IPv6 data plane (SRv6).</p>
+
+<h2 id="bgp">BGP</h2>
+
+<p><strong>1. BGP Request for Advertising Candidate Path of Segment Routing TE Policies</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-ldr-bgp-request-cp-sr-te-policy-00">https://tools.ietf.org/html/draft-li-ldr-bgp-request-cp-sr-te-policy-00</a></p>
+
+<p>Description:</p>
+
+<p>An SR Policy is a set of candidate paths.  The headend of an SR
+   Policy may learn multiple candidate paths for an SR Policy via a
+   number of different mechanisms, e.g., CLI, NetConf, PCEP, or BGP.
+   BGP distribute candidate paths has been defined in
+   [I-D.ietf-idr-segment-routing-te-policy].  This document defines an
+   extension of BGP to request BGP speaker(controller) advertise the
+   candidate paths.  The goal is to unify the protocol when the
+   candidate path of SR Policy provision is via BGP to reduce the
+   network complexity and potential bugs cause by different protocol
+   interactions.</p>
+
+<p><strong>2. BGP Flow Specification for SRv6</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-idr-flowspec-srv6-00">https://tools.ietf.org/html/draft-li-idr-flowspec-srv6-00</a></p>
+
+<p>Description:</p>
+
+<p>This draft proposes BGP flow specification rules that are used to
+   filter SRv6 packets.</p>
+
+<p><strong>3. Flowspec Indirection-id Redirect for SRv6</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf0-idr-srv6-flowspec-path-redirect-00">https://tools.ietf.org/html/draft-ietf0-idr-srv6-flowspec-path-redirect-00</a></p>
+
+<p>Description:</p>
+
+<p>This document defines extensions to “FlowSpec Redirect to
+   indirection-id Extended Community” for SRv6.  This extended community
+   can trigger advanced redirection capabilities to flowspec clients for
+   SRv6.  When activated, this flowspec extended community is used by a
+   flowspec client to retrieve the corresponding next-hop and encoding
+   information within a localised indirection-id mapping table.
+   The functionality detailed in this document allows a network
+   controller to decouple the BGP flowspec redirection instruction from
+   the operation of the available paths.</p>
+
+<h2 id="pce">PCE</h2>
+
+<p><strong>1. PCEP Flow Specification for SRv6</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-pcep-flowspec-srv6-00">https://tools.ietf.org/html/draft-li-pce-pcep-flowspec-srv6-00</a></p>
+
+<p>Description:</p>
+
+<p>This draft proposes PCEP flow specification rules that are used to
+   filter SRv6 packets.</p>
+
+<h2 id="netconfyang">Netconf/YANG</h2>
+
+<p><strong>1. YANG Data Model for SRv6</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2017-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hu-spring-srv6-yang-00">https://tools.ietf.org/html/draft-hu-spring-srv6-yang-00</a></p>
+
+<p>Description:</p>
+
+<p>This document defines a YANG data model that can be used to configure
+   and manage SRv6</p>
+
+<h2 id="deployment">Deployment</h2>
+
+<p><strong>1. SRv6 Network Migration</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-07</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-spring-srv6-network-migration-00">https://tools.ietf.org/html/draft-xie-spring-srv6-network-migration-00</a></p>
+
+<p>Description:</p>
+
+<p>SRv6 has significant advantages over SR-MPLS which has attracted more
+   and more attentions and interests from operators and verticals.  The
+   smooth network migration towards SRv6 is a key focal point for the
+   SRv6 deployers.  This document provides network migration guidance
+   and recommendations on solutions in various scenarios.</p>
+
+<p><strong>2. SRv6 Compatibility with Legacy Devices</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-peng-spring-srv6-compatibility-00">https://tools.ietf.org/html/draft-peng-spring-srv6-compatibility-00</a></p>
+
+<p>Description:</p>
+
+<p>When deploying SRv6 on legacy devices, there are some compatibility
+   challenges such as the support of SRH processing.  This document
+   identifies some of the major challenges, and provides solutions that
+   are able to mitigate those challenges and smooth the evolution
+   towards SRv6 deployment.</p>
+
+<p><strong>3. SRv6 Deployment Consideration</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-11</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-tian-spring-srv6-deployment-consideration-00">https://tools.ietf.org/html/draft-tian-spring-srv6-deployment-consideration-00</a></p>
+
+<p>Description:</p>
+
+<p>SRv6 has significant advantages over SR-MPLS and has attracted more
+   and more attention and interest from network operators and verticals.
+   Smooth network migration towards SRv6 is a key focal point and this
+   document provides network migration guidance and recommendations on
+   solutions in various scenarios.  Deployment cases with SRv6 are also
+   introduced.</p>
+
+<p><strong>4. SRv6 Implementation and Deployment Status</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-matsushima-spring-srv6-deployment-status-00">https://tools.ietf.org/html/draft-matsushima-spring-srv6-deployment-status-00</a></p>
+
+<p>Description:</p>
+
+<p>This draft provides an overview of IPv6 Segment Routing (SRv6)
+   deployment status.  It lists various SRv6 features that have been
+   deployed in the production networks.  It also provides an overview of
+   SRv6 implementation and interoperability testing status.</p>
+
+<p><strong>5. SRv6 and MPLS interworking</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-agrawal-spring-srv6-mpls-interworking-00">https://tools.ietf.org/html/draft-agrawal-spring-srv6-mpls-interworking-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes SRv6 and MPLS/SR-MPLS interworking and co-
+   existence procedures.</p>
+
+<h2 id="security">Security</h2>
+
+<p><strong>1. Security Considerations for SRv6 Networks</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-06</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-spring-srv6-security-consideration-00">https://tools.ietf.org/html/draft-li-spring-srv6-security-consideration-00</a></p>
+
+<p>Description:</p>
+
+<p>SRv6 inherits potential security vulnerabilities from Source Routing
+   in general, and also from IPv6.  This document describes various
+   threats to SRv6 networks and existing approaches to solve these
+   threats.</p>
+
+<h2 id="central-control">Central Control</h2>
+
+<p><strong>1. BGP Extensions for Segment Allocation</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2015-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-wu-idr-bgp-segment-allocation-ext-00">https://tools.ietf.org/html/draft-wu-idr-bgp-segment-allocation-ext-00</a></p>
+
+<p>Description:</p>
+
+<p>This document defines extensions to the BGP-LS to distribute/push the
+   segment information to its administrative SR domain and describes
+   some use cases.</p>
+
+<p><strong>2. BGP Extensions for SRv6 SIDs Allocation</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2019-03</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-chen-idr-bgp-srv6-sid-allocation-00">https://tools.ietf.org/html/draft-chen-idr-bgp-srv6-sid-allocation-00</a></p>
+
+<p>Description:</p>
+
+<p>This document describes extensions to the BGP-LS for IDs allocation.
+   The IDs are SIDs for segment routing for IPv6 (SRv6).  They are
+   distributed to their domains if needed.</p>
+
+<p><strong>3. PCEP Procedures and Protocol Extensions for Using PCE as a Central Controller (PCECC) for SRv6</strong></p>
+
+<p>Publication: IETF Individual Draft</p>
+
+<p>Publication History: 2018-10</p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dhody-pce-pcep-extension-pce-controller-srv6-00">https://tools.ietf.org/html/draft-dhody-pce-pcep-extension-pce-controller-srv6-00</a></p>
+
+<p>Description:</p>
+
+<p>The Path Computation Element (PCE) is a core component of Software-
+   Defined Networking (SDN) systems.  It can compute optimal paths for
+   traffic across a network and can also update the paths to reflect
+   changes in the network or traffic demands.</p>
+
+<p>PCE was developed to derive paths for MPLS Label Switched Paths
+   (LSPs), which are supplied to the head end of the LSP using the Path
+   Computation Element Communication Protocol (PCEP).  But SDN has a
+   broader applicability than signaled (G)MPLS traffic-engineered (TE)
+   networks, and the PCE may be used to determine paths in a range of
+   use cases.  PCEP has been proposed as a control protocol for use in
+   these environments to allow the PCE to be fully enabled as a central
+   controller.</p>
+
+<p>A PCE-based central controller (PCECC) can simplify the processing of
+   a distributed control plane by blending it with elements of SDN and
+   without necessarily completely replacing it.  This document specifies
+   the procedures and PCEP protocol extensions when a PCE-based
+   controller is also responsible for configuring the forwarding actions
+   on the routers for Segment Routing in IPv6 (SRv6), in addition to
+   computing the SRv6 paths for packet flows and telling the edge
+   routers what instructions to attach to packets as they enter the
+   network.</p>
+
+
+            </article>
+
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+})();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>
