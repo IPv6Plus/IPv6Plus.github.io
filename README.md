@@ -2,4 +2,4 @@
 
 [www.IPv6Plus.net](https://www.IPv6Plus.net/)
 
-A New IP Era for 5G and Cloud.
+A New Era of IP Networks for 5G and Cloud.
