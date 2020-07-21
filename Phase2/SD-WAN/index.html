@@ -40,8 +40,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-07-21 15:07:52 +0800",
-      "dateModified": "2020-07-21 15:07:52 +0800",
+      "datePublished": "2020-07-21 19:51:21 +0800",
+      "dateModified": "2020-07-21 19:51:21 +0800",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -99,6 +99,96 @@
 <p>This document describes a method for end-to-end (E2E) SDWAN paths to traverse specific list of underlay network segments, some of which can be private networks which include SR enabled segments, some of which  can be the public IP networks that do not support SR, to achieve the desired optimal E2E quality.</p>
 
 <p>The method described in this draft uses the principle of segment routing to enforce a SDWAN path’s head-end selected route traversing through a list of specific nodes of multiple network segments without requiring the nodes in each network segment to have the intelligence (or maintaining states) of selecting next hop or next domain.</p>
+
+<p><strong>3. BGP Usage for SDWAN Overlay Networks</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dunbar-bess-bgp-sdwan-usage">https://tools.ietf.org/html/draft-dunbar-bess-bgp-sdwan-usage</a></p>
+
+<p>Introduction:</p>
+
+<p>The document describes three distinct SDWAN scenarios and discusses the applicability of BGP for each of those scenarios. The goal of the document is to make it easier for future SDWAN control plane protocols discussion.</p>
+
+<p>SDWAN edge nodes are commonly interconnected by multiple underlay networks which can be owned and managed by different network providers. A BGP-based control plane is chosen for handling large number of SDWAN edge nodes with little manual intervention.</p>
+
+<p><strong>4. A YANG Data Model for SD-WAN Service Delivery</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-sun-opsawg-sdwan-service-model">https://tools.ietf.org/html/draft-sun-opsawg-sdwan-service-model</a></p>
+
+<p>Introduction:</p>
+
+<p>This document provides a YANG data model for an SD-WAN service.  An SD-WAN service is a connectivity service offered by a service provider network to provide connectivity across different locations of a customer network or between a customer network and an external network, such as the Internet or a private/public cloud network.</p>
+
+<p>This connectivity is provided as an overlay constructed using one of more underlay networks.  The model can be used by a service orchestrator of a service provider to request, configure, and manage the components of an SD-WAN service.</p>
+
+<p><strong>5. Dynamic Networks to Hybrid Cloud DCs Problem Statement</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-rtgwg-net2cloud-problem-statement">https://tools.ietf.org/html/draft-ietf-rtgwg-net2cloud-problem-statement</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the problems that enterprises face today when interconnecting their branch offices with dynamic workloads in third party data centers (a.k.a. Cloud DCs). There can be many problems associated with network connecting to or among Clouds, many of which probably are out of the IETF scope. The objective of this document is to identify some of the problems that need additional work in IETF Routing area. Other problems are out of the scope of this document.</p>
+
+<p>This document focuses on the network problems that many enterprises face when they have workloads &amp; applications &amp; data split among different data centers, specially for those enterprises with multiple sites that are already interconnected by VPNs (e.g., MPLS L2VPN/L3VPN).</p>
+
+<p>Current operational problems are examined to determine whether there is a need to improve existing protocols or whether a new protocol is necessary to solve them.</p>
+
+<p><strong>6. Secure EVPN</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-sajassi-bess-secure-evpn">https://tools.ietf.org/html/draft-sajassi-bess-secure-evpn</a></p>
+
+<p>Introduction:</p>
+
+<p>This document presents a solution where BGP point-to-multipoint signaling is leveraged for key and policy exchange among PE devices to create private pair-wise IPsec Security Associations without IKEv2 point-to-point signaling or any other direct peer-to-peer session establishment messages.</p>
+
+<p><strong>7. IPsec Key Exchange using a Controller</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-carrel-ipsecme-controller-ike">https://tools.ietf.org/html/draft-carrel-ipsecme-controller-ike</a></p>
+
+<p>Introduction:</p>
+
+<p>This document presents a key exchange method allowing devices managed by a controller (e.g., an SDN management station) to create private pair-wise IPsec SAs without IKEv2 or any other direct peer-to-peer session establishment messages.  The method can be used when a full mesh of IKEv2 sessions between IPsec devices is not appropriate.</p>
+
+<p><strong>8. SDWAN WAN Ports Property Advertisement in BGP UPDATE</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dunbar-idr-sdwan-port-safi">https://tools.ietf.org/html/draft-dunbar-idr-sdwan-port-safi</a></p>
+
+<p>Introduction:</p>
+
+<p>The document describes how the SDWAN SAFI, which is assigned by IANA in the First Come First Server range, is used for SDWAN edge nodes to propagate its WAN port properties to its controller.</p>
+
+<p>In the context of this document, BGP Route Reflectors (RR) is the component of the SDWAN Controller that receives the BGP UPDATE from SDWAN edges and in turns propagate the information to a group of authorized SDWAN edges reachable via overlay networks.</p>
+
+<p><strong>9. BGP Provisioned IPsec Tunnel Configuration</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hujun-idr-bgp-ipsec">https://tools.ietf.org/html/draft-hujun-idr-bgp-ipsec</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a method of using BGP to provide IPsec tunnel configuration along with NLRI, it uses and extends tunnel encapsulation attribute as specified in [I-D.ietf-idr-tunnel-encaps] for IPsec tunnel.</p>
+
+<p><strong>10. BGP Provisioned IPsec Transport Mode Protected Tunnel Configuration</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hujun-idr-bgp-ipsec-transport-mode">https://tools.ietf.org/html/draft-hujun-idr-bgp-ipsec-transport-mode</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a method of using BGP to advertise IPsec transport mode protected tunnel (like GRE tunnel with IPsec transport mode protection) configuration along with NLRI, based on [I-D.ietf-idr-tunnel-encaps] and [I-D.hujun-idr-bgp-ipsec].</p>
+
+<p><strong>11. YANG Data Model for SD-WAN OSE service delivery</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-wood-rtgwg-sdwan-ose-yang">https://tools.ietf.org/html/draft-wood-rtgwg-sdwan-ose-yang</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines two SD-WAN OSE Open SD-WAN Exchange(OSE) service YANG modules to enable the orchestrator in the enterprise network to implement SD-WAN inter-domain reachability and connectivity services and application aware traffic steering services.</p>
+
+<p><strong>12. A YANG Module for uCPE management</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-shytyi-opsawg-vysm">https://tools.ietf.org/html/draft-shytyi-opsawg-vysm</a></p>
+
+<p>Introduction:</p>
+
+<p>This document provides a YANG data model for uCPE management (VYSM) and definition of the uCPE equipment. The YANG Model serves as a base framework for managing an universal Customer-Premises Equipment (uCPE) subsystem.  The model can be used by a Network Orchestrator.</p>
 
 <div id="CCSA"></div>
 
