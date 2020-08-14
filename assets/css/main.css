@@ -179,7 +179,8 @@ table {
 }
 
 td,th {
-	padding: 0
+	border: 1px black solid;
+	padding: 6px 13px;
 }
 
 a {
@@ -923,7 +924,7 @@ main {
 	display: block
 }
 
-.post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,.post-content .tags,.post-content iframe,.post-content .button-post {
+.post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,.post-content table,.post-content .tags,.post-content iframe,.post-content .button-post {
 	*zoom: 1;
 	width: auto;
 	max-width: 50rem;
@@ -943,17 +944,17 @@ main {
 	letter-spacing: .01rem;
 }
 
-.post-content p:before,.post-content h1:before,.post-content h2:before,.post-content h3:before,.post-content h4:before,.post-content ul:before,.post-content ol:before,.post-content .tags:before,.post-content iframe:before,.post-content .button-post:before,.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after {
+.post-content p:before,.post-content h1:before,.post-content h2:before,.post-content h3:before,.post-content h4:before,.post-content ul:before,.post-content ol:before,.post-content table:before,.post-content .tags:before,.post-content iframe:before,.post-content .button-post:before,.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content table:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after {
 	content: '';
 	display: table
 }
 
-.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after {
+.post-content p:after,.post-content h1:after,.post-content h2:after,.post-content h3:after,.post-content h4:after,.post-content ul:after,.post-content ol:after,.post-content table:after,.post-content .tags:after,.post-content iframe:after,.post-content .button-post:after {
 	clear: both
 }
 
 @media only screen and (min-width:37.5rem) {
-	.post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,.post-content .tags,.post-content iframe,.post-content .button-post {
+	.post-content p,.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content ul,.post-content ol,.post-content table,.post-content .tags,.post-content iframe,.post-content .button-post {
 		font-size: 1.25rem
 	}
 }
@@ -1046,7 +1047,7 @@ main {
 	}
 }
 
-.post-content ul,.post-content ol {
+.post-content ul,.post-content ol,.post-content table {
 	padding-left: 2.5rem
 }
 
@@ -1131,6 +1132,11 @@ main {
 }
 
 .post-content > table {
+
+	font-size: 1.1rem;
+	padding-left: 1.25rem;
+    max-width: fit-content;
+
 	margin: 3.125rem auto;
 }
 
@@ -1141,8 +1147,10 @@ main {
 }
 
 .post-content > table th,.post-content > table td {
-	border: .125rem solid #ccc;
-	padding: .313rem
+	/*border: .125rem solid #ccc;*/
+	/*padding: .313rem*/
+	border: 1px black solid;
+	padding: 6px 13px;
 }
 
 .post-content td > pre {
