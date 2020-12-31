@@ -42,8 +42,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-09-30 18:07:09 +0800",
-      "dateModified": "2020-09-30 18:07:09 +0800",
+      "datePublished": "2020-12-31 23:30:44 +0800",
+      "dateModified": "2020-12-31 23:30:44 +0800",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -112,16 +112,21 @@ TE technologies and adds features that specific services require over and above 
 
 <h3 id="2-vpn-data-plane">2. VPN+ Data Plane</h3>
 
+<p><strong>Introducing Resource Awareness to SR Segments</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-resource-aware-segments">https://tools.ietf.org/html/draft-ietf-spring-resource-aware-segments</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the mechanism to associate network resource attributes to Segment Routing Identifiers (SIDs). The resource-aware SIDs retain their original forwarding semantics, but with the additional semantics to identify the set of network resources available for the packet processing action.  The resource-aware SIDs can therefore be used to build SR paths or virtual networks with a set of reserved network resources.</p>
+
 <p><strong>Segment Routing Extensions for VPN+</strong></p>
 
 <p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-spring-sr-for-enhanced-vpn">https://tools.ietf.org/html/draft-dong-spring-sr-for-enhanced-vpn</a></p>
 
 <p>Introduction:</p>
 
-<p>This document describes the mechanism to associate Segment Routing Identifiers (SIDs) with network resource attributes. These SIDs can be used to build SR paths with reserved network resources.  In addition, these SID can
-also be used to build SR based virtual networks, which provide the network topology and resource attributes required by particular
-services.  The proposed mechanism is applicable to both segment routing with MPLS data plane (SR-MPLS) and segment routing with IPv6
-data plane (SRv6).</p>
+<p>Resource-aware SIDs may be used to build SR paths with a set of reserved network resources. Resource-aware SIDs may be used to build SR based virtual underlay networks, which can provide the customized network topology and resource attributes required by different customers and/or services.  Such virtual networks are called SR based Virtual Transport Networks (VTNs).  The SR based VTNs can be used as the underlay network to enable services with required topology and resource characteristics. This document describes a suggested use of resource-aware SIDs to build SR based VTNs.</p>
 
 <p><strong>IPv6 Extensions for VPN+</strong></p>
 
@@ -186,15 +191,23 @@ plane (SRv6).</p>
 
 <p>This document describes a simplified mechanism to distribute the information of SR based VTNs using BGP-LS with Multi-Topology.</p>
 
-<h3 id="4-vpn-management-plane">4. VPN+ Management Plane</h3>
+<p><strong>BGP SR Policy Extensions For VTN</strong></p>
 
-<p><strong>A Yang Data Model for Transport Slice</strong></p>
-
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-wd-teas-transport-slice-yang">https://tools.ietf.org/html/draft-wd-teas-transport-slice-yang</a></p>
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-idr-sr-policy-vtn">https://tools.ietf.org/html/draft-dong-idr-sr-policy-vtn</a></p>
 
 <p>Introduction:</p>
 
-<p>This document provides a YANG data model for the transport slice service. The model can be used by a client management system of the transport slice controller to request, configure, and manage the components of an transport slice service.</p>
+<p>In scenarios where multiple Virtual Transport Networks (VTNs) exist in the network, the VTN in which the SR policy is instantiated may also need to be specified, so that the header of packet can also be augmented with the information associated with the VTN.This document defines extensions to BGP SR policy to specify the VTN associated with the SR policy.</p>
+
+<h3 id="4-vpn-management-plane">4. VPN+ Management Plane</h3>
+
+<p><strong>A Yang Data Model for IETF Network Slice NBI</strong></p>
+
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-wd-teas-ietf-network-slice-nbi-yang">https://tools.ietf.org/html/draft-wd-teas-ietf-network-slice-nbi-yang</a></p>
+
+<p>Introduction:</p>
+
+<p>This document provides a YANG data model for the IETF Network Slice NBI (Northbound Interface). The model can be used by a higher level system which is the IETF Network Slice consumer of an IETF Network Slice Controller (NSC) to request, configure, and manage the components of an IETF Network Slice.</p>
 
 <h3 id="5-end-to-end-network-slice-mapping">5. End-to-End Network Slice Mapping</h3>
 

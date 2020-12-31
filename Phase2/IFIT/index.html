@@ -42,8 +42,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-09-30 18:07:09 +0800",
-      "dateModified": "2020-09-30 18:07:09 +0800",
+      "datePublished": "2020-12-31 23:30:44 +0800",
+      "dateModified": "2020-12-31 23:30:44 +0800",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -172,7 +172,7 @@
 
 <p><strong>BGP SR Policy Extensions to Enable IFIT</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-qin-idr-sr-policy-ifit">https://tools.ietf.org/html/draft-qin-idr-sr-policy-ifit</a></p>
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-idr-sr-policy-ifit">https://tools.ietf.org/html/draft-ietf-idr-sr-policy-ifit</a></p>
 
 <p>Introduction:</p>
 
@@ -206,25 +206,39 @@
 
 <p><strong>UDP based Publication Channel for Streaming Telemetry</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-unyte-netconf-udp-pub-channel">https://tools.ietf.org/html/draft-unyte-netconf-udp-pub-channel</a></p>
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-netconf-udp-notif">https://tools.ietf.org/html/draft-ietf-netconf-udp-notif</a></p>
 
 <p>Introduction:</p>
 
-<p>This document describes a UDP-based publication channel for streaming telemetry use to collect data from devices.  A new shim header is proposed to facilitate the distributed data collection mechanism which directly pushes data from line cards to the collector. Because of the lightweight UDP encapsulation, higher frequency and better transit performance can be achieved.</p>
+<p>This document describes an UDP-based notification mechanism to collect data from networking devices.  A shim header is proposed to facilitate the streaming of data directly from line cards to a collector.  The objective is to rely on a lightweight approach to allow for higher frequency and better transit performance compared to already established notification mechanisms.</p>
 
 <p><strong>Subscription to Multiple Stream Originators</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-unyte-netconf-multi-stream-originators">https://tools.ietf.org/html/draft-unyte-netconf-multi-stream-originators</a></p>
+<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-netconf-distributed-notif">https://tools.ietf.org/html/draft-ietf-netconf-distributed-notif</a></p>
 
 <p>Introduction:</p>
 
-<p>This document describes the distributed data export mechanism that allows multiple data streams to be managed by using a single subscription. Specifically, device can decide to decompse one subscription into multiple subscriptions to the line-cards. So that each line-card can directly push data to the collector without passing through a broker for internal consolidation. And the device can indicate the subscription decomposition result to the receiver to check the data integrity.</p>
+<p>This documents describes extensions to the YANG notifications subscription to allow metrics being published directly from processors on line cards to target receivers, while subscription is still maintained at the route processor in a distributed forwarding system.</p>
+
+<div id="ETSI"></div>
+
+<h2 id="etsi">ETSI</h2>
+
+<p><strong>1. Reactive In-situ flow information Telemetry</strong></p>
+
+<p>Publication URL: <a href="https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=59544">https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?WKI_ID=59544</a></p>
+
+<p>Introduction:</p>
+
+<p>The present document will describe the motivation, requirements, and challenges of using flow-oriented on-path telemetry techniques which provides relevant measurement or event reports to the AI-enabled network entities. The present document will outline a reference framework, named as “In-situ Flow Information Telemetry (IFIT)” and identify technical requirements, including: modes of flow-oriented on-path telemetry; IFIT-based reactive telemetry framework; and technical requirements, including intelligent flow and packet selection, intelligent data export, dynamic network probe, on-demand underlying technique selection.</p>
 
 <div id="CCSA"></div>
 
 <h2 id="ccsa">CCSA</h2>
 
 <p><strong>1. Technical requirement of automatic In-situ Flow Information Telemetry (IFIT) for carrier network</strong></p>
+
+<p><strong>2. Dataplane technical requirement of automatic In-situ Flow Information Telemetry (IFIT) for carrier network</strong></p>
 
 <div id="Demo"></div>
 
@@ -237,6 +251,10 @@
 <p>Introduction:</p>
 
 <p>This is short paper accepted by the SIGCOMM2019 Posters and Demos session.</p>
+
+<p><strong>2. Discover IP new techniques: IFIT</strong></p>
+
+<p>Video URL: <a href="https://support.huawei.com/enterprise/en/doc/EDOC1100134313">https://support.huawei.com/enterprise/en/doc/EDOC1100134313</a></p>
 
 <div id="OpenSource"></div>
 
