@@ -7,8 +7,7 @@
 
     <title>VPN+ / VTN | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="Provide IP Network Slicing via VPN and TE Enhancements. | IPv6+ | IPv6 Plus">
-
-    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="https://www.ipv6plus.net/Phase2/VTN/">
@@ -42,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-12-31 23:30:44 +0800",
-      "dateModified": "2020-12-31 23:30:44 +0800",
+      "datePublished": "2021-07-01T10:01:00+08:00",
+      "dateModified": "2021-07-01T10:01:00+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -90,59 +89,73 @@
 
 <h2 id="ietf">IETF</h2>
 
+<h3 id="0-ietf-network-slice">0. IETF Network Slice</h3>
+
+<p><strong>Framework for IETF Network Slices</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-ietf-network-slices">https://datatracker.ietf.org/doc/html/draft-ietf-teas-ietf-network-slices</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes network slicing in the context of networks built from IETF technologies.  It defines the term “IETF Network Slice” and establishes the general principles of network slicing in the IETF context.</p>
+
+<p>The document discusses the general framework for requesting and operating IETF Network Slices, the characteristics of an IETF Network Slice, the necessary system components and interfaces, and how abstract requests can be mapped to more specific technologies.  The document also discusses related considerations with monitoring and security.</p>
+
 <h3 id="1-vpn-framework">1. VPN+ Framework</h3>
 
 <p><strong>A Framework for VPN+ Services</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-teas-enhanced-vpn">https://tools.ietf.org/html/draft-ietf-teas-enhanced-vpn</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-enhanced-vpn">https://datatracker.ietf.org/doc/html/draft-ietf-teas-enhanced-vpn</a></p>
 
 <p>Introduction:</p>
 
-<p>This document describes the framework for Enhanced Virtual Private Network (VPN+) service.  The purpose is to support the needs of new
-applications, particularly applications that are associated with 5G services, by utilizing an approach that is based on existing VPN and
-TE technologies and adds features that specific services require over and above traditional VPNs.</p>
+<p>This document describes the framework for Enhanced Virtual Private Network (VPN+) services.  The purpose of enhanced VPNs is to support the needs of new applications, particularly applications that are associated with 5G services, by utilizing an approach that is based on existing VPN and Traffic Engineering (TE) technologies and adds characteristics that specific services require over and above traditional VPNs.</p>
 
 <p><strong>Scalability Considerations for VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-teas-enhanced-vpn-vtn-scalability">https://tools.ietf.org/html/draft-dong-teas-enhanced-vpn-vtn-scalability</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dong-teas-enhanced-vpn-vtn-scalability">https://datatracker.ietf.org/doc/html/draft-dong-teas-enhanced-vpn-vtn-scalability</a></p>
 
 <p>Introduction:</p>
 
-<p>This document describes the scalability considerations in the control plane and data plane to enable VPN+ services, some optimization mechanisms are also described.</p>
+<p>Enhanced VPN (VPN+) aims to provide enhancements to existing VPN services to support the needs of new applications, particularly including the applications that are associated with 5G services. VPN+ could be used to provide network slicing, and may also be of use in more generic scenarios, such as enterprise services which have demanding requirement.  With the requirement for VPN+ services increase, scalability would become an important factor for the deployment of VPN+.  This document describes the scalability considerations in the control plane and data plane to enable VPN+ services, some optimization mechanisms are also described.</p>
 
 <h3 id="2-vpn-data-plane">2. VPN+ Data Plane</h3>
 
 <p><strong>Introducing Resource Awareness to SR Segments</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-resource-aware-segments">https://tools.ietf.org/html/draft-ietf-spring-resource-aware-segments</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-resource-aware-segments">https://datatracker.ietf.org/doc/html/draft-ietf-spring-resource-aware-segments</a></p>
 
 <p>Introduction:</p>
 
-<p>This document describes the mechanism to associate network resource attributes to Segment Routing Identifiers (SIDs). The resource-aware SIDs retain their original forwarding semantics, but with the additional semantics to identify the set of network resources available for the packet processing action.  The resource-aware SIDs can therefore be used to build SR paths or virtual networks with a set of reserved network resources.</p>
+<p>This document describes the mechanism to associate network resource attributes to Segment Routing Identifiers (SIDs).  Such SIDs are referred to as resource-aware SIDs in this document.  The resource-aware SIDs retain their original forwarding semantics, but with the additional semantics to identify the set of network resources available for the packet processing action.  The resource-aware SIDs can therefore be used to build SR paths or virtual networks with a set of reserved network resources.  The proposed mechanism is applicable to both segment routing with MPLS data plane (SR-MPLS) and segment routing with IPv6 data plane (SRv6).</p>
 
 <p><strong>Segment Routing Extensions for VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-spring-sr-for-enhanced-vpn">https://tools.ietf.org/html/draft-dong-spring-sr-for-enhanced-vpn</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-for-enhanced-vpn">https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-for-enhanced-vpn</a></p>
 
 <p>Introduction:</p>
 
-<p>Resource-aware SIDs may be used to build SR paths with a set of reserved network resources. Resource-aware SIDs may be used to build SR based virtual underlay networks, which can provide the customized network topology and resource attributes required by different customers and/or services.  Such virtual networks are called SR based Virtual Transport Networks (VTNs).  The SR based VTNs can be used as the underlay network to enable services with required topology and resource characteristics. This document describes a suggested use of resource-aware SIDs to build SR based VTNs.</p>
+<p>Segment Routing (SR) leverages the source routing paradigm.  A node steers a packet through an ordered list of instructions, called “segments”.  A segment can represent topological or service based instructions.  A segment can further be associated with a set of network resources used for executing the instruction.  Such a segment is called resource-aware segment.</p>
+
+<p>Resource-aware Segment Identifiers (SIDs) may be used to build SR paths with a set of reserved network resources.  In addition, a group of resource-aware SIDs may be used to build SR based virtual underlay networks, which has customized network topology and resource attributes required by one or a group of customers and/or services. Such virtual networks are the SR instantiations of Virtual Transport Networks (VTNs).</p>
+
+<p>This document describes a suggested use of resource-aware SIDs to build SR based VTNs.</p>
 
 <p><strong>IPv6 Extensions for VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-6man-enhanced-vpn-vtn-id">https://tools.ietf.org/html/draft-dong-6man-enhanced-vpn-vtn-id</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dong-6man-enhanced-vpn-vtn-id">https://datatracker.ietf.org/doc/html/draft-dong-6man-enhanced-vpn-vtn-id</a></p>
 
 <p>Introduction:</p>
 
-<p>This document proposes a new option type to carry virtual transport network identifier (VTN ID) in the IPv6 extensions headers to
-identify the virtual transport network the packet belongs to. The procedure of processing the VTN option is also specified. This provides a scalable solution for data plane encapsulation of
-enhanced VPN (VPN+).</p>
+<p>A Virtual Transport Network (VTN) is a virtual network which has a customized network topology and a set of dedicated or shared network resources allocated from the network infrastructure.  A VTN can be used as the underlay for one or a group of VPNs to provide enhanced VPN (VPN+) services.  In packet forwarding, some fields in data packet needs to be used to identify the VTN the packet belongs to, so that the VTN-specific processing can be performed.</p>
+
+<p>This document proposes a new option type to carry VTN ID in an IPv6 extension header to identify the Virtual Transport Network (VTN) the packet belongs to.  The procedure for processing of the VTN option is also specified. This provides a data plane encapsulation for scalable VTN and VPN+ service.</p>
 
 <h3 id="3-vpn-control-plane">3. VPN+ Control Plane</h3>
 
 <p><strong>IGP Extensions for SR based VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-lsr-sr-enhanced-vpn">https://tools.ietf.org/html/draft-dong-lsr-sr-enhanced-vpn</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dong-lsr-sr-enhanced-vpn">https://datatracker.ietf.org/doc/html/draft-dong-lsr-sr-enhanced-vpn</a></p>
 
 <p>Introduction:</p>
 
@@ -152,7 +165,7 @@ and segment routing with IPv6 data plane (SRv6).</p>
 
 <p><strong>BGP-LS Extensions for SR based VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-idr-bgpls-sr-enhanced-vpn">https://tools.ietf.org/html/draft-dong-idr-bgpls-sr-enhanced-vpn</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn">https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn</a></p>
 
 <p>Introduction:</p>
 
@@ -161,7 +174,7 @@ plane (SRv6).</p>
 
 <p><strong>Using IGP Flex-Algo for SR based VTN</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhu-lsr-isis-sr-vtn-flexalgo">https://tools.ietf.org/html/draft-zhu-lsr-isis-sr-vtn-flexalgo</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-zhu-lsr-isis-sr-vtn-flexalgo">https://datatracker.ietf.org/doc/html/draft-zhu-lsr-isis-sr-vtn-flexalgo</a></p>
 
 <p>Introduction:</p>
 
@@ -169,7 +182,7 @@ plane (SRv6).</p>
 
 <p><strong>BGP-LS with Flex-Algo for SR based VTN</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo">https://tools.ietf.org/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo">https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo</a></p>
 
 <p>Introduction:</p>
 
@@ -177,7 +190,7 @@ plane (SRv6).</p>
 
 <p><strong>Using Multi-Topology for SR based VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-lsr-isis-sr-vtn-mt">https://tools.ietf.org/html/draft-xie-lsr-isis-sr-vtn-mt</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-sr-vtn-mt">https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-sr-vtn-mt</a></p>
 
 <p>Introduction:</p>
 
@@ -185,7 +198,7 @@ plane (SRv6).</p>
 
 <p><strong>BGP-LS with Multi-Topology for SR based VPN+</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-idr-bgpls-sr-vtn-mt">https://tools.ietf.org/html/draft-xie-idr-bgpls-sr-vtn-mt</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xie-idr-bgpls-sr-vtn-mt">https://datatracker.ietf.org/doc/html/draft-xie-idr-bgpls-sr-vtn-mt</a></p>
 
 <p>Introduction:</p>
 
@@ -193,21 +206,45 @@ plane (SRv6).</p>
 
 <p><strong>BGP SR Policy Extensions For VTN</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dong-idr-sr-policy-vtn">https://tools.ietf.org/html/draft-dong-idr-sr-policy-vtn</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dong-idr-sr-policy-vtn">https://datatracker.ietf.org/doc/html/draft-dong-idr-sr-policy-vtn</a></p>
 
 <p>Introduction:</p>
 
-<p>In scenarios where multiple Virtual Transport Networks (VTNs) exist in the network, the VTN in which the SR policy is instantiated may also need to be specified, so that the header of packet can also be augmented with the information associated with the VTN.This document defines extensions to BGP SR policy to specify the VTN associated with the SR policy.</p>
+<p>Segment Routing (SR) Policy is a set of candidate paths, each consisting of one or more segment lists and the associated information.  The header of a packet steered in an SR Policy is augmented with an ordered list of segments associated with that SR Policy.  In scenarios where multiple Virtual Transport Networks (VTNs) exist in the network, the VTN in which the SR policy is instantiated may also need to be specified, so that the header of packet can also be augmented with the information associated with the VTN.  An SR Policy candidate path can be distributed using BGP SR Policy.  This document defines extensions to BGP SR policy to specify the VTN associated with the SR policy.</p>
+
+<p><strong>BGP SPF for VTN</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dong-lsvr-bgp-spf-vtn">https://datatracker.ietf.org/doc/html/draft-dong-lsvr-bgp-spf-vtn</a></p>
+
+<p>A Virtual Transport Network (VTN) is a virtual underlay network which consists of a customized network topology and a set of network resource allocated from the physical network.  In a network, multiple VTNs can be created to meet different service requirements, and services may be mapped to the same or different VTNs.</p>
+
+<p>In networks where BGP Shortest Path First (SPF) is used to distribute the link-state information among network nodes, the information of VTNs needs to be distributed along with the basic network information.  This document specifies the BGP SPF mechanisms with necessary extensions to distribute the VTN information and perform VTN-specific path computaton.</p>
 
 <h3 id="4-vpn-management-plane">4. VPN+ Management Plane</h3>
 
 <p><strong>A Yang Data Model for IETF Network Slice NBI</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-wd-teas-ietf-network-slice-nbi-yang">https://tools.ietf.org/html/draft-wd-teas-ietf-network-slice-nbi-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-wd-teas-ietf-network-slice-nbi-yang">https://datatracker.ietf.org/doc/html/draft-wd-teas-ietf-network-slice-nbi-yang</a></p>
 
 <p>Introduction:</p>
 
 <p>This document provides a YANG data model for the IETF Network Slice NBI (Northbound Interface). The model can be used by a higher level system which is the IETF Network Slice consumer of an IETF Network Slice Controller (NSC) to request, configure, and manage the components of an IETF Network Slice.</p>
+
+<p><strong>A VTN Network YANG Module</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-wd-teas-vtn-network-yang">https://datatracker.ietf.org/doc/html/draft-wd-teas-vtn-network-yang</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a virtual transport network (VTN) network YANG module for retrieving and manipulating VTN topology and resource allocation. The model can be used to implement the provisioning of IETF network slice services.</p>
+
+<p><strong>YANG Model for Scalable VTN</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-teas-enhanced-vpn-scalable-vtn-yang">https://datatracker.ietf.org/doc/html/draft-geng-teas-enhanced-vpn-scalable-vtn-yang</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines the Yang data model for scalable Virtual Transport Network(VTN).</p>
 
 <h3 id="5-end-to-end-network-slice-mapping">5. End-to-End Network Slice Mapping</h3>
 
@@ -219,6 +256,66 @@ plane (SRv6).</p>
 
 <p>This document describes the procedure of mapping between 5G end-to-end network slice and transport network slice defined in IETF. The analysis of data plane mechanisms to support network slice mapping is also provided.</p>
 
+<h3 id="6-end-to-end-ietf-network-slicing">6. End-to End IETF Network Slicing</h3>
+
+<p><strong>Framework for End-to-End IETF Network Slicing</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-teas-e2e-ietf-network-slicing">https://datatracker.ietf.org/doc/html/draft-li-teas-e2e-ietf-network-slicing</a></p>
+
+<p>Introduction:</p>
+
+<p>Network slicing can be used to meet the connectivity and performance requirement of different services or customers in a shared network. An IETF network slice may span multiple network domains.  In the context of 5G, the 5G end-to-end network slices consist of three major types of network segments: Radio Access Network (RAN), Transport Network (TN) and Core Network (CN).</p>
+
+<p>In order to facilitate the mapping between network slices in different network segments and network domains, it is beneficial to carry the identifiers of the 5G end-to-end network slice, the multi-domain IETF network slice together with the intra-domain network slice identifier in the data packet.</p>
+
+<p>This document describes the framework of end-to-end IETF network slicing, and introduces the identifiers for 5G end-to-end network slice and the multi-domain IETF network slice in the data packet. The roles of the different identifiers in packet forwarding is also described.  The network slice identifiers can be instantiated with different data planes.</p>
+
+<p><strong>Encapsulation of End-to-End IETF Network Slice Information in IPv6</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-6man-e2e-ietf-network-slicing">https://datatracker.ietf.org/doc/html/draft-li-6man-e2e-ietf-network-slicing</a></p>
+
+<p>Introduction:</p>
+
+<p>In order to facilitate the mapping between network slices in different network segments and network domains, it is beneficial to carry the identifiers of the 5G end-to-end network slice, the multi-domain IETF network slice together with the intra-domain network slice identifier in the data packet.</p>
+
+<p>This document defines the mechanism of encapsulating the end-to-end network slice related information in IPv6 data plane.</p>
+
+<p><strong>Segment Routing for End-to-End IETF Network Slicing</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-spring-sr-e2e-ietf-network-slicing">https://datatracker.ietf.org/doc/html/draft-li-spring-sr-e2e-ietf-network-slicing</a></p>
+
+<p>Introduction:</p>
+
+<p>When segment routing (SR) is used to build a multi-domain IETF network slice, information of the local network slices in each domain can be specified using special SR binding segments called VTN binding segments (VTN BSID).  The multi-domain IETF network slice can be specified using a list of VTN BSIDs in the packet, each of which can be used by the corresponding domain edge nodes to steer the traffic of end-to-end IETF network slice into the specific VTN in the local domain.</p>
+
+<p>This document describes the functionality of VTN binding segment and its instantiation in SR-MPLS and SRv6.</p>
+
+<h3 id="7-other-network-slicing-related-ietf-work">7. Other Network Slicing related IETF Work</h3>
+
+<p><strong>Building blocks for Slicing in Segment Routing Network</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ali-spring-network-slicing-building-blocks">https://datatracker.ietf.org/doc/html/draft-ali-spring-network-slicing-building-blocks</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes how to build network slice using the Segment Routing based technology. It explains how the building blocks specified for the Segment Routing can be used for this purpose.</p>
+
+<p><strong>Stateless and Scalable Network Slice Identification for SRv6</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-filsfils-spring-srv6-stateless-slice-id">https://datatracker.ietf.org/doc/html/draft-filsfils-spring-srv6-stateless-slice-id</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a stateless and scalable solution to achieve network slicing with SRv6.</p>
+
+<p><strong>Realizing Network Slices in IP/MPLS Networks</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-bestbar-teas-ns-packet">https://datatracker.ietf.org/doc/html/draft-bestbar-teas-ns-packet</a></p>
+
+<p>Introduction:</p>
+
+<p>Network slicing provides the ability to partition a physical network into multiple logical networks of varying sizes, structures, and functions so that each slice can be dedicated to specific services or customers.  Network slices need to operate in parallel while providing slice elasticity in terms of network resource allocation. The Differentiated Service (Diffserv) model allows for carrying multiple services on top of a single physical network by relying on compliant nodes to apply specific forwarding treatment (scheduling and drop policy) on to packets that carry the respective Diffserv code point.  This document proposes a solution based on the Diffserv model to realize network slicing in IP/MPLS networks.</p>
+
 <div id="CCSA"></div>
 
 <h2 id="ccsa">CCSA</h2>
@@ -228,6 +325,12 @@ plane (SRv6).</p>
 <p>Introduction:</p>
 
 <p>This is the standard project in CCSA which defines the VPN+ framework and SR based VPN+ technology and procedure.</p>
+
+<p><strong>2. Technical Specification on Controller North Bound Interface of IP Network Slicing</strong></p>
+
+<p>Introduction:</p>
+
+<p>This is the standard project in CCSA which defines the controller’s NBI interface of IP network slicing.</p>
 
 <div id="Demo"></div>
 
@@ -252,13 +355,23 @@ plane (SRv6).</p>
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020</p>
+	<p>IPv6+ Community 2020 - 2021</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
         </section>
     </body>
-    <script>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+</script>
+
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -267,6 +380,22 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
 })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
 </script>
 
 <script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>

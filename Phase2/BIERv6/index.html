@@ -7,8 +7,7 @@
 
     <title>BIERv6 | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="Stateless multicast solution over IPv6 domain. | IPv6+ | IPv6 Plus">
-
-    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="https://www.ipv6plus.net/Phase2/BIERv6/">
@@ -42,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-12-31 23:30:44 +0800",
-      "dateModified": "2020-12-31 23:30:44 +0800",
+      "datePublished": "2021-07-01T10:01:00+08:00",
+      "dateModified": "2021-07-01T10:01:00+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -84,9 +83,15 @@
 
 <p>Publication URL: <a href="/resources/BIERv6/BIERv6_Introduction.pdf">PDF - BIERv6 Introduction</a></p>
 
+<p><strong>2. BIERv6 eBook [EN]</strong></p>
+
+<p>Publication URL: <a href="https://support.huawei.com/enterprise/en/doc/EDOC1100201299">https://support.huawei.com/enterprise/en/doc/EDOC1100201299</a></p>
+
 <div id="IETF"></div>
 
 <h2 id="ietf">IETF</h2>
+
+<h3 id="part-1-bierv6">Part 1: BIERv6</h3>
 
 <p><strong>1. BIER IPv6 Requirements</strong></p>
 
@@ -136,6 +141,87 @@
 
 <p>This document introduces the techniques for multicast deployment across multiple domains using BIERv6, and demonstrate how BIERv6 is beneficial for such deployment.</p>
 
+<p><strong>7. Tree Engineering for Bit Index Explicit Replication (BIER-TE)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch-09">https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch</a></p>
+
+<p>Introduction:</p>
+
+<p>This document introduces per-packet stateless strict and loose path steered replication and forwarding for Bit Index Explicit Replication packets (RFC8279).  This is called BIER Tree Engineering (BIER-TE).</p>
+
+<p><strong>8. BIER Fast ReRoute</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-bier-frr">https://datatracker.ietf.org/doc/html/draft-chen-bier-frr</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a mechanism for fast re-route (FRR) protection against the failure of a node or link in the core of a “Bit Index Explicit Replication” (BIER) domain.</p>
+
+<h3 id="part-2-sr-multicast">Part 2: SR Multicast</h3>
+
+<p><strong>1. SR Replication Segment for Multi-point Service Delivery</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-replication-segment">https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-replication-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the SR Replication segment for Multi-point service delivery.  A SR Replication segment allows a packet to be replicated from a Replication Node to downstream nodes.</p>
+
+<p><strong>2. Segment Routing Point-to-Multipoint Policy</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-pim-sr-p2mp-policy">https://datatracker.ietf.org/doc/html/draft-ietf-pim-sr-p2mp-policy</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes an architecture to construct a Point-to-Multipoint (P2MP) tree to deliver Multi-point services in a Segment Routing domain.  A SR P2MP tree is constructed by stitching a set of Replication segments together.  A SR Point-to-Multipoint (SR P2MP) Policy is used to define and instantiate a P2MP tree which is computed by a PCE.</p>
+
+<p><strong>3. Multicast and Ethernet VPN with Segment Routing Point-to-Multipoint Trees</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-bess-mvpn-evpn-sr-p2mp">https://datatracker.ietf.org/doc/html/draft-ietf-bess-mvpn-evpn-sr-p2mp</a></p>
+
+<p>Introduction:</p>
+
+<p>A Point-to-Multipoint (P2MP) Tree in a Segment Routing domain efficiently carries traffic from a Root to a set of Leaves.  This document describes extensions to BGP encodings and procedures for P2MP trees used in BGP/MPLS IP VPNs and Ethernet VPNs.</p>
+
+<p><strong>4. YANG Data Model for p2mp sr policy</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hb-spring-sr-p2mp-policy-yang">https://datatracker.ietf.org/doc/html/draft-hb-spring-sr-p2mp-policy-yang</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a YANG data model for SR P2MP Policy Configuration and operation.</p>
+
+<p><strong>5.  PCEP extensions for p2mp sr policy</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hsd-pce-sr-p2mp-policy">https://datatracker.ietf.org/doc/html/draft-hsd-pce-sr-p2mp-policy</a></p>
+
+<p>Introduction:</p>
+
+<p>SR P2MP policies are set of policies that enable architecture for P2MP service delivery.  This document specifies extensions to the Path Computation Element Communication Protocol (PCEP) that allow a stateful PCE to compute and initiate P2MP paths from a Root to a set of Leaves.</p>
+
+<p><strong>6.  Advertising p2mp policies in BGP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hb-idr-sr-p2mp-policy">https://datatracker.ietf.org/doc/html/draft-hb-idr-sr-p2mp-policy</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies a new BGP SAFI with a new NLRI in order to advertise P2MP policy from a controller to a set of nodes.</p>
+
+<p><strong>7. P2MP Policy Ping</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hb-pim-p2mp-policy-ping">https://datatracker.ietf.org/doc/html/draft-hb-pim-p2mp-policy-ping</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a simple and efficient mechanism that can be used to detect data plane failures in P2MP Policy Candidate Paths (CPs) and Path Instances (PIs).</p>
+
+<p><strong>8. Stateless SRv6 Point-to-Multipoint Path</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-pim-srv6-p2mp-path">https://datatracker.ietf.org/doc/html/draft-chen-pim-srv6-p2mp-path</a></p>
+
+<p>Introduction:
+This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tree to deliver the traffic from the ingress of the path to the multiple egresses/leaves of the path in a SR domain.  There is no state stored in the core of the network for a SR P2MP path like a SR Point-to-Point (P2P) path in this solution.</p>
+
 <div id="CCSA"></div>
 
 <h2 id="ccsa">CCSA</h2>
@@ -158,6 +244,15 @@
 
 <h2 id="news">News</h2>
 
+<p><strong>1. Technical requirement of BIER IPv6</strong></p>
+
+<p>Publication URL: <a href="https://m.c114.com.cn/w241-1153570.html">https://m.c114.com.cn/w241-1153570.html</a></p>
+
+<p>Introduction:</p>
+
+<p>In February 2021, China Unicom successfully validated this BIERv6 solution over its Beijing Metro network.</p>
+
+
             </article>
 
 
@@ -168,13 +263,23 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020</p>
+	<p>IPv6+ Community 2020 - 2021</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
         </section>
     </body>
-    <script>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+</script>
+
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -183,6 +288,22 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
 })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
 </script>
 
 <script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>

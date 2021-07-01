@@ -7,8 +7,7 @@
 
     <title>DetNet | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="Deterministic Networking with zero loss and bounded latency. | IPv6+ | IPv6 Plus">
-
-    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="https://www.ipv6plus.net/Phase2/DetNet/">
@@ -42,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-12-31 23:30:44 +0800",
-      "dateModified": "2020-12-31 23:30:44 +0800",
+      "datePublished": "2021-07-01T10:01:00+08:00",
+      "dateModified": "2021-07-01T10:01:00+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -90,7 +89,7 @@
 
 <p><strong>1. Deterministic Networking Architecture</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/rfc8655">https://tools.ietf.org/html/rfc8655</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc8655">https://datatracker.ietf.org/doc/html/rfc8655</a></p>
 
 <p>Introduction:</p>
 
@@ -98,7 +97,7 @@
 
 <p><strong>2. DetNet Data Plane Framework</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-detnet-data-plane-framework">https://tools.ietf.org/html/draft-ietf-detnet-data-plane-framework</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc8938">https://datatracker.ietf.org/doc/html/rfc8938</a></p>
 
 <p>Introduction:</p>
 
@@ -106,35 +105,51 @@
 
 <p><strong>3. DetNet SRv6 Data Plane Encapsulation</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-geng-detnet-dp-sol-srv6">https://tools.ietf.org/html/draft-geng-detnet-dp-sol-srv6</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-detnet-dp-sol-srv6">https://datatracker.ietf.org/doc/html/draft-geng-detnet-dp-sol-srv6</a></p>
 
 <p>Introduction:</p>
 
 <p>This document specifies Deterministic Networking data plane operation for SRv6 encapsulated user data.</p>
 
-<p><strong>4. DetNet Controller Plane Framework</strong></p>
+<p><strong>4. Deterministic Networking (DetNet) Controller Plane Framework</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-malis-detnet-controller-plane-framework">https://tools.ietf.org/html/draft-malis-detnet-controller-plane-framework</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-detnet-controller-plane-framework">https://datatracker.ietf.org/doc/html/draft-ietf-detnet-controller-plane-framework</a></p>
 
 <p>Introduction:</p>
 
 <p>This document provides a framework overview for the DetNet controller plane. It discusses concepts and requirements that will be basis for Detnet controller plane solution documents.</p>
 
-<p><strong>5. DetNet Configuration YANG Model</strong></p>
+<p><strong>5. Deterministic Networking (DetNet) YANG Model</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-detnet-yang">https://tools.ietf.org/html/draft-ietf-detnet-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-detnet-yang">https://datatracker.ietf.org/doc/html/draft-ietf-detnet-yang</a></p>
 
 <p>Introduction:</p>
 
 <p>This document contains the specification for Deterministic Networking flow configuration YANG Model.  The model allows for provisioning of end-to-end DetNet service along the path without dependency on any signaling protocol.</p>
 
-<p><strong>6. SRv6 for Redundancy Protection</strong></p>
+<p><strong>6. Segment Routing for Redundancy Protection</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-geng-spring-sr-redundancy-protection">https://tools.ietf.org/html/draft-geng-spring-sr-redundancy-protection</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-spring-sr-redundancy-protection">https://datatracker.ietf.org/doc/html/draft-geng-spring-sr-redundancy-protection</a></p>
 
 <p>Introduction:</p>
 
 <p>This document contains the specifications of Redundancy Segment and Merging Segment, defined to empower the Segment Routing with the capability of Redundancy Protection.</p>
+
+<p><strong>7. SRH Extension for Redundancy Protection</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-6man-redundancy-protection-srh">https://datatracker.ietf.org/doc/html/draft-geng-6man-redundancy-protection-srh</a></p>
+
+<p>Introduction:</p>
+
+<p>This document provides a TLV based Encapsulation of meta data used for redundancy protection, including the definitions of flow identification and sequence number.</p>
+
+<p><strong>8. Redundancy Policy for Redundancy Protection</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-spring-redundancy-policy">https://datatracker.ietf.org/doc/html/draft-geng-spring-redundancy-policy</a></p>
+
+<p>Introduction:</p>
+
+<p>This document provides the extension to Segment Routing policy to support redundancy protection.</p>
 
 <div id="CCSA"></div>
 
@@ -162,13 +177,23 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020</p>
+	<p>IPv6+ Community 2020 - 2021</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
         </section>
     </body>
-    <script>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+</script>
+
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -177,6 +202,22 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
 })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
 </script>
 
 <script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>

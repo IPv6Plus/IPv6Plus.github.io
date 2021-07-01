@@ -7,8 +7,7 @@
 
     <title>SRv6 TE | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="Steer packets into SRv6 Policy. | IPv6+ | IPv6 Plus">
-
-    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="https://www.ipv6plus.net/Phase1/SRv6-Traffic-Engineering/">
@@ -42,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-12-31 23:30:44 +0800",
-      "dateModified": "2020-12-31 23:30:44 +0800",
+      "datePublished": "2021-07-01T10:01:00+08:00",
+      "dateModified": "2021-07-01T10:01:00+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -140,11 +139,45 @@
 
 <p>This document describes the extensions required for SR support for IPv6 data plane in Path Computation Element communication Protocol (PCEP). The PCEP extension and mechanism to support SR-MPLS is described in RFC 8664.  This document extends it to support SRv6 (SR over IPv6).</p>
 
+<p><strong>7. BGP Color-Aware Routing Problem Statement</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dskc-bess-bgp-car-problem-statement">https://datatracker.ietf.org/doc/html/draft-dskc-bess-bgp-car-problem-statement</a></p>
+
+<p>Introduction:</p>
+
+<p>This document explores the scope, use-cases and requirements for a BGP based routing solution to establish end-to-end intent-aware paths across a multi-domain service provider network environment.</p>
+
+<p><strong>8. BGP Color-Aware Routing (CAR)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dskc-bess-bgp-car">https://datatracker.ietf.org/doc/html/draft-dskc-bess-bgp-car</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a BGP based routing solution to establish end-to-end intent-aware paths across a multi-domain service provider transport network.  This solution is called BGP Color-Aware Routing (BGP CAR).</p>
+
+<p><strong>9. Seamless SR Problem Statement</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hegde-spring-mpls-seamless-sr">https://datatracker.ietf.org/doc/html/draft-hegde-spring-mpls-seamless-sr</a></p>
+
+<p>Introduction:</p>
+
+<p>This draft documents a set of use cases and requirements for end-to-end intent-based paths spanning multi-domain packet networks.  The document explicitly focuses on use cases that require high scale and availability, which will likely benefit from distributed solutions. It is intended that the requirements in this document serve as a basis for future IETF work to develop distributed solutions for inter-domain intent-based transport paths.</p>
+
+<p><strong>10. BGP Classful Transport Planes</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-kaliraj-idr-bgp-classful-transport-planes">https://datatracker.ietf.org/doc/html/draft-kaliraj-idr-bgp-classful-transport-planes</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies a mechanism, referred to as “service mapping”, to express association of overlay routes with underlay routes satisfying a certain SLA, using BGP.  The document describes a framework for classifying underlay routes into transport classes, and mapping service routes to specific transport class.</p>
+
 <div id="CCSA"></div>
 
 <h2 id="ccsa">CCSA</h2>
 
-<p>CCSA TC3WG2 approves the project.</p>
+<p><strong>1. Segment Routing Policy Technical Specification</strong></p>
+
+<p>CCSA TC3WG2 approves this project.</p>
 
 <div id="Demo"></div>
 
@@ -168,13 +201,23 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020</p>
+	<p>IPv6+ Community 2020 - 2021</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
         </section>
     </body>
-    <script>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+</script>
+
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -183,6 +226,22 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
 })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
 </script>
 
 <script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>

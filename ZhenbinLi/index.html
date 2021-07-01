@@ -7,8 +7,7 @@
 
     <title>Zhenbin (Robin) Li | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="Huawei Chief IP Protocol Expert / IETF IAB (Internet Architecture Board) Member | IPv6+ | IPv6 Plus">
-
-    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="https://www.ipv6plus.net/ZhenbinLi/">
@@ -42,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-12-31 23:30:44 +0800",
-      "dateModified": "2020-12-31 23:30:44 +0800",
+      "datePublished": "2021-07-01T10:01:00+08:00",
+      "dateModified": "2021-07-01T10:01:00+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -681,13 +680,23 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020</p>
+	<p>IPv6+ Community 2020 - 2021</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
         </section>
     </body>
-    <script>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+</script>
+
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -696,6 +705,22 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
 })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
 </script>
 
 <script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>

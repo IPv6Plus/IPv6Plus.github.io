@@ -7,8 +7,7 @@
 
     <title>IFIT | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="New fashion data plane telemetry technique and framework. | IPv6+ | IPv6 Plus">
-
-    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="og:url" content="https://www.ipv6plus.net/Phase2/IFIT/">
@@ -42,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2020-12-31 23:30:44 +0800",
-      "dateModified": "2020-12-31 23:30:44 +0800",
+      "datePublished": "2021-07-01T10:01:00+08:00",
+      "dateModified": "2021-07-01T10:01:00+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -97,6 +96,16 @@
   <li>It can measure the real user traffic. Not the simulation way.</li>
   <li>It can monitor very packet behavior in the network. So we can see the sequence of devices the packet visited along its path. The time the packet spent buffered in every switch. The set of rules the packet matched at every device along the way. The flows that the packet shared each queue with. And so IFIT can provide abundant data plane information to enable big data and AI.</li>
 </ul>
+
+<p><strong>2. IFIT E-Book</strong></p>
+
+<p>Publication URL [CN]: <a href="https://support.huawei.com/enterprise/zh/doc/EDOC1100195086">https://support.huawei.com/enterprise/zh/doc/EDOC1100195086</a></p>
+
+<p>Publication URL [EN]: <a href="https://support.huawei.com/enterprise/en/doc/EDOC1100201704">https://support.huawei.com/enterprise/en/doc/EDOC1100201704</a></p>
+
+<p>Introduction:</p>
+
+<p>This book focuses on the background of IFIT, reveals the reasons why IFIT is attracting attention, expounds the unique technical value of IFIT, and demonstrates the diverse application scenarios and wide development space of IFIT. This book also briefly introduces the implementation principles of IFIT, which will help you better understand the technical advantages of IFIT.</p>
 
 <div id="IETF"></div>
 
@@ -198,7 +207,7 @@
 
 <p><strong>A YANG Data Model for In-Situ OAM</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-zhou-ippm-ioam-yang">https://tools.ietf.org/html/draft-zhou-ippm-ioam-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/draft-ietf-ippm-ioam-yang/00/">https://datatracker.ietf.org/doc/draft-ietf-ippm-ioam-yang/00/</a></p>
 
 <p>Introduction:</p>
 
@@ -219,6 +228,15 @@
 <p>Introduction:</p>
 
 <p>This documents describes extensions to the YANG notifications subscription to allow metrics being published directly from processors on line cards to target receivers, while subscription is still maintained at the route processor in a distributed forwarding system.</p>
+
+<h3 id="4-multicast-ifit">4. Multicast IFIT</h3>
+<p><strong>Multicast On-path Telemetry Solutions</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/draft-ietf-mboned-multicast-telemetry/">https://datatracker.ietf.org/doc/draft-ietf-mboned-multicast-telemetry/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document discusses the requirement of on-path telemetry for multicast traffic. The existing solutions are examined and their issues are identified.  Solution modifications are proposed to allow the original multicast tree to be correctly reconstructed without unnecessary replication of telemetry information.</p>
 
 <div id="ETSI"></div>
 
@@ -287,13 +305,23 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020</p>
+	<p>IPv6+ Community 2020 - 2021</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
         </section>
     </body>
-    <script>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+</script>
+
+<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -302,6 +330,22 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
 })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
 </script>
 
 <script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>

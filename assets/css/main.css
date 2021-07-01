@@ -1136,8 +1136,12 @@ main {
 	font-size: 1.1rem;
 	padding-left: 1.25rem;
     max-width: fit-content;
-
 	margin: 3.125rem auto;
+
+/*	margin: 3.125rem 1.25rem;
+	display: table;
+    max-width: -webkit-fill-available;
+    width: -webkit-fill-available;*/
 }
 
 @media only screen and (max-width:37.5rem) {
