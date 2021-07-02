@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-07-01T10:01:00+08:00",
-      "dateModified": "2021-07-01T10:01:00+08:00",
+      "datePublished": "2021-07-01T19:21:07+08:00",
+      "dateModified": "2021-07-01T19:21:07+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -143,6 +143,20 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+
+  function addBlankTargetForLinks () {
+    $('a[href^="http"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+    $('a[href^="/resources"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+  }
+  $(document).bind('DOMNodeInserted', function(event) {
+    addBlankTargetForLinks();
+  });
 </script>
 
 <script>
@@ -153,6 +167,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
+  console.log("Last publish 2021-07-01T19:21:07+08:00")
 })();
 </script>
 

@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-07-01T10:01:00+08:00",
-      "dateModified": "2021-07-01T10:01:00+08:00",
+      "datePublished": "2021-07-01T19:21:07+08:00",
+      "dateModified": "2021-07-01T19:21:07+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -236,6 +236,14 @@ This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tr
 
 <h2 id="demo">Demo</h2>
 
+<p><strong>1. BIERv6 Test Report White Paper [EN]</strong></p>
+
+<p>Publication URL: <a href="/resources/BIERv6/BIERv6_Test_White_Paper-China_Unicom-Huawei.pdf">PDF - White Paper</a></p>
+
+<p>Introduction:</p>
+
+<p>China Unicom Beijing branch, in conjunction with Huawei, has tested BIERv6 multicast solution with the IPTV service in existing metro network. This test is an end-to-end verification of the actual IPTV video service, proving that BIERv6 solution has the advantages of easy deployment, on-demand access, high reliability and intelligent operation and maintenance. This white paper covers the topology, network device and the features that have been tested.</p>
+
 <div id="OpenSource"></div>
 
 <h2 id="opensource">OpenSource</h2>
@@ -277,6 +285,20 @@ This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tr
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+
+  function addBlankTargetForLinks () {
+    $('a[href^="http"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+    $('a[href^="/resources"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+  }
+  $(document).bind('DOMNodeInserted', function(event) {
+    addBlankTargetForLinks();
+  });
 </script>
 
 <script>
@@ -287,6 +309,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
+  console.log("Last publish 2021-07-01T19:21:07+08:00")
 })();
 </script>
 

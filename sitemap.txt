@@ -64,6 +64,7 @@ https://www.ipv6plus.net/resources/APN6/APN6_Introduction.pdf
 https://www.ipv6plus.net/resources/APN6/APN6_Milestone.pdf
 https://www.ipv6plus.net/resources/BIERv6
 https://www.ipv6plus.net/resources/BIERv6/BIERv6_Introduction.pdf
+https://www.ipv6plus.net/resources/BIERv6/BIERv6_Test_White_Paper-China_Unicom-Huawei.pdf
 https://www.ipv6plus.net/resources/CFN
 https://www.ipv6plus.net/resources/CFN/CFN-dyncast-overview.pdf
 https://www.ipv6plus.net/resources/CFN/CFN-dyncast_Load_Balancing_the_Edges_via_the_Network-IEEE_WCNC_2021_Paper-Huawei.pdf
