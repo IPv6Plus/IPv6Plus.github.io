@@ -1,7 +1,4 @@
-https://www.ipv6plus.net/assets
-https://www.ipv6plus.net/assets/css
 https://www.ipv6plus.net/assets/css/main.css
-https://www.ipv6plus.net/assets/js
 https://www.ipv6plus.net/assets/js/main.js
 https://www.ipv6plus.net/baidu_verify_PJsacr6xEg.html
 https://www.ipv6plus.net/BingSiteAuth.xml
@@ -13,7 +10,6 @@ https://www.ipv6plus.net/google0082eebac6768c49.html
 https://www.ipv6plus.net/index.html
 https://www.ipv6plus.net/ipv6plus
 https://www.ipv6plus.net/ipv6plus/index.html
-https://www.ipv6plus.net/Phase1
 https://www.ipv6plus.net/Phase1/SRv6-Best-Effort
 https://www.ipv6plus.net/Phase1/SRv6-Best-Effort/index.html
 https://www.ipv6plus.net/Phase1/SRv6-E2E-Protection
@@ -26,7 +22,6 @@ https://www.ipv6plus.net/Phase1/SRv6-VPN
 https://www.ipv6plus.net/Phase1/SRv6-VPN/index.html
 https://www.ipv6plus.net/Phase1/SRv6-YANG
 https://www.ipv6plus.net/Phase1/SRv6-YANG/index.html
-https://www.ipv6plus.net/Phase2
 https://www.ipv6plus.net/Phase2/ACH6
 https://www.ipv6plus.net/Phase2/ACH6/index.html
 https://www.ipv6plus.net/Phase2/BIERv6
@@ -51,76 +46,56 @@ https://www.ipv6plus.net/Phase2/SFC
 https://www.ipv6plus.net/Phase2/SFC/index.html
 https://www.ipv6plus.net/Phase2/VTN
 https://www.ipv6plus.net/Phase2/VTN/index.html
-https://www.ipv6plus.net/Phase3
 https://www.ipv6plus.net/Phase3/apn6
 https://www.ipv6plus.net/Phase3/apn6/index.html
 https://www.ipv6plus.net/Phase3/cfn
 https://www.ipv6plus.net/Phase3/cfn/index.html
 https://www.ipv6plus.net/README.md
-https://www.ipv6plus.net/resources
-https://www.ipv6plus.net/resources/APN6
 https://www.ipv6plus.net/resources/APN6/APN6_Introduction.mp4
 https://www.ipv6plus.net/resources/APN6/APN6_Introduction.pdf
 https://www.ipv6plus.net/resources/APN6/APN6_Milestone.pdf
-https://www.ipv6plus.net/resources/BIERv6
 https://www.ipv6plus.net/resources/BIERv6/BIERv6_Introduction.pdf
 https://www.ipv6plus.net/resources/BIERv6/BIERv6_Test_White_Paper-China_Unicom-Huawei.pdf
-https://www.ipv6plus.net/resources/CFN
 https://www.ipv6plus.net/resources/CFN/CFN-dyncast-overview.pdf
 https://www.ipv6plus.net/resources/CFN/CFN-dyncast_Load_Balancing_the_Edges_via_the_Network-IEEE_WCNC_2021_Paper-Huawei.pdf
 https://www.ipv6plus.net/resources/CFN/CFN-dyncast_Load_Balancing_the_Edges_via_the_Network-IEEE_WCNC_2021_Slides-Huawei.pdf
 https://www.ipv6plus.net/resources/CFN/CFN__IEEE_WCNC_2021.mp4
 https://www.ipv6plus.net/resources/CFN/CFN现网实践发布，华为，联通研究院，北京联通.jpg
-https://www.ipv6plus.net/resources/CFN/CFN%E7%8E%B0%E7%BD%91%E5%AE%9E%E8%B7%B5%E5%8F%91%E5%B8%83%EF%BC%8C%E5%8D%8E%E4%B8%BA%EF%BC%8C%E8%81%94%E9%80%9A%E7%A0%94%E7%A9%B6%E9%99%A2%EF%BC%8C%E5%8C%97%E4%BA%AC%E8%81%94%E9%80%9A.jpg
-https://www.ipv6plus.net/resources/DCN
 https://www.ipv6plus.net/resources/DCN/SRv6_for_Cloud_and_Network_Synergy_v1.0.pdf
 https://www.ipv6plus.net/resources/DCN/SRv6面向5G和电信云的创新.pdf
-https://www.ipv6plus.net/resources/DetNet
 https://www.ipv6plus.net/resources/DetNet/SRv6_for_Deterministic_Networking_for_5G_Vertical_Services.pdf
-https://www.ipv6plus.net/resources/G-SRv6
 https://www.ipv6plus.net/resources/G-SRv6/China_Mobile_Technical_White_Paper_on_G-SRv6.pdf
 https://www.ipv6plus.net/resources/G-SRv6/Huawei_G-SRv6_Introduction_v1.0.6.M.pdf
-https://www.ipv6plus.net/resources/G-SRv6/IETF
 https://www.ipv6plus.net/resources/G-SRv6/IETF/Huawei-Application-aware_G-SRv6_networking-IETF_110_Hackathon-v1.6.pdf
-https://www.ipv6plus.net/resources/G-SRv6/INFOCOM
 https://www.ipv6plus.net/resources/G-SRv6/INFOCOM/Application-aware_G-SRv6_network_enabling_5G_services-INFOCOM_2021-Huawei-v1.6.pdf
 https://www.ipv6plus.net/resources/G-SRv6/INFOCOM/Application-aware_G-SRv6_network_enabling_5G_services-INFOCOM_2021_Paper-Huawei.pdf
-https://www.ipv6plus.net/resources/G-SRv6/华为G-SRv6压缩技术介绍、业界SRv6压缩方案对比（中文版）.pdf
+https://www.ipv6plus.net/resources/G-SRv6/华为G-SRv6压缩技术介绍_业界SRv6压缩方案对比_中文版.pdf
 https://www.ipv6plus.net/resources/G-SRv6/%E5%8D%8E%E4%B8%BAG-SRv6%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%9A%E7%95%8CSRv6%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88%E5%AF%B9%E6%AF%94%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89.pdf
-https://www.ipv6plus.net/resources/IPv6_Plus
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_A_New_Era_of_IP_Networks_for_5G_and_Cloud.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_Innovation_and_Standards.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_Innovation_and_Standards_CN.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_Introduction_and_Innovation.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_演进阶段与关键技术.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/SRv6_技术与产业白皮书.pdf
-https://www.ipv6plus.net/resources/Path_MTU
 https://www.ipv6plus.net/resources/Path_MTU/IETF105 Path MTU in BGP & BGP-LS v1.1.pdf
-https://www.ipv6plus.net/resources/Path_Segment
 https://www.ipv6plus.net/resources/Path_Segment/IETF-103-PCE-Path-Segment-in-PCEP.pdf
 https://www.ipv6plus.net/resources/Path_Segment/IETF105 side meeting-SRv6 Path Segment Encap-v1.1.pdf
 https://www.ipv6plus.net/resources/Path_Segment/SR-TP OAM enhancement for SR-v1.3.pdf
 https://www.ipv6plus.net/resources/Path_Segment/SRv6 Path Segment for efficient PM, OAM and IOAM.pdf
-https://www.ipv6plus.net/resources/picture
 https://www.ipv6plus.net/resources/picture/SRv6-Book-Author.png
 https://www.ipv6plus.net/resources/picture/SRv6-Book-Catalog.png
 https://www.ipv6plus.net/resources/picture/SRv6-Book-Content.png
 https://www.ipv6plus.net/resources/picture/SRv6_Book.png
 https://www.ipv6plus.net/resources/picture/SRv6_Book_EN.jpg
 https://www.ipv6plus.net/resources/picture/SRv6_Book_JD.jpg
-https://www.ipv6plus.net/resources/SD_WAN
 https://www.ipv6plus.net/resources/SD_WAN/中国移动弹性SD-WAN技术白皮书.pdf
-https://www.ipv6plus.net/resources/SFC
 https://www.ipv6plus.net/resources/SFC/SFC Technology and Standards.pdf
 https://www.ipv6plus.net/resources/SFC/SR based SFC Leveraging SR to Realize Transport Independent Service Function Chaining 2018.pdf
 https://www.ipv6plus.net/resources/SFC/SRv6_Interop_test_report_SFC.pdf
 https://www.ipv6plus.net/resources/SFC/Transport Independent Service Function Chaining - MPLS Congress Paris 2018.pdf
-https://www.ipv6plus.net/resources/SRv6_Overview
 https://www.ipv6plus.net/resources/SRv6_Overview/SRv6_Innovation_and_Standards_Work.pdf
 https://www.ipv6plus.net/resources/SRv6_Overview/SRv6_产业与标准化进展.pdf
-https://www.ipv6plus.net/resources/SRv6_VPN
 https://www.ipv6plus.net/resources/SRv6_VPN/SRv6_Operation_L2VPN_L3VPN.pdf
-https://www.ipv6plus.net/resources/VTN
 https://www.ipv6plus.net/resources/VTN/SRv6-based-Network-Slicing_MPLS-Congress-2019.pdf
 https://www.ipv6plus.net/robots.txt
 https://www.ipv6plus.net/sitemap.xml
@@ -136,7 +111,6 @@ https://www.ipv6plus.net/YANG-Models/YANG-Models-NBI
 https://www.ipv6plus.net/YANG-Models/YANG-Models-NBI/index.html
 https://www.ipv6plus.net/ZhenbinLi
 https://www.ipv6plus.net/ZhenbinLi/index.html
-https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/1-data-plane
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/1-data-plane/index.html
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6
@@ -159,7 +133,6 @@ https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/91-path-mtu
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/91-path-mtu/index.html
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/92-apn
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/92-apn/index.html
-https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul
 https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/1-framework
 https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/1-framework/index.html
 https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/2-auto-path-calculation
@@ -176,14 +149,12 @@ https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/7-ber-notification
 https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/7-ber-notification/index.html
 https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/8-green-te
 https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/8-green-te/index.html
-https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement
 https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/1-starting-point
 https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/1-starting-point/index.html
 https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/2-p2mp-te-enhancement
 https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/2-p2mp-te-enhancement/index.html
 https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/3-mrt-frr
 https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/3-mrt-frr/index.html
-https://www.ipv6plus.net/ZhenbinLi/SDN_Transition
 https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/1-framework
 https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/1-framework/index.html
 https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/2-mpls-plus
