@@ -1,4 +1,4 @@
-https://www.ipv6plus.net/Phase1/SRv6-Overview/
+﻿https://www.ipv6plus.net/Phase1/SRv6-Overview/
 https://www.ipv6plus.net/Phase1/SRv6-Best-Effort/
 https://www.ipv6plus.net/Phase1/SRv6-Traffic-Engineering/
 https://www.ipv6plus.net/Phase1/SRv6-VPN/
@@ -168,12 +168,10 @@ https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/2-mpls-plus/
 https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/3-bgp/
 https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/4-pcep/
 https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/5-netconf-yang/
-https://www.ipv6plus.net/ZhenbinLi/Telemetry
 https://www.ipv6plus.net/ZhenbinLi/Telemetry/1-framework/
 https://www.ipv6plus.net/ZhenbinLi/Telemetry/2-data-plane-telemetry/
 https://www.ipv6plus.net/ZhenbinLi/Telemetry/3-control-plane-telemetry/
 https://www.ipv6plus.net/ZhenbinLi/Telemetry/4-management-plane-telemetry/
-https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement
 https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/1-vpn/
 https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/2-evpn/
 https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/3-mvpn/
