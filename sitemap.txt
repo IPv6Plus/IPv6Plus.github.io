@@ -18,6 +18,7 @@ https://www.ipv6plus.net/Phase2/Path-MTU/
 https://www.ipv6plus.net/Phase2/ACH6/
 https://www.ipv6plus.net/Phase3/apn6/
 https://www.ipv6plus.net/Phase3/cfn/
+https://www.ipv6plus.net/Protocols/
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/1-data-plane/
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6/
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/3-path-segment/
@@ -105,8 +106,8 @@ https://www.ipv6plus.net/resources/G-SRv6/China_Mobile_Technical_White_Paper_on_
 https://www.ipv6plus.net/resources/G-SRv6/IETF/Huawei-Application-aware_G-SRv6_networking-IETF_110_Hackathon-v1.6.pdf
 https://www.ipv6plus.net/resources/G-SRv6/INFOCOM/Application-aware_G-SRv6_network_enabling_5G_services-INFOCOM_2021-Huawei-v1.6.pdf
 https://www.ipv6plus.net/resources/G-SRv6/INFOCOM/Application-aware_G-SRv6_network_enabling_5G_services-INFOCOM_2021_Paper-Huawei.pdf
-https://www.ipv6plus.net/resources/G-SRv6/华为G-SRv6技术详细介绍与应用场景解析.pdf
-https://www.ipv6plus.net/resources/G-SRv6/%E5%8D%8E%E4%B8%BAG-SRv6%E6%8A%80%E6%9C%AF%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E8%A7%A3%E6%9E%90.pdf
+https://www.ipv6plus.net/resources/G-SRv6/G-SRv6技术详细介绍与应用场景解析.pdf
+https://www.ipv6plus.net/resources/G-SRv6/G-SRv6%E6%8A%80%E6%9C%AF%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E8%A7%A3%E6%9E%90.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_A_New_Era_of_IP_Networks_for_5G_and_Cloud.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_Innovation_and_Standards.pdf
 https://www.ipv6plus.net/resources/IPv6_Plus/IPv6+_Innovation_and_Standards_CN.pdf
@@ -175,5 +176,5 @@ https://www.ipv6plus.net/ZhenbinLi/Telemetry/4-management-plane-telemetry/
 https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/1-vpn/
 https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/2-evpn/
 https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/3-mvpn/
-https://www.ipv6plus.net/resources/G-SRv6/Huawei G-SRv6 Introduction v1.0.8.pdf
-https://www.ipv6plus.net/resources/G-SRv6/Huawei%20G-SRv6%20Introduction%20v1.0.8.pdf
+https://www.ipv6plus.net/resources/G-SRv6/G-SRv6 Introduction v1.0.8.pdf
+https://www.ipv6plus.net/resources/G-SRv6/G-SRv6%20Introduction%20v1.0.8.pdf

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-ipv6">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Innovation of Protocols | IPv6+ | IPv6 Plus</title>
+    <meta name="description" content="The innovation and standardization work of protocols | IPv6+ | IPv6 Plus">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/Protocols/">
+    <meta property="og:title" content="Protocols">
+
+    <meta property="og:description" content="The innovation and standardization work of protocols | IPv6+ | IPv6 Plus">
+    <meta property="og:site_name" content="IPv6+ | IPv6 Plus">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Protocols"/>
+    <meta itemprop="description" content="The innovation and standardization work of protocols | IPv6+ | IPv6 Plus">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/Protocols/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+ | IPv6 Plus" href="https://www.ipv6plus.net/feed.xml" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Protocols | The innovation and standardization work of protocols",
+      "image": [
+        "/"
+       ],
+      "datePublished": "2021-08-12T17:59:50+08:00",
+      "dateModified": "2021-08-12T17:59:50+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "IPv6+ Community"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "IPv6+ Community",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.ipv6plus.net/Protocols/"
+      }
+    }
+    </script>
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/">
+            <h1 class="post-title" itemprop="name">Protocols</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;">The innovation and standardization work of protocols</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <div id="Fundamental Capabilities"></div>
+
+<h2 id="fundamental-capabilities">Fundamental Capabilities</h2>
+
+<h3 id="1-bgp-over-quic">1. BGP Over QUIC</h3>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-idr-bgp-over-quic-00">https://datatracker.ietf.org/doc/html/draft-chen-idr-bgp-over-quic-00</a></p>
+
+<p>Introduction:</p>
+
+<p>Border Gateway Protocol (BGP) is an autonomous system routing protocol. The main function of BGP is to exchange routing and reachability information between autonomous systems(AS) on the Internet. BGP uses TCP to implement reliable and orderly transmission of information. Similar to TCP, QUIC is a UDP-based, byte-stream-based reliable data transmission service. In addition, by integrating with TLS 1.3, QUIC also supports functions such as establishing connections with minimum latency and providing confidentiality and integrity protection for the transmitted data, and multi-stream multiplexing. Taking use of QUIC for BGP can achieve the possible advantages. This document defines the mechanism of BGP over QUIC to and corresponding procedures.</p>
+
+<div id="Scalability"></div>
+
+<h2 id="scalability">Scalability</h2>
+
+<h3 id="1-igp">1. IGP</h3>
+
+<p><strong>1.1 Dynamic Flooding on Dense Graphs</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-lsr-dynamic-flooding-07">https://datatracker.ietf.org/doc/html/draft-ietf-lsr-dynamic-flooding-07</a></p>
+
+<p>Introduction:</p>
+
+<p>Routing with link state protocols in dense network topologies can result in sub-optimal convergence times due to the overhead associated with flooding. This can be addressed by decreasing the flooding topology so that it is less dense.</p>
+
+<p>This document discusses the problem in some depth and an architectural solution. Specific protocol changes for IS-IS, OSPFv2, and OSPFv3 are described in this document.</p>
+
+<p><strong>1.2 Flooding Topology Computation Algorithm</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-cc-lsr-flooding-reduction-08">https://datatracker.ietf.org/doc/html/draft-cc-lsr-flooding-reduction-08</a></p>
+
+<p>Introduction:</p>
+
+<p>This document proposes an algorithm for a node to compute a flooding topology, which is a subgraph of the complete topology per underline physical network. When every node in an area automatically calculates a flooding topology by using a same algorithm and floods the link states using the flooding topology, the amount of flooding traffic in the network is greatly reduced. This would reduce convergence time with a more stable and optimized routing environment.</p>
+
+<p><strong>1.3 Flooding Topology Minimum Degree Algorithm</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-lsr-flooding-topo-min-degree-02">https://datatracker.ietf.org/doc/html/draft-ietf-lsr-flooding-topo-min-degree-02</a></p>
+
+<p>Introduction:</p>
+
+<p>This document proposes an algorithm for a node to compute a flooding topology, which is a subgraph of the complete topology per underline physical network. When every node in an area automatically calculates a flooding topology by using a same algorithm and floods the link states using the flooding topology, the amount of flooding traffic in the network is greatly reduced. This would reduce convergence time with a more stable and optimized routing.</p>
+
+<h3 id="2-bgp">2. BGP</h3>
+
+<p><strong>2.1 Use of BGP for Routing in Large-Scale Data Centers</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc7938">https://datatracker.ietf.org/doc/html/rfc7938</a></p>
+
+<p>Introduction:</p>
+
+<p>Some network operators build and operate data centers that support over one hundred thousand servers. In this document, such data centers are referred to as “large-scale” to differentiate them from smaller infrastructures. Environments of this scale have a unique set of network requirements with an emphasis on operational simplicity and network stability. This document summarizes operational experience in designing and operating large-scale data centers using BGP as the only routing protocol. The intent is to report on a proven and stable routing design that could be leveraged by others in the industry.</p>
+
+<p><strong>2.2 BGP Link-State Shortest Path First (SPF) Routing</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-lsvr-bgp-spf-15">https://datatracker.ietf.org/doc/html/draft-ietf-lsvr-bgp-spf-15</a></p>
+
+<p>Introduction:</p>
+
+<p>Many Massively Scaled Data Centers (MSDCs) have converged on simplified layer 3 routing. Furthermore, requirements for operational simplicity have led many of these MSDCs to converge on BGP as their single routing protocol for both their fabric routing and their Data Center Interconnect (DCI) routing. This document describes extensions to BGP to use BGP Link-State distribution and the Shortest Path First (SPF) algorithm used by Internal Gateway Protocols (IGPs) such as OSPF. In doing this, it allows BGP to be efficiently used as both the underlay protocol and the overlay protocol in MSDCs.</p>
+
+<p><strong>2.3 Requirements and Considerations in BGP Peer Auto-Configuration</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-autoconf-considerations-01">https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-autoconf-considerations-01</a></p>
+
+<p>Introduction:</p>
+
+<p>This draft is an exploration of the requirements, the alternatives, and trade-offs in BGP peer auto-discovery at various layers in the stack. It is based on discussions in the IDR Working Group BGP Autoconf Design Team. The current target environment is the datacenter.</p>
+
+<p>This document is not intended to become an RFC.</p>
+
+<h3 id="3-rift">3. RIFT</h3>
+
+<p><strong>3.1 RIFT: Routing in Fat Trees</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-rift-rift-13">https://datatracker.ietf.org/doc/html/draft-ietf-rift-rift-13</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a specialized, dynamic routing protocol for Clos and fat-tree network topologies optimized towards minimization of control plane state as well as configuration and operational complexity.</p>
+
+<div id="Maintenability"></div>
+
+<h2 id="maintenability">Maintenability</h2>
+
+<h3 id="1-bmp">1. BMP</h3>
+
+<p><strong>1.1 BGP Monitoring Protocol (BMP)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc7854">https://datatracker.ietf.org/doc/html/rfc7854</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines the BGP Monitoring Protocol (BMP), which can be used to monitor BGP sessions. BMP is intended to provide a convenient interface for obtaining route views. Prior to the introduction of BMP, screen scraping was the most commonly used approach to obtaining such views. The design goals are to keep BMP simple, useful, easily implemented, and minimally service affecting. BMP is not suitable for use as a routing protocol.</p>
+
+<p><strong>1.2 Support for Adj-RIB-Out in the BGP Monitoring Protocol (BMP)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc8671">https://datatracker.ietf.org/doc/html/rfc8671</a></p>
+
+<p>Introduction:</p>
+
+<p>The BGP Monitoring Protocol (BMP) only defines access to the Adj-RIB-In Routing Information Bases (RIBs). This document updates BMP (<a href="https://datatracker.ietf.org/doc/html/rfc7854">RFC7854</a>) by adding access to the Adj-RIB-Out RIBs. It also adds a new flag to the peer header to distinguish between Adj-RIB-In and Adj-RIB-Out.</p>
+
+<p><strong>1.3 BGP Route Policy and Attribute Trace Using BMP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-grow-bmp-route-policy-attr-trace-05">https://datatracker.ietf.org/doc/html/draft-xu-grow-bmp-route-policy-attr-trace-05</a></p>
+
+<p>Introduction:</p>
+
+<p>The generation of BGP adj-rib-in, local-rib or adj-rib-out comes from BGP route exchange and route policy processing.  BGP Monitoring Protocol (BMP) provides the monitoring of BGP adj-rib-in (<a href="https://datatracker.ietf.org/doc/html/rfc7854">RFC7854</a>), BGP local-rib [I-D.ietf-grow-bmp-local-rib] and BGP adj-rib-out [I-D.ietf-grow-bmp-adj-rib-out].  By monitoring these BGP RIB’s the full state of the network is visible, but how route-policies affect the route propagation or changes BGP attributes is still not.  This document describes a method of using BMP to record the trace data on how BGP routes are (not) changed under the process of route policies.</p>
+
+<p><strong>1.4 VPN Traffic Engineering Using BMP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-gu-grow-bmp-vpn-te-00">https://datatracker.ietf.org/doc/html/draft-gu-grow-bmp-vpn-te-00</a></p>
+
+<p>Introduction:</p>
+
+<p>The BGP Monitoring Protocol (BMP) is designed to monitor BGP running status, such as BGP peer relationship establishment and termination and route updates. This document provides a traffic engineering (TE) method in the VPN (Virtual Private Network) scenario using BMP.</p>
+
+<p><strong>1.5 VPN Label Monitoring Using BMP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-gu-grow-bmp-vpn-label-00">https://datatracker.ietf.org/doc/html/draft-gu-grow-bmp-vpn-label-00</a></p>
+
+<p>Introduction:</p>
+
+<p>The BGP Monitoring Protocol (BMP) is designed to monitor BGP running status, such as BGP peer relationship establishment and termination and route updates. This document provides a method of collecting the VPN label using BMP, as well as an implementation example.</p>
+
+<p><strong>1.6 Monitoring BGP Capabilities Using BMP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-zhuang-grow-monitoring-bgp-capabilities-00">https://datatracker.ietf.org/doc/html/draft-zhuang-grow-monitoring-bgp-capabilities-00</a></p>
+
+<p>Introduction:</p>
+
+<p>The BGP Monitoring Protocol (BMP) (<a href="https://datatracker.ietf.org/doc/html/rfc7854">RFC7854</a>) is designed to monitor BGP (<a href="https://datatracker.ietf.org/doc/html/rfc4271">RFC4271</a>) running status, such as BGP peer relationship establishment and termination and route updates. This document provides a use case that the BMP station can get all BGP capability information of the monitored network device via BMP.</p>
+
+<p><strong>1.7 TLV support for BMP Route Monitoring and Peer Down Messages</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-grow-bmp-tlv-04">https://datatracker.ietf.org/doc/html/draft-ietf-grow-bmp-tlv-04</a></p>
+
+<p>Introduction:</p>
+
+<p>Most of the message types defined by the BGP Monitoring Protocol (BMP) do provision for optional trailing data. However, Route Monitoring messages (to provide a snapshot of the monitored Routing Information Base) and Peer Down messages (to indicate that a peering session was terminated) do not. Supporting optional data in TLV format across all BMP message types allows for an homogeneous and extensible surface that would be useful for the most different use- cases that need to convey additional data to a BMP station. While it is not intended for this document to cover any specific utilization scenario, it defines a simple way to support optional TLV data in all message types.</p>
+
+<p><strong>1.8 BMP Extension for Path Status TLV</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-cppy-grow-bmp-path-marking-tlv-08">https://datatracker.ietf.org/doc/html/draft-cppy-grow-bmp-path-marking-tlv-08</a></p>
+
+<p>Introduction:</p>
+
+<p>The BGP Monitoring Protocol (BMP) provides an interface for obtaining BGP Path information.  BGP Path Information is conveyed within BMP Route Monitoring (RM) messages.  This document proposes an extension to BMP to convey the status of a BGP path before and after being processed by the BGP best-path selection algorithm.  This extension makes use of the TLV mechanims described in draft-ietf-grow-bmp-tlv [I-D.ietf-grow-bmp-tlv] and draft-lucente-grow-bmp-tlv-ebit [I-D.lucente-grow-bmp-tlv-ebit].</p>
+
+<p><strong>1.9 Support for Enterprise-specific TLVs in the BGP Monitoring Protocol</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-lucente-grow-bmp-tlv-ebit-00">https://datatracker.ietf.org/doc/html/draft-lucente-grow-bmp-tlv-ebit-00</a></p>
+
+<p>Introduction:</p>
+
+<p>Message types defined by the BGP Monitoring Protocol (BMP) do provision for optional trailing data in TLV - Type, Length, Value - format; however the space for Type value is unique and governed by IANA. To allow the usage of vendor-specific TLVs, a mechanism to define per-vendor Type values is required.  With this document we want to introduce an Enterprise Bit, or E-bit, for such purpose.</p>
+
+<h3 id="2-nmp">2. NMP</h3>
+
+<p><strong>2.1 Network Monitoring Protocol (NMP)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-gu-network-monitoring-protocol-00">https://datatracker.ietf.org/doc/html/draft-gu-network-monitoring-protocol-00</a></p>
+
+<p>Introduction:</p>
+
+<p>To evolve towards automated network OAM (Operations, administration and management), the monitoring of control plane protocols is a fundamental necessity. In this document, a network monitoring protocol (NMP) is proposed to provision the running status information of control plane protocols, e.g., IGP (Interior Gateway Protocol) and other protocols. By collecting the protocol monitoring data and reporting it to the NMP monitoring server in real-time, NMP can facilitate network troubleshooting. In this document, NMP for IGP troubleshooting are illustrated to showcase the necessity of NMP. IS-IS is used as the demonstration protocol, and the case of OSPF (Open Shortest Path First) and other control protocols will be elaborated in the future versions. The operations of NMP are described, and the NMP message types and message formats are defined in the document.</p>
+
+<p><strong>2.2 Network-wide Protocol Monitoring (NPM): Use Cases</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-npm-use-cases-00">https://datatracker.ietf.org/doc/html/draft-chen-npm-use-cases-00</a></p>
+
+<p>Introduction:</p>
+
+<p>As networks continue to scale, we need a coordinated effort for diagnosing control plane health issues in heterogeneous environments. Traditionally, operators developed internal solutions to address the identification and remediation of control plane health issues, but as networks increase in size, speed and dynamicity, new methods and techniques will be required.</p>
+
+<p>This document highlights key network health issues, as well as network planning requirements, identified by leading network operators. It also provides an overview of current art and techniques that are used, but highlights key deficiencies and areas for improvement.</p>
+
+<p>This document proposes a unified management framework for coordinating diagnostics of control plane problems and optimization of network design. Furthermore, it outlines requirements for collecting, storing and analyzing control plane data, to minimise or negate control plane problems that may significantly affect overall network performance and to optimize path/peering/policy planning for meeting application-specific demands.</p>
+
+<p><strong>2.3 Network Monitoring For IGP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-gu-opsawg-network-monitoring-igp-01">https://datatracker.ietf.org/doc/html/draft-gu-opsawg-network-monitoring-igp-01</a></p>
+
+<p>Introduction:</p>
+
+<p>To evolve towards automated network OAM (Operations, administration and management), the monitoring of control plane protocols is a fundamental necessity. This document proposes network monitoring for IGP to facilitate troubleshooting by collecting the IGP monitoring data and reporting it to the network monitoring server in real-time. In this document, the operations of network monitoring for ISIS are described, and the corresponding network monitoring message types and message formats are defined.</p>
+
+<h3 id="3-pasp">3. PASP</h3>
+
+<p><strong>3.1 Protocol Assisted Protocol (PASP)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-rtgwg-protocol-assisted-protocol-02">https://datatracker.ietf.org/doc/html/draft-li-rtgwg-protocol-assisted-protocol-02</a></p>
+
+<p>Introduction:</p>
+
+<p>For routing protocol troubleshooting, different approaches exibit merits w.r.t. different situations. They can be generally divided into two categories, the distributive way and the centralized way. A very commonly used distributive approach is to log in possiblly all related devices one by one to check massive data via CLI. Such approach provides very detailed device information, however it requires operators with high NOC (Network Operation Center) experience and suffers from low troubleshooting efficiency and high cost. The centralized approach is realized by collecting data from devices via approaches, like the streaming Telemetry or BMP(BGP Monitoring Protocol) (<a href="https://datatracker.ietf.org/doc/html/rfc7854">RFC7854</a>), for the centralized server to analyze all gathered data. Such approach allows a comprehensive view fo the whole network and facilitates automated troubleshooting, but is limited by the data collection boundary set by different management domains, as well as high network bandwidth and CPU computation costs.</p>
+
+<p>This document proposes a semi-distributive and semi-centralized approach for fast routing protocol troubleshooting, localizing the target device and possibly the root cause, more precisely. It defines a new protocol, called the PAP (Protocol assisted Protocol), for devices to exchange protocol related information between each other in both active and on-demand manners. It allow devices to request specific information from other devices and receive replies to the requested data. It also allows actively transmission of information without request to inform other devices to better react w.r.t. network issues.</p>
+
+<div id="Security"></div>
+
+<h2 id="security">Security</h2>
+
+<h3 id="1-sava">1. SAVA</h3>
+
+<p><strong>1.1 A Source Address Validation Architecture (SAVA) Testbed and Deployment Experience</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc5210">https://datatracker.ietf.org/doc/html/rfc5210</a></p>
+
+<p>Introduction:</p>
+
+<p>Because the Internet forwards packets according to the IP destination address, packet forwarding typically takes place without inspection of the source address and malicious attacks have been launched using spoofed source addresses. In an effort to enhance the Internet with IP source address validation, a prototype implementation of the IP Source Address Validation Architecture (SAVA) was created and an evaluation was conducted on an IPv6 network. This document reports on the prototype implementation and the test results, as well as the lessons and insights gained from experimentation.</p>
+
+<h3 id="2-savi">2. SAVI</h3>
+
+<p><strong>2.1 Source Address Validation Improvement (SAVI) Framework</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc7039">https://datatracker.ietf.org/doc/html/rfc7039</a></p>
+
+<p>Introduction:</p>
+
+<p>Source Address Validation Improvement (SAVI) methods were developed to prevent nodes attached to the same IP link from spoofing each other’s IP addresses, so as to complement ingress filtering with finer-grained, standardized IP source address validation. This document is a framework document that describes and motivates the design of the SAVI methods. Particular SAVI methods are described in other documents.</p>
+
+<p><strong>2.2 Source Address Validation Improvement (SAVI) Solution for DHCP</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc7513">https://datatracker.ietf.org/doc/html/rfc7513</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies the procedure for creating a binding between a DHCPv4/DHCPv6-assigned IP address and a binding anchor on a Source Address Validation Improvement (SAVI) device. The bindings set up by this procedure are used to filter packets with forged source IP addresses. This mechanism complements BCP 38 (<a href="https://datatracker.ietf.org/doc/html/rfc2827">RFC 2827</a>) ingress filtering, providing finer-grained source IP address validation.</p>
+
+<p><strong>2.3 Source Address Validation Improvement (SAVI) for Mixed Address Assignment Methods Scenario</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/rfc8074">https://datatracker.ietf.org/doc/html/rfc8074</a></p>
+
+<p>Introduction:</p>
+
+<p>In networks that use multiple techniques for address assignment, the spoofing of addresses assigned by each technique can be prevented using the appropriate Source Address Validation Improvement (SAVI) methods. This document reviews how multiple SAVI methods can coexist in a single SAVI device and how collisions are resolved when the same binding entry is discovered by two or more methods.</p>
+
+<p><strong>2.4 A SAVI Solution for WLAN</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-bi-savi-wlan-21">https://datatracker.ietf.org/doc/html/draft-bi-savi-wlan-21</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a source address validation solution for WLAN enabling 802.11i or other security mechanisms. This mechanism snoops NDP and DHCP packets to bind IP address to MAC address, and relies on the security of MAC address guaranteed by 802.11i or other mechanisms to filter IP spoofing packets. It can work in the special situations described in the charter of SAVI(Source Address Validation Improvements) workgroup, such as multiple MAC addresses on one interface. This document describes three different deployment scenarios, with solutions for migration of binding entries when hosts move from one access point to another.</p>
+
+            </article>
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020 - 2021</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
+  function addBlankTargetForLinks () {
+    $('a[href^="http"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+    $('a[href^="/resources"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+  }
+  $(document).bind('DOMNodeInserted', function(event) {
+    addBlankTargetForLinks();
+  });
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+  console.log("Last publish 2021-08-12T17:59:50+08:00")
+})();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>
