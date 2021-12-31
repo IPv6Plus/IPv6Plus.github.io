@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -140,21 +140,21 @@
       <td style="text-align: center">draft-ietf-opsawg-l2nm</td>
       <td style="text-align: left">A Layer 2 VPN Network Yang Model</td>
       <td style="text-align: center">WG Draft</td>
-      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-04">https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-02</a></td>
-      <td style="text-align: left"> </td>
+      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-12">https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-12</a></td>
+      <td style="text-align: left">Revised I-D Needed - Issue raised by WGLC</td>
     </tr>
     <tr>
       <td style="text-align: center">draft-ietf-opsawg-l3sm-l3nm</td>
       <td style="text-align: left">A Layer 3 VPN Network YANG Model</td>
       <td style="text-align: center">Submitted to IESG for Publication</td>
-      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l3sm-l3nm-10">https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l3sm-l3nm-09</a></td>
-      <td style="text-align: left">IESG state:Waiting for Writeup</td>
+      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l3sm-l3nm-18">https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l3sm-l3nm-18</a></td>
+      <td style="text-align: left">RFC Ed Queue</td>
     </tr>
     <tr>
       <td style="text-align: center">draft-ietf-teas-te-service-mapping-yang</td>
       <td style="text-align: left">Traffic Engineering (TE) and Service Mapping Yang Model</td>
       <td style="text-align: center">WG Draft</td>
-      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-te-service-mapping-yang-07">https://datatracker.ietf.org/doc/html/draft-ietf-teas-te-service-mapping-yang-07</a></td>
+      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-te-service-mapping-yang-09">https://datatracker.ietf.org/doc/html/draft-ietf-teas-te-service-mapping-yang-09</a></td>
       <td style="text-align: left"> </td>
     </tr>
   </tbody>
@@ -212,14 +212,14 @@
       <td style="text-align: center">draft-ietf-teas-yang-l3-te-topo</td>
       <td style="text-align: left">YANG Data Model for Layer 3 TE Topologies</td>
       <td style="text-align: center">WG Draft</td>
-      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-l3-te-topo-11">https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-l3-te-topo-11</a></td>
+      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-l3-te-topo-12">https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-l3-te-topo-12</a></td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
       <td style="text-align: center">draft-ietf-teas-yang-sr-te-topo</td>
       <td style="text-align: left">YANG Data Model for SR and SR TE Topologies on MPLS Data Plane</td>
       <td style="text-align: center">WG Draft</td>
-      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-sr-te-topo-10">https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-sr-te-topo-10</a></td>
+      <td style="text-align: left"><a href="https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-sr-te-topo-11">https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-sr-te-topo-11</a></td>
       <td style="text-align: left"> </td>
     </tr>
     <tr>
@@ -249,7 +249,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -263,6 +263,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -287,7 +293,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

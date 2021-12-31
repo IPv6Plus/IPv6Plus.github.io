@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -129,7 +129,7 @@
 
 <p>Introduction:</p>
 
-<p>This paper showcased how application-aware G-SRv6 network provides fine-grained traffic steering with more economical IPv6 source routing encapsulation, effectively supporting 5G eMBB, mMTC and uRLLC services.</p>
+<p>Huawei published this paper to showcase how application-aware G-SRv6 network provides fine-grained traffic steering with more economical IPv6 source routing encapsulation, effectively supporting 5G eMBB, mMTC and uRLLC services.</p>
 
 <div id="IETF"></div>
 
@@ -151,9 +151,25 @@
 
 <p>Several mechanisms have been proposed to compress the SRv6 SID list. This document analyzes each mechanism with regard to the requirements stated in the companion requirements document.</p>
 
-<p><strong>3. Generalized SRv6 Network Programming</strong></p>
+<p><strong>3. Compressed SRv6 Segment List Encoding in SRH</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-np">https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-np</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-filsfilscheng-spring-srv6-srh-compression">https://datatracker.ietf.org/doc/html/draft-filsfilscheng-spring-srv6-srh-compression</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes the G-SRv6(REPLACE-CSID) and uSID(NEXT-CSID) solution, and it has been adopted by the IETF SPRING WG. However, some issues need to be addressed before posting the WG draft.</p>
+
+<blockquote>
+  <ul>
+    <li>SPRING Chair Conclusions: <a href="https://mailarchive.ietf.org/arch/msg/ipv6/5IpkHf5tVa-G4sKca-EWGEziYSo/">https://mailarchive.ietf.org/arch/msg/ipv6/5IpkHf5tVa-G4sKca-EWGEziYSo/</a></li>
+    <li>6MAN chair and AD replies: <a href="https://mailarchive.ietf.org/arch/msg/ipv6/rGgpWZyPaKonLaeuT37D7qZ1Vcw/">https://mailarchive.ietf.org/arch/msg/ipv6/rGgpWZyPaKonLaeuT37D7qZ1Vcw/</a></li>
+    <li>Adoption annoucement email: <a href="https://mailarchive.ietf.org/arch/msg/spring/VjVIxo7fZFhsIHJ5wFQXIBvvtNM/">https://mailarchive.ietf.org/arch/msg/spring/VjVIxo7fZFhsIHJ5wFQXIBvvtNM/</a></li>
+  </ul>
+</blockquote>
+
+<p><strong>4. Generalized SRv6 Network Programming</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-cl-spring-generalized-srv6-np">https://datatracker.ietf.org/doc/html/draft-cl-spring-generalized-srv6-np</a></p>
 
 <p>Introduction:</p>
 
@@ -163,17 +179,17 @@
 
 <p>This document also defines the mechanisms of Generalized SRv6 Networking Programming and the requirements of related protocol extensions of control plane and data plane.</p>
 
-<p><strong>4. Generalized Segment Routing Header</strong></p>
+<p><strong>5. Generalized Segment Routing Header</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-lc-6man-generalized-srh">https://tools.ietf.org/html/draft-lc-6man-generalized-srh</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-lc-6man-generalized-srh">https://datatracker.ietf.org/doc/html/draft-lc-6man-generalized-srh</a></p>
 
 <p>Introduction:</p>
 
 <p>Generalized SRv6 network programming defines the enhanced mechanisms of SRv6 to encode SRv6 SIDs, Compressed SIDs and even the MPLS labels or IPv4 tunnel information in a single SRH.  This type of SRH is called Generalized SRH (G-SRH), which can reduce the overhead of SRv6 and also provide more flexibility for network programming.  This document defines the encapsulation and packet processing of G-SRH.</p>
 
-<p><strong>5. Generalized SRv6 Network Programming for Compression</strong></p>
+<p><strong>6. Generalized SRv6 Network Programming for Compression</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-for-cmpr/">https://tools.ietf.org/html/draft-cl-spring-generalized-srv6-for-cmpr/</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-cl-spring-generalized-srv6-for-cmpr">https://datatracker.ietf.org/doc/html/draft-cl-spring-generalized-srv6-for-cmpr</a></p>
 
 <p>Introduction:</p>
 
@@ -183,14 +199,6 @@
 
 <p>G-SRv6 is fully compatible with SRv6 with no modification of SRH, no new address consumption, no new route creation, and even no modification of control plane.
 G-SRv6 for Compression is designed based on the Compressed SRv6 Segment List Encoding in SRH [I-D.filsfilscheng-spring-srv6-srh-comp-sl-enc] framework.</p>
-
-<p><strong>6. Compressed SRv6 Segment List Encoding in SRH</strong></p>
-
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-filsfilscheng-spring-srv6-srh-comp-sl-enc">https://tools.ietf.org/html/draft-filsfilscheng-spring-srv6-srh-comp-sl-enc</a></p>
-
-<p>Introduction:</p>
-
-<p>This document defines a compressed SRv6 Segment List Encoding in the SRH.  This solution does not require any SRH data plane change nor any SRv6 control plane change.  This solution leverages the SRv6 Network Programming model.</p>
 
 <p><strong>7. G-SRv6 Hackathon @IETF 110</strong></p>
 
@@ -349,7 +357,7 @@ G-SRv6 for Compression is designed based on the Compressed SRv6 Segment List Enc
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -363,6 +371,12 @@ G-SRv6 for Compression is designed based on the Compressed SRv6 Segment List Enc
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -387,7 +401,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

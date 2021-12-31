@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -99,7 +99,7 @@
 
 <p><strong>1. Service Programming with Segment Routing</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-sr-service-programming">https://tools.ietf.org/html/draft-ietf-spring-sr-service-programming</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-service-programming">https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-service-programming</a></p>
 
 <p>Introduction:</p>
 
@@ -107,7 +107,7 @@
 
 <p><strong>2. NSH and Segment Routing Integration for SFC</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-nsh-sr">https://tools.ietf.org/html/draft-ietf-spring-nsh-sr</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-nsh-sr">https://datatracker.ietf.org/doc/html/draft-ietf-spring-nsh-sr</a></p>
 
 <p>Introduction:</p>
 
@@ -115,7 +115,7 @@
 
 <p><strong>3. BGP Control Plane Extensions for Segment Routing based Service Chaining</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-dawra-idr-bgp-sr-service-chaining">https://tools.ietf.org/html/draft-dawra-idr-bgp-sr-service-chaining</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-sr-service-segments">https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-sr-service-segments</a></p>
 
 <p>Introduction:</p>
 
@@ -128,7 +128,7 @@
 
 <p><strong>4. A Framework for Constructing Service Function Chaining Systems Based on Segment Routing</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-spring-sr-sfc-control-plane-framework">https://tools.ietf.org/html/draft-li-spring-sr-sfc-control-plane-framework</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-spring-sr-sfc-control-plane-framework">https://datatracker.ietf.org/doc/html/draft-li-spring-sr-sfc-control-plane-framework</a></p>
 
 <p>Introduction:</p>
 
@@ -136,7 +136,7 @@
 
 <p><strong>5. ISIS extension for SR SFC</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xu-isis-service-function-adv">https://tools.ietf.org/html/draft-xu-isis-service-function-adv</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-isis-service-function-adv">https://datatracker.ietf.org/doc/html/draft-xu-isis-service-function-adv</a></p>
 
 <p>Introduction:</p>
 
@@ -144,7 +144,7 @@
 
 <p><strong>6. OSPF extension for SR SFC</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xu-ospf-service-function-adv">https://tools.ietf.org/html/draft-xu-ospf-service-function-adv</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-ospf-service-function-adv">https://datatracker.ietf.org/doc/html/draft-xu-ospf-service-function-adv</a></p>
 
 <p>Introduction:</p>
 
@@ -196,7 +196,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -210,6 +210,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -234,7 +240,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

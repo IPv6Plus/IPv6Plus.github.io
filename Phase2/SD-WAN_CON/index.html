@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -170,6 +170,16 @@ This document describes the scenarios, requirements and technologies for IPv6-ba
 
 <p>In the context of this document, BGP Route Reflectors (RR) is the component of the SDWAN Controller that receives the BGP UPDATE from SDWAN edges and in turns propagate the information to a group of authorized SDWAN edges reachable via overlay networks.</p>
 
+<p><strong>BGP UPDATE for SDWAN Edge Discovery</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-sdwan-edge-discovery">https://datatracker.ietf.org/doc/html/draft-ietf-idr-sdwan-edge-discovery</a></p>
+
+<p>Introduction:</p>
+
+<p>The document describes the encoding of BGP UPDATE messages for the SDWAN edge node discovery.</p>
+
+<p>In the context of this document, BGP Route Reflector (RR) is the component of the SDWAN Controller that receives the BGP UPDATE from SDWAN edges and in turns propagates the information to the intended peers that are authorized to communicate via the SDWAN overlay network.</p>
+
 <p><strong>BGP Provisioned IPsec Tunnel Configuration</strong></p>
 
 <p>Publication URL: <a href="https://tools.ietf.org/html/draft-hujun-idr-bgp-ipsec">https://tools.ietf.org/html/draft-hujun-idr-bgp-ipsec</a></p>
@@ -229,6 +239,22 @@ This document introduces a new type of segment, Tunnel Segment, for the segment 
 
 <h2 id="ccsa">CCSA</h2>
 
+<p><strong>CCSA has finished series of SD-WAN Standards</strong></p>
+
+<p>Publication URL: <a href="http://www.ccsa.org.cn/detail/4118?title=SD-WAN">http://www.ccsa.org.cn/detail/4118?title=SD-WAN</a></p>
+
+<p>Introduction:</p>
+
+<p>CCSA has finished series of SD-WAN standards. For more details, you can search “CCSA related standard name” in search engine.</p>
+
+<p><strong>The technology requirements of SD-WAN</strong></p>
+
+<p>Publication URL: <a href="http://www.ccsa.org.cn/newApproval?projectType=3&amp;tcwgName=TC3%2FWG3%E6%96%B0%E5%9E%8B%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF&amp;title=%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E5%B9%BF%E5%9F%9F%E7%BD%91%EF%BC%88SD-WAN%EF%BC%89%E6%80%BB%E4%BD%93%E6%8A%80%E6%9C%AF%E8%A6%81%E6%B1%82&amp;createTime=2021-09-14&amp;endTime=2021-10-05&amp;id=3873&amp;planCode=2019-1277T-YD">CCSA Standard - The technology requirements of SD-WAN</a></p>
+
+<p>Introduction:</p>
+
+<p>This is one of the most importand standards for SD-WAN in CCSA. Due to the number of standards are large, you are suggested to search it in CCSA’s website.</p>
+
 <div id="Demo"></div>
 
 <h2 id="demo">Demo</h2>
@@ -245,7 +271,6 @@ This document introduces a new type of segment, Tunnel Segment, for the segment 
 
 <p>Publication URL: <a href="https://m.c114.com.cn/w126-1145517.html">https://m.c114.com.cn/w126-1145517.html</a></p>
 
-
             </article>
 
 
@@ -256,7 +281,7 @@ This document introduces a new type of segment, Tunnel Segment, for the segment 
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -270,6 +295,12 @@ This document introduces a new type of segment, Tunnel Segment, for the segment 
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -294,7 +325,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

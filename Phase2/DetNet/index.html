@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -127,13 +127,13 @@
 
 <p>This document contains the specification for Deterministic Networking flow configuration YANG Model.  The model allows for provisioning of end-to-end DetNet service along the path without dependency on any signaling protocol.</p>
 
-<p><strong>6. Segment Routing for Redundancy Protection</strong></p>
+<p><strong>6. SRv6 for Redundancy Protection</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-spring-sr-redundancy-protection">https://datatracker.ietf.org/doc/html/draft-geng-spring-sr-redundancy-protection</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-redundancy-protection">https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-redundancy-protection</a></p>
 
 <p>Introduction:</p>
 
-<p>This document contains the specifications of Redundancy Segment and Merging Segment, defined to empower the Segment Routing with the capability of Redundancy Protection.</p>
+<p>This document contains the specifications of Redundancy Segment and Merging Segment for SRv6, defined to empower the Segment Routing with the capability of Redundancy Protection.</p>
 
 <p><strong>7. SRH Extension for Redundancy Protection</strong></p>
 
@@ -143,13 +143,21 @@
 
 <p>This document provides a TLV based Encapsulation of meta data used for redundancy protection, including the definitions of flow identification and sequence number.</p>
 
-<p><strong>8. Redundancy Policy for Redundancy Protection</strong></p>
+<p><strong>8. IPv6 Options for DetNet</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-pthubert-detnet-ipv6-hbh">https://datatracker.ietf.org/doc/html/draft-pthubert-detnet-ipv6-hbh</a></p>
+
+<p>Introduction:</p>
+
+<p>This document introduces new IPv6 options that signal the path and redundancy information to the intermediate DetNet relay and forwarding nodes in IPv6 networks.</p>
+
+<p><strong>9. Redundancy Policy for Redundancy Protection</strong></p>
 
 <p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-spring-redundancy-policy">https://datatracker.ietf.org/doc/html/draft-geng-spring-redundancy-policy</a></p>
 
 <p>Introduction:</p>
 
-<p>This document provides the extension to Segment Routing policy to support redundancy protection.</p>
+<p>This document defines redundancy policy as an extension to the current SR policy to support redundancy protection.</p>
 
 <div id="CCSA"></div>
 
@@ -177,7 +185,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -191,6 +199,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -215,7 +229,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

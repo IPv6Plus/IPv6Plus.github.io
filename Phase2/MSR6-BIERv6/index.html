@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>BIERv6 | IPv6+ | IPv6 Plus</title>
+    <title>MSR6 & BIERv6 | IPv6+ | IPv6 Plus</title>
     <meta name="description" content="Stateless multicast solution over IPv6 domain. | IPv6+ | IPv6 Plus">
     <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
 
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:url" content="https://www.ipv6plus.net/Phase2/BIERv6/">
-    <meta property="og:title" content="BIERv6">
+    <meta property="og:url" content="https://www.ipv6plus.net/Phase2/MSR6-BIERv6/">
+    <meta property="og:title" content="MSR6 & BIERv6">
 
     <meta property="og:description" content="Stateless multicast solution over IPv6 domain. | IPv6+ | IPv6 Plus">
     <meta property="og:site_name" content="IPv6+ | IPv6 Plus">
 
     <!-- Social: Google+ / Schema.org  -->
-    <meta itemprop="name" content="BIERv6"/>
+    <meta itemprop="name" content="MSR6 & BIERv6"/>
     <meta itemprop="description" content="Stateless multicast solution over IPv6 domain. | IPv6+ | IPv6 Plus">
 
     <!-- Favicon -->
@@ -31,18 +31,18 @@
     <meta name="theme-color" content="">
 
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://www.ipv6plus.net/Phase2/BIERv6/">
+    <link rel="canonical" href="https://www.ipv6plus.net/Phase2/MSR6-BIERv6/">
     <link rel="alternate" type="application/rss+xml" title="IPv6+ | IPv6 Plus" href="https://www.ipv6plus.net/feed.xml" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NewsArticle",
-      "headline": "BIERv6 | Stateless multicast solution over IPv6 domain.",
+      "headline": "MSR6 & BIERv6 | Stateless multicast solution over IPv6 domain.",
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -57,7 +57,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.ipv6plus.net/Phase2/BIERv6/"
+        "@id": "https://www.ipv6plus.net/Phase2/MSR6-BIERv6/"
       }
     }
     </script>
@@ -67,7 +67,7 @@
         <header class="header-post" role="banner" style="height: 31.25rem;">
     <div class="content" style="height: 100%;">
         <a href="/">
-            <h1 class="post-title" itemprop="name">BIERv6</h1>
+            <h1 class="post-title" itemprop="name">MSR6 & BIERv6</h1>
         </a>
         <p itemprop="description" class="subtitle" style="margin-top: 90px;">Stateless multicast solution over IPv6 domain.</p>
     </div>
@@ -91,65 +91,75 @@
 
 <h2 id="ietf">IETF</h2>
 
-<h3 id="part-1-bierv6">Part 1: BIERv6</h3>
+<h3 id="part-1-msr6--bierv6">Part 1: MSR6 / BIERv6</h3>
 
-<p><strong>1. BIER IPv6 Requirements</strong></p>
+<p><strong>1. MSR6 Design Consideration</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-bier-ipv6-requirements">https://tools.ietf.org/html/draft-ietf-bier-ipv6-requirements</a></p>
-
-<p>Introduction:</p>
-
-<p>This document describes the BIER IPv6 requirements, summarize the proposed solutions, and guide the working group in understanding the benefits, and drawbacks, of the various solutions and to help in the development of acceptable solutions.</p>
-
-<p><strong>2. Encapsulation for BIER in Non-MPLS IPv6 Networks</strong></p>
-
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-bier-ipv6-encapsulation">https://tools.ietf.org/html/draft-xie-bier-ipv6-encapsulation</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-cheng-spring-ipv6-msr-design-consideration">https://datatracker.ietf.org/doc/html/draft-cheng-spring-ipv6-msr-design-consideration</a></p>
 
 <p>Introduction:</p>
 
-<p>This document proposes a BIER IPv6 (BIERv6) encapsulation for Non-MPLS IPv6 Networks using the IPv6 Destination Option extension header.</p>
+<p>This document discusses the design consideration of IPv6 source routing multicast solution, including MSR6 Deployment Modes, Requirements and the relationship with existing IETF work.</p>
 
-<p><strong>3. Use of BIER IPv6 Encapsulation (BIERv6) for Multicast VPN in IPv6 networks</strong></p>
+<p><strong>2. MSR6 Gap Analysis</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-bier-ipv6-mvpn">https://tools.ietf.org/html/draft-xie-bier-ipv6-mvpn</a></p>
-
-<p>Introduction:</p>
-
-<p>This document defines the procedures and messages for using Bit Index Explicit Replication (BIER) for Multicast VPN Services in IPv6 networks using the BIER IPv6 encapsulation.</p>
-
-<p><strong>4. BIER IPv6 Encapsulation (BIERv6) Support via IS-IS</strong></p>
-
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-xie-bier-ipv6-isis-extension">https://tools.ietf.org/html/draft-xie-bier-ipv6-isis-extension</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-spring-ipv6-msr-gap-analysis">https://datatracker.ietf.org/doc/html/draft-li-spring-ipv6-msr-gap-analysis</a></p>
 
 <p>Introduction:</p>
 
-<p>This document defines IS-IS extensions to support multicast forwarding using the Bit Index Explicit Replication (BIER) with IPv6 encapsulation (BIERv6).</p>
+<p>This document analyses the gaps of the existing IPv6 multicast solutions under discussion in IETF based on the requirements..</p>
 
-<p><strong>5. YANG Data Model for Bierv6</strong></p>
+<p><strong>3. RGB (Replication through Global Bitstring) Segment for MSR6</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-geng-bier-bierv6-yang">https://tools.ietf.org/html/draft-geng-bier-bierv6-yang</a></p>
-
-<p>Introduction:</p>
-
-<p>This draft defines a YANG data model for Bierv6 (Bit indexed explicit replication over IPv6).</p>
-
-<p><strong>6. Inter-Domain Multicast Deployment using BIERv6</strong></p>
-
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-geng-bier-ipv6-inter-domain">https://tools.ietf.org/html/draft-geng-bier-ipv6-inter-domain</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-lx-msr6-rgb-segment">https://datatracker.ietf.org/doc/html/draft-lx-msr6-rgb-segment</a></p>
 
 <p>Introduction:</p>
 
-<p>This document introduces the techniques for multicast deployment across multiple domains using BIERv6, and demonstrate how BIERv6 is beneficial for such deployment.</p>
+<p>This document introduces the RGB (Replication through Global Bitstring) Segment and the corresponding encapsulation for Multicast Source Routing over IPv6.</p>
 
-<p><strong>7. Tree Engineering for Bit Index Explicit Replication (BIER-TE)</strong></p>
+<p><strong>4. Source Segment for MSR6</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch-09">https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xl-msr6-source-segment">https://datatracker.ietf.org/doc/html/draft-xl-msr6-source-segment</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines the general concept of source segment which is used as the IPv6 source address in an IPv6 packet.  Source segment for multicast service is introduced in this document.</p>
+
+<p><strong>5. MSR6 Traffic Engineering</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-geng-msr6-traffic-engineering">https://datatracker.ietf.org/doc/html/draft-geng-msr6-traffic-engineering</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines 2 new types of segment: End.RL and End.RL.X, and the corresponding packet processing procedures over the IPv6 data plane for the MSR6(Multicast Source Routing over IPv6) TE solutions.</p>
+
+<p><strong>6. Stateless SRv6 Point-to-Multipoint Path</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-pim-srv6-p2mp-path">https://datatracker.ietf.org/doc/html/draft-chen-pim-srv6-p2mp-path</a></p>
+
+<p>Introduction:</p>
+
+<p>This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tree to deliver the traffic from the ingress of the path to the multiple egresses/leaves of the path in a SR domain.  There is no state stored in the core of the network for a SR P2MP path like a SR Point-to-Point (P2P) path in this solution.</p>
+
+<p><strong>7. MSR6 Side Meeting @IETF112</strong></p>
+
+<p>Publication URL: <a href="https://github.com/XuesongGeng/IETF-112-MSR6-Side-Meeting">https://github.com/XuesongGeng/IETF-112-MSR6-Side-Meeting</a></p>
+
+<p>Introduction:</p>
+
+<p>MSR6 Side Meeting was to introduce the requirement for Multicast Source Routing over IPv6, including MSR6 BE, MSR6 TE, MSR6 Network Slicing and the corresponding potential solutions.</p>
+
+<h3 id="part-2-bier">Part 2: BIER</h3>
+
+<p><strong>1. Tree Engineering for Bit Index Explicit Replication (BIER-TE)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch">https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch</a></p>
 
 <p>Introduction:</p>
 
 <p>This document introduces per-packet stateless strict and loose path steered replication and forwarding for Bit Index Explicit Replication packets (RFC8279).  This is called BIER Tree Engineering (BIER-TE).</p>
 
-<p><strong>8. BIER Fast ReRoute</strong></p>
+<p><strong>2. BIER Fast ReRoute</strong></p>
 
 <p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-bier-frr">https://datatracker.ietf.org/doc/html/draft-chen-bier-frr</a></p>
 
@@ -157,7 +167,7 @@
 
 <p>This document describes a mechanism for fast re-route (FRR) protection against the failure of a node or link in the core of a “Bit Index Explicit Replication” (BIER) domain.</p>
 
-<h3 id="part-2-sr-multicast">Part 2: SR Multicast</h3>
+<h3 id="part-3-sr-multicast">Part 3: SR Multicast</h3>
 
 <p><strong>1. SR Replication Segment for Multi-point Service Delivery</strong></p>
 
@@ -193,7 +203,7 @@
 
 <p><strong>5.  PCEP extensions for p2mp sr policy</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hsd-pce-sr-p2mp-policy">https://datatracker.ietf.org/doc/html/draft-hsd-pce-sr-p2mp-policy</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-pce-sr-p2mp-policy">https://datatracker.ietf.org/doc/html/draft-ietf-pce-sr-p2mp-policy</a></p>
 
 <p>Introduction:</p>
 
@@ -215,12 +225,15 @@
 
 <p>This document describes a simple and efficient mechanism that can be used to detect data plane failures in P2MP Policy Candidate Paths (CPs) and Path Instances (PIs).</p>
 
-<p><strong>8. Stateless SRv6 Point-to-Multipoint Path</strong></p>
+<h3 id="part-4-pcecc-for-multicast">Part 4: PCECC for Multicast</h3>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-pim-srv6-p2mp-path">https://datatracker.ietf.org/doc/html/draft-chen-pim-srv6-p2mp-path</a></p>
+<p><strong>1. PCECC for Multicast</strong></p>
 
-<p>Introduction:
-This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tree to deliver the traffic from the ingress of the path to the multiple egresses/leaves of the path in a SR domain.  There is no state stored in the core of the network for a SR P2MP path like a SR Point-to-Point (P2P) path in this solution.</p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-dhody-pce-pcep-extension-pce-controller-p2mp">https://datatracker.ietf.org/doc/html/draft-dhody-pce-pcep-extension-pce-controller-p2mp</a></p>
+
+<p>Introduction:</p>
+
+<p>This document specifies the procedures and Path Computation Element Communication Protocol (PCEP) extensions for using the PCE as the central controller for provisioning labels along the path of the static P2MP LSP.</p>
 
 <div id="CCSA"></div>
 
@@ -230,7 +243,7 @@ This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tr
 
 <p>Introduction:</p>
 
-<p>This is the standard project in CCSA which defines the BIERv6 technology and procedure.</p>
+<p>This is the standard project in CCSA which defines the BIERv6 technology and procedure. The document has been approved by WG.</p>
 
 <div id="Demo"></div>
 
@@ -252,13 +265,21 @@ This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tr
 
 <h2 id="news">News</h2>
 
-<p><strong>1. Technical requirement of BIER IPv6</strong></p>
+<p><strong>1. China Unicom Beijing Branch has developed BIERv6 trial</strong></p>
 
 <p>Publication URL: <a href="https://m.c114.com.cn/w241-1153570.html">https://m.c114.com.cn/w241-1153570.html</a></p>
 
 <p>Introduction:</p>
 
-<p>In February 2021, China Unicom successfully validated this BIERv6 solution over its Beijing Metro network.</p>
+<p>In February 2021, China Unicom successfully validated BIERv6 solution over its Beijing Metro network.</p>
+
+<p><strong>2. China Mobile Gansu Branch has developed G-BIER trial</strong></p>
+
+<p>Publication URL: <a href="https://m.c114.com.cn/w241-1181956.html">https://m.c114.com.cn/w241-1181956.html</a></p>
+
+<p>Introduction:</p>
+
+<p>In November 2021, China Mobile successfully validated G-BIER solution in Gansu.</p>
 
 
             </article>
@@ -271,7 +292,7 @@ This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tr
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -285,6 +306,12 @@ This document describes a solution for a SRv6 Point-to-Multipoint (P2MP) Path/Tr
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -309,7 +336,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

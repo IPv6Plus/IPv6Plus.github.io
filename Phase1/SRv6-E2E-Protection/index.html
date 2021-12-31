@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -97,7 +97,7 @@
 
 <p><strong>1. SRv6 Path Egress Protection</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-rtgwg-srv6-egress-protection">https://tools.ietf.org/html/draft-ietf-rtgwg-srv6-egress-protection</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection">https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection</a></p>
 
 <p>Introduction:</p>
 
@@ -105,7 +105,7 @@
 
 <p><strong>2. SR-TE Path Midpoint Protection</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hu-spring-segment-routing-proxy-forwarding">https://tools.ietf.org/html/draft-hu-spring-segment-routing-proxy-forwarding</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hu-spring-segment-routing-proxy-forwarding">https://datatracker.ietf.org/doc/html/draft-hu-spring-segment-routing-proxy-forwarding</a></p>
 
 <p>Introduction:</p>
 
@@ -113,11 +113,19 @@
 
 <p><strong>3. SRv6 Midpoint Protection</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-chen-rtgwg-srv6-midpoint-protection/">https://tools.ietf.org/html/draft-chen-rtgwg-srv6-midpoint-protection/</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-rtgwg-srv6-midpoint-protection/">https://datatracker.ietf.org/doc/html/draft-chen-rtgwg-srv6-midpoint-protection/</a></p>
 
 <p>Introduction:</p>
 
 <p>This document defines midpoint protection, which enables the direct neighbor of the failed endpoint to do the function of the endpoint, replace the IPv6 destination address to the other endpoint, and choose the next hop based on the new destination address.</p>
+
+<p><strong>4. Enhanced TI-LFA (TI-LFA+)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-rtgwg-enhanced-ti-lfa">https://datatracker.ietf.org/doc/html/draft-li-rtgwg-enhanced-ti-lfa</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines Enhanced TI-LFA(TI-LFA+) by adding a No-bypass indicator for segments to ensure that the FRR route will not bypass the specific node, such as firewall.  Also, this document defines No-bypass flag and No-FRR flag in SRH to indicate not to bypass nodes and not to perform FRR on all the nodes along the SRv6 path, respectively.</p>
 
 <div id="CCSA"></div>
 
@@ -127,13 +135,13 @@
 
 <p>Introduction:</p>
 
-<p>This is the standard project in CCSA which defines the SRv6 protection technology and procedure. The document has been submitted for review.</p>
+<p>This is the standard project in CCSA which defines the SRv6 protection technology and procedure. The document has been approved by the WG.</p>
 
-<p><strong>2. Technical Requirement of SRv6 Protection</strong></p>
+<p><strong>2. Test requirement of SRv6 Protection</strong></p>
 
 <p>Introduction:</p>
 
-<p>CCSA TC3WG2 has just approved the project, according to the technologies defined in “Technical requirement of SRv6 Protection”.</p>
+<p>CCSA TC3WG2 has just approved the project, according to the technologies defined in “Test requirement of SRv6 Protection”.</p>
 
 <div id="Demo"></div>
 
@@ -157,7 +165,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -171,6 +179,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -195,7 +209,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

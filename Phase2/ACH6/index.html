@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -81,9 +81,9 @@
 
 <h2 id="tutorial">Tutorial</h2>
 
-<p><strong>1. ACH6 [EN]</strong></p>
+<p><strong>1. ACH6 Introduction [EN]</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/draft-yang-rtgwg-ipv6-associated-channel">https://datatracker.ietf.org/doc/draft-yang-rtgwg-ipv6-associated-channel</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-yang-rtgwg-ipv6-associated-channel">https://datatracker.ietf.org/doc/html/draft-yang-rtgwg-ipv6-associated-channel</a></p>
 
 <p>Introduction:</p>
 
@@ -97,11 +97,31 @@
 
 <p><strong>Associated Channel over IPv6</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/draft-yang-rtgwg-ipv6-associated-channel">https://datatracker.ietf.org/doc/draft-yang-rtgwg-ipv6-associated-channel</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-yang-rtgwg-ipv6-associated-channel">https://datatracker.ietf.org/doc/html/draft-yang-rtgwg-ipv6-associated-channel</a></p>
 
 <p>Introduction:</p>
 
 <p>This document defines an architecture of the IPv6 based associated channel, a TLV-based format of the associated channel, and possible ACH6 format encapsulations in IPv6 packet.</p>
+
+<h3 id="2-ach6-in-srv6">2. ACH6 in SRv6</h3>
+
+<p><strong>ACH6 in Segment Routing</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-yang-spring-ach6-sr">https://datatracker.ietf.org/doc/html/draft-yang-spring-ach6-sr/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document document specifies an SRv6 ACH6 mechanism and describes how ACH6 is applied in a Segment Routing network.</p>
+
+<h3 id="3-ach6-for-oam-in-srv6">3. ACH6 for OAM in SRv6</h3>
+
+<p><strong>ACH6 for OAM in Segment Routing</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-yang-spring-ach6-oam-sr">https://datatracker.ietf.org/doc/html/draft-yang-spring-ach6-oam-sr/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines an OAM toolset encapsulated in ACH6 to provide the functions of performance measurement, continuity check and verification to an SRv6 path.</p>
 
 <div id="CCSA"></div>
 
@@ -130,7 +150,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -144,6 +164,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -168,7 +194,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -85,7 +85,7 @@
 
 <p><strong>1. YANG Data Model for SRv6 Base and Static</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-spring-srv6-yang">https://tools.ietf.org/html/draft-ietf-spring-srv6-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-srv6-yang">https://datatracker.ietf.org/doc/html/draft-ietf-spring-srv6-yang</a></p>
 
 <p>Introduction:</p>
 
@@ -93,7 +93,7 @@
 
 <p><strong>2. YANG Data Model for IS-IS SRv6</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hu-isis-srv6-yang">https://tools.ietf.org/html/draft-hu-isis-srv6-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-srv6-yang">https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-srv6-yang</a></p>
 
 <p>Introduction:</p>
 
@@ -101,7 +101,7 @@
 
 <p><strong>3. YANG Data Model for OSPF SRv6</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hu-lsr-ospf-srv6-yang">https://tools.ietf.org/html/draft-hu-lsr-ospf-srv6-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-srv6-yang">https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-srv6-yang</a></p>
 
 <p>Introduction:</p>
 
@@ -109,7 +109,7 @@
 
 <p><strong>4. YANG Data Model for Segment Routing Policy</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/draft-ietf-spring-sr-policy-yang">https://datatracker.ietf.org/doc/draft-ietf-spring-sr-policy-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-policy-yang">https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-policy-yang</a></p>
 
 <p>Introduction:</p>
 
@@ -117,7 +117,7 @@
 
 <p><strong>5. Yang Data Model for SRv6 based Services</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-raza-bess-srv6-services-yang">https://tools.ietf.org/html/draft-raza-bess-srv6-services-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-raza-bess-srv6-services-yang">https://datatracker.ietf.org/doc/html/draft-raza-bess-srv6-services-yang</a></p>
 
 <p>Introduction:</p>
 
@@ -125,7 +125,7 @@
 
 <p><strong>6. A YANG Data Model for Segment Routing in IPv6 (SRv6) support in Path Computation Element Communications Protocol (PCEP)</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-pcep-srv6-yang">https://tools.ietf.org/html/draft-li-pce-pcep-srv6-yang</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-pce-pcep-srv6-yang">https://datatracker.ietf.org/doc/html/draft-li-pce-pcep-srv6-yang</a></p>
 
 <p>Introduction:</p>
 
@@ -141,7 +141,7 @@
 
 <p><strong>1. IETF 105 Hackathon</strong></p>
 
-<p>Publication URL: <a href="https://github.com/IETF-Hackathon/ietf105-project-presentations?files=1">https://github.com/IETF-Hackathon/ietf105-project-presentations?files=1</a></p>
+<p>Publication URL: <a href="https://github.com/IETF-Hackathon/ietf105-project-presentations">https://github.com/IETF-Hackathon/ietf105-project-presentations</a></p>
 
 <div id="OpenSource"></div>
 
@@ -161,7 +161,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -175,6 +175,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -199,7 +205,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 

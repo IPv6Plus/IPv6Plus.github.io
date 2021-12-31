@@ -19,6 +19,11 @@ https://www.ipv6plus.net/Phase2/ACH6/
 https://www.ipv6plus.net/Phase3/apn6/
 https://www.ipv6plus.net/Phase3/cfn/
 https://www.ipv6plus.net/Protocols/
+https://www.ipv6plus.net/IP-Hordes/
+https://www.ipv6plus.net/IP-Hordes/Chinese-First-IETF-Meetup/
+https://www.ipv6plus.net/resources/IP_Hordes/IETF_Reports/IETF112%E5%B7%A5%E4%BD%9C%E7%BB%84%E5%8F%82%E4%BC%9A%E6%8A%A5%E5%91%8A.pdf
+https://www.ipv6plus.net/resources/IP_Hordes/IETF_Reports/IETF112工作组参会报告.pdf
+https://www.ipv6plus.net/resources/IP_Hordes/IAB_Workshops/IAB_AID_Workshop_Report_2021.pdf
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/1-data-plane/
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6/
 https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/3-path-segment/

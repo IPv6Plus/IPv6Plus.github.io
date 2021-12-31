@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2021-08-12T17:59:50+08:00",
-      "dateModified": "2021-08-12T17:59:50+08:00",
+      "datePublished": "2022-01-03T19:10:01+08:00",
+      "dateModified": "2022-01-03T19:10:01+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -93,15 +93,15 @@
 
 <p><strong>1. Segment Routing Path MTU in BGP</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-idr-sr-policy-path-mtu">https://tools.ietf.org/html/draft-ietf-idr-sr-policy-path-mtu</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-path-mtu">https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-path-mtu</a></p>
 
 <p>Introduction:</p>
 
 <p>This document defines extensions to BGP to distribute path MTU information within SR policies.</p>
 
-<p><strong>2. BGP-LS Extensions for Advertising Path MTU</strong></p>
+<p><strong>2. Signaling Maximum Transmission Unit (MTU) using BGP-LS</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-ietf-idr-bgp-ls-link-mtu">https://tools.ietf.org/html/draft-ietf-idr-bgp-ls-link-mtu</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-link-mtu">https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-link-mtu</a></p>
 
 <p>Introduction:</p>
 
@@ -109,19 +109,19 @@
 
 <p><strong>3. Support for Path MTU (PMTU) in the Path Computation Element Communication Protocol (PCEP)</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-li-pce-pcep-pmtu">https://tools.ietf.org/html/draft-li-pce-pcep-pmtu</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-pce-pcep-pmtu">https://datatracker.ietf.org/doc/html/draft-li-pce-pcep-pmtu</a></p>
 
 <p>Introduction:</p>
 
 <p>This document specify the extension to PCE communication protocol (PCEP) to carry path (MTU) in the PCEP messages.</p>
 
-<p><strong>4. IS-IS Extensions for Path MTU</strong></p>
+<p><strong>4. IGP Extensions for Path MTU</strong></p>
 
-<p>Publication URL: <a href="https://tools.ietf.org/html/draft-hu-lsr-isis-path-mtu">https://tools.ietf.org/html/draft-hu-lsr-isis-path-mtu</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-hu-lsr-igp-path-mtu">https://datatracker.ietf.org/doc/html/draft-hu-lsr-igp-path-mtu</a></p>
 
 <p>Introduction:</p>
 
-<p>This draft provides the necessary IS-IS extensions about the Path MTU that need to be used on SR.</p>
+<p>This draft provides the necessary IS-IS and OSPF extensions about the Path MTU that need to be used on SR. Here, the term “OSPF” means both OSPFv2 and OSPFv3.</p>
 
 <div id="CCSA"></div>
 
@@ -149,7 +149,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2021</p>
+	<p>IPv6+ Community 2020 - 2022</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -163,6 +163,12 @@
         $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
       }
   });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
 
   function addBlankTargetForLinks () {
     $('a[href^="http"]').each(function(){
@@ -187,7 +193,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2021-08-12T17:59:50+08:00")
+  console.log("Last publish 2022-01-03T19:10:01+08:00")
 })();
 </script>
 
