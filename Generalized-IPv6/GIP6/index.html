@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/BlogPosting" class="post-jekyll">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GIP6 | IPv6+ | IPv6 Plus</title>
+    <meta name="description" content="Generalized IPv6 Tunnel. | IPv6+ | IPv6 Plus">
+    <meta name="keywords" content="IPv6, SRv6, IPv6+, ipv6, apn, apn6, ipv6+, srv6, gsrv6, G-SRv6, cfn, CFN">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://www.ipv6plus.net/Generalized-IPv6/GIP6/">
+    <meta property="og:title" content="GIP6">
+
+    <meta property="og:description" content="Generalized IPv6 Tunnel. | IPv6+ | IPv6 Plus">
+    <meta property="og:site_name" content="IPv6+ | IPv6 Plus">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="GIP6"/>
+    <meta itemprop="description" content="Generalized IPv6 Tunnel. | IPv6+ | IPv6 Plus">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- Windows 8 Tile Icons -->
+    <meta name="application-name" content="IPv6+">
+    <meta name="msapplication-TileColor" content="#0562DC">
+
+    <!-- Android Lolipop Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://www.ipv6plus.net/Generalized-IPv6/GIP6/">
+    <link rel="alternate" type="application/rss+xml" title="IPv6+ | IPv6 Plus" href="https://www.ipv6plus.net/feed.xml" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "GIP6 | Generalized IPv6 Tunnel.",
+      "image": [
+        "/"
+       ],
+      "datePublished": "2022-12-30T17:30:10+08:00",
+      "dateModified": "2022-12-30T17:30:10+08:00",
+      "author": {
+        "@type": "Person",
+        "name": "IPv6+ Community"
+      },
+       "publisher": {
+        "@type": "Organization",
+        "name": "IPv6+ Community",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.ipv6plus.net/Generalized-IPv6/GIP6/"
+      }
+    }
+    </script>
+</head>
+
+    <body>
+        <header class="header-post" role="banner" style="height: 31.25rem;">
+    <div class="content" style="height: 100%;">
+        <a href="/">
+            <h1 class="post-title" itemprop="name">GIP6</h1>
+        </a>
+        <p itemprop="description" class="subtitle" style="margin-top: 90px;">Generalized IPv6 Tunnel.</p>
+    </div>
+</header>
+        <section class="post">
+
+            <article role="article" id="post" class="post-content" itemprop="articleBody">
+                <p>Currently there are many types of IP tunnels, such as VXLAN and GRE. On IPv6 networks, it is hard to define extensions for all these tunnels to support new features, such as Slicing, Alternate Marking, IOAM, etc. On the other hand it is not recommended to extend new features based on the IPv4 data plane for these tunnels. The Generalized IPv6 (GIP6) tunnel is defined to use the IPv6 header and IPv6 extension header to support both existing IP tunnels functions and new features.</p>
+
+<div id="IETF"></div>
+
+<h2 id="ietf">IETF</h2>
+
+<h3 id="drafts">Drafts</h3>
+
+<p><strong>1. Generalized IPv6 Tunnel (GIP6)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-rtgwg-generalized-ipv6-tunnel/">https://datatracker.ietf.org/doc/html/draft-li-rtgwg-generalized-ipv6-tunnel/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines the generalized IPv6 tunnel based on the analysis of challenges of the existing problems of IP tunnels.</p>
+
+<p><strong>2. Generalized IPv6 Tunnel for MPLS</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-rtgwg-gip6-for-mpls/">https://datatracker.ietf.org/doc/html/draft-li-rtgwg-gip6-for-mpls/</a></p>
+
+<p>Introduction:</p>
+
+<p>With the development of new services, MPLS faces many problems and technical challenges.  This document defines the method to implement MPLS through the GIP6 tunnel.</p>
+
+<p><strong>3. Generalized IPv6 Tunnel for Quic</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-rtgwg-gip6-for-quic/">https://datatracker.ietf.org/doc/html/draft-li-rtgwg-gip6-for-quic/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document defines a new encapsulation method for QUIC packet transmission based on IPv6 extension headers. This method enables QUIC packet transmission to easily inherit the extended functions of IPv6.</p>
+
+<p><strong>4. Protocol Extension Requirements of Generalized IPv6 Tunnel</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-rtgwg-gip6-protocol-ext-requirements/">https://datatracker.ietf.org/doc/html/draft-li-rtgwg-gip6-protocol-ext-requirements/</a></p>
+
+<p>Introduction:</p>
+
+<p>IPv6 provides extension header mechanism for additional functions. There are emerging features based on the extension headers, such as SRv6, Slicing, Alternate Marking, IOAM, DetNet, APN.  However network devices have different capabilities of IPv6 extension header processing which has much effect on the deployment of these features. This document analyses the issues found during the deployment of the above new features using IPv6 extension headers and the protocol extension requirements for IPv6 capability advertisement are defined.</p>
+
+            </article>
+
+
+<div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部" style="display: block;">
+  <a href="#">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </a>
+</div>
+            <footer>
+	<p>IPv6+ Community 2020 - 2023</p>
+</footer>
+<script src="/assets/js/main.js"></script>
+
+        </section>
+    </body>
+    
+<script type="text/javascript">
+  // Mao: click and open large picture, and avoid affect SRv6 Book page
+  $('img[src^="/resources/CFN"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+  $('img[src^="/resources/IP_Hordes"]').each(function(){
+      if($(this).attr("class") != "avatar"){
+        $(this).wrap("<a href='" + $(this).attr('src') + "' target='_blank'></a>");
+      }
+  });
+
+
+  function addBlankTargetForLinks () {
+    $('a[href^="http"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+    $('a[href^="/resources"]').each(function(){
+        $(this).attr('target', '_blank');
+        // console.log(this.href);
+    });
+  }
+  $(document).bind('DOMNodeInserted', function(event) {
+    addBlankTargetForLinks();
+  });
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a44bdd51205a9273450aa88c4b26ad4e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+  console.log("Welcome to IPv6+ :)")
+  console.log("Last publish 2022-12-30T17:30:10+08:00")
+})();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+      // console.log("Call Baidu Site Manager :)");
+  })();
+</script>
+
+<script type="text/javascript" src="https://js.users.51.la/20841259.js"></script>
+</html>

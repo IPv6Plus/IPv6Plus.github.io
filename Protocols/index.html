@@ -41,8 +41,8 @@
       "image": [
         "/"
        ],
-      "datePublished": "2022-06-23T09:16:10+08:00",
-      "dateModified": "2022-06-23T09:16:10+08:00",
+      "datePublished": "2022-12-30T17:30:10+08:00",
+      "dateModified": "2022-12-30T17:30:10+08:00",
       "author": {
         "@type": "Person",
         "name": "IPv6+ Community"
@@ -83,11 +83,11 @@
 
 <p><strong>1.1 BGP Over QUIC</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-chen-idr-bgp-over-quic">https://datatracker.ietf.org/doc/html/draft-chen-idr-bgp-over-quic</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-retana-idr-bgp-quic">https://datatracker.ietf.org/doc/html/draft-retana-idr-bgp-quic</a></p>
 
 <p>Introduction:</p>
 
-<p>BGP uses TCP to implement reliable and orderly transmission of information. Similar to TCP, QUIC is a UDP-based, byte-stream-based reliable data transmission service. In addition, by integrating with TLS 1.3, QUIC also supports functions such as establishing connections with minimum latency and providing confidentiality and integrity protection for the transmitted data, and multi-stream multiplexing. Taking use of QUIC for BGP can achieve the possible advantages. This document defines the mechanism of BGP over QUIC to and corresponding procedures.</p>
+<p>This document defines the use of QUIC as BGP transport protocol.</p>
 
 <p><strong>1.2 Use of Streams in BGP over QUIC</strong></p>
 
@@ -199,7 +199,7 @@
 
 <p>Introduction:</p>
 
-<p>The generation of BGP adj-rib-in, local-rib or adj-rib-out comes from BGP route exchange and route policy processing.  BGP Monitoring Protocol (BMP) provides the monitoring of BGP adj-rib-in (<a href="https://datatracker.ietf.org/doc/html/rfc7854">RFC7854</a>), BGP local-rib [I-D.ietf-grow-bmp-local-rib] and BGP adj-rib-out [I-D.ietf-grow-bmp-adj-rib-out].  By monitoring these BGP RIB’s the full state of the network is visible, but how route-policies affect the route propagation or changes BGP attributes is still not.  This document describes a method of using BMP to record the trace data on how BGP routes are (not) changed under the process of route policies.</p>
+<p>The generation of BGP adj-rib-in, local-rib or adj-rib-out comes from BGP route exchange and route policy processing. BGP Monitoring Protocol (BMP) provides the monitoring of BGP adj-rib-in (<a href="https://datatracker.ietf.org/doc/html/rfc7854">RFC7854</a>), BGP local-rib [I-D.ietf-grow-bmp-local-rib] and BGP adj-rib-out [I-D.ietf-grow-bmp-adj-rib-out]. By monitoring these BGP RIB’s the full state of the network is visible, but how route-policies affect the route propagation or changes BGP attributes is still not. This document describes a method of using BMP to record the trace data on how BGP routes are (not) changed under the process of route policies.</p>
 
 <p><strong>1.4 VPN Traffic Engineering Using BMP</strong></p>
 
@@ -239,7 +239,7 @@
 
 <p>Introduction:</p>
 
-<p>The BGP Monitoring Protocol (BMP) provides an interface for obtaining BGP Path information.  BGP Path Information is conveyed within BMP Route Monitoring (RM) messages.  This document proposes an extension to BMP to convey the status of a BGP path before and after being processed by the BGP best-path selection algorithm.  This extension makes use of the TLV mechanims described in draft-ietf-grow-bmp-tlv [I-D.ietf-grow-bmp-tlv] and draft-lucente-grow-bmp-tlv-ebit [I-D.lucente-grow-bmp-tlv-ebit].</p>
+<p>The BGP Monitoring Protocol (BMP) provides an interface for obtaining BGP Path information. BGP Path Information is conveyed within BMP Route Monitoring (RM) messages. This document proposes an extension to BMP to convey the status of a BGP path before and after being processed by the BGP best-path selection algorithm. This extension makes use of the TLV mechanims described in draft-ietf-grow-bmp-tlv [I-D.ietf-grow-bmp-tlv] and draft-lucente-grow-bmp-tlv-ebit [I-D.lucente-grow-bmp-tlv-ebit].</p>
 
 <p><strong>1.9 Support for Enterprise-specific TLVs in the BGP Monitoring Protocol</strong></p>
 
@@ -305,25 +305,17 @@
 
 <p>Because the Internet forwards packets according to the IP destination address, packet forwarding typically takes place without inspection of the source address and malicious attacks have been launched using spoofed source addresses. In an effort to enhance the Internet with IP source address validation, a prototype implementation of the IP Source Address Validation Architecture (SAVA) was created and an evaluation was conducted on an IPv6 network. This document reports on the prototype implementation and the test results, as well as the lessons and insights gained from experimentation.</p>
 
-<p><strong>1.2 Source Address Validation: Use Cases and Gap Analysis</strong></p>
+<p><strong>1.2 An RPKI and IPsec-based AS-to-AS Approach for Source Address Validation</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-sav-gap-analysis">https://datatracker.ietf.org/doc/html/draft-li-sav-gap-analysis</a></p>
-
-<p>Introduction:</p>
-
-<p>This document identifies the importance and use cases of source address validation (SAV) at both intra-AS level and inter-AS level (see <a href="https://datatracker.ietf.org/doc/html/rfc5210">RFC5210</a>). However, existing intra-AS and inter-AS SAV mechanisms, either Ingress ACL filtering <a href="https://datatracker.ietf.org/doc/html/rfc2827">RFC2827</a>, unicast Reverse Path Forwarding (uRPF) <a href="https://datatracker.ietf.org/doc/html/rfc3704">RFC3704</a>, or Enhanced Feasible-Path uRPF (EFP-uRPF) <a href="https://datatracker.ietf.org/doc/html/rfc8704">RFC8704</a> has limitations in scalability or accuracy. This document provides the gap analysis of the existing SAV mechanisms followed with some design considerations.</p>
-
-<p><strong>1.3 Distributed Source Address Validation (DSAV) Framework</strong></p>
-
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-dsav-framework">https://datatracker.ietf.org/doc/html/draft-li-dsav-framework</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-risav/">https://datatracker.ietf.org/doc/html/draft-xu-risav/</a></p>
 
 <p>Introduction:</p>
 
-<p>This document provides an overall framework of Distributed Source Address Validation (DSAV) including both intra-AS and inter-AS levels. It also describes related considerations.</p>
+<p>This document presents RISAV, a protocol for establishing and using IPsec security between Autonomous Systems (ASes) using the RPKI identity system. In this protocol, the originating AS adds authenticating information to each outgoing packet at its Border Routers (ASBRs), and the receiving AS verifies and strips this information at its ASBRs. Packets that fail validation are dropped by the ASBR. RISAV achieves Source Address Validation among all participating ASes.</p>
 
-<p><strong>1.4 Control Plane of Inter-Domain Source Address Validation Architecture</strong></p>
+<p><strong>1.3 Control Plane of Inter-Domain Source Address Validation Architecture</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-savax-control">https://datatracker.ietf.org/doc/html/draft-xu-savax-control</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-savax-control/">https://datatracker.ietf.org/doc/html/draft-xu-savax-control/</a></p>
 
 <p>Introduction:</p>
 
@@ -331,17 +323,17 @@
 
 <p>This memo focus on the control plane of the SAVA-X mechanism.</p>
 
-<p><strong>1.5 Data Plane of Inter-Domain Source Address Validation Architecture</strong></p>
+<p><strong>1.4 Data Plane of Inter-Domain Source Address Validation Architecture</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-savax-data">https://datatracker.ietf.org/doc/html/draft-xu-savax-data</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-savax-data/">https://datatracker.ietf.org/doc/html/draft-xu-savax-data/</a></p>
 
 <p>Introduction:</p>
 
 <p>This memo focus on the data plane of the SAVA-X mechanism.</p>
 
-<p><strong>1.6 Communication Protocol Between the AD Control Server and the AD Edge Router of Inter-Domain Source Address Validation Architecture</strong></p>
+<p><strong>1.5 Communication Protocol Between the AD Control Server and the AD Edge Router of Inter-Domain Source Address Validation Architecture</strong></p>
 
-<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-savax-protocol">https://datatracker.ietf.org/doc/html/draft-xu-savax-protocol</a></p>
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-xu-savax-protocol/">https://datatracker.ietf.org/doc/html/draft-xu-savax-protocol/</a></p>
 
 <p>Introduction:</p>
 
@@ -389,6 +381,94 @@
 
 <p>This document presents the detailed analysis about the problems and requirements of dealing with the threat of source address spoofing in Integrated Space and Terrestrial Networks (ISTN). First, characteristics of ISTN that cause DDos are identified. Secondly, it analyzes the major reasons why existing terrestrial source address validation mechanism does not fit well for ISTN. Then, it outlines the major requirements for improvement on source address validation mechanism for ISTN.</p>
 
+<h3 id="3-savnet">3. SAVNET</h3>
+
+<p>WG link: <a href="https://datatracker.ietf.org/wg/savnet/about/">https://datatracker.ietf.org/wg/savnet/about/</a></p>
+
+<p>Mail Archive: <a href="https://mailarchive.ietf.org/arch/browse/savnet/">https://mailarchive.ietf.org/arch/browse/savnet/</a></p>
+
+<p>To subscribe: <a href="https://www.ietf.org/mailman/listinfo/savnet/">https://www.ietf.org/mailman/listinfo/savnet/</a></p>
+
+<p><strong>3.1 Source Address Validation in Intra-domain Networks (Intra-domain SAVNET) Gap Analysis, Problem Statement and Requirements</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-savnet-intra-domain-problem-statement/">https://datatracker.ietf.org/doc/html/draft-li-savnet-intra-domain-problem-statement/</a></p>
+
+<p>Introduction:</p>
+
+<p>Source Address Validation in Intra-domain Networks (Intra-domain SAVNET) aims to make improvements to existing intra-domain Source Address Validation (SAV). This document provides the gap analysis of existing intra-domain SAV mechanisms, describes the fundamental problems, and defines the requirements for improvements.</p>
+
+<p><strong>3.2 Source Address Validation in Inter-domain Networks (Inter-domain SAVNET) Gap Analysis, Problem Statement, and Requirements</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-wu-savnet-inter-domain-problem-statement/">https://datatracker.ietf.org/doc/html/draft-wu-savnet-inter-domain-problem-statement/</a></p>
+
+<p>Introduction:</p>
+
+<p>Source Address Validation in Inter-domain Networks (Inter-domain SAVNET) focuses on narrowing the technical gaps of existing source address validation (SAV) mechanisms in inter-domain scenarios. This document provides a gap analysis of existing inter-domain SAV mechanisms, describes the problem statement based on the analysis results, and concludes the requirements for improving inter-domain SAV.</p>
+
+<p><strong>3.3 The Incentive Consideration for Defense Against Reflection Attacks</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-qin-savnet-incentive/">https://datatracker.ietf.org/doc/html/draft-qin-savnet-incentive/</a></p>
+
+<p>Introduction:</p>
+
+<p>Source address spoofing remains a significant challenge in today’s Internet. Although source address validation (SAV) mechanisms, such as ingress filtering [<a href="https://datatracker.ietf.org/doc/rfc2827/">RFC2827</a>], unicast Reverse Path Forwarding (uRPF) [<a href="https://datatracker.ietf.org/doc/rfc3704/">RFC3704</a>], and the Enhanced Feasible-Path Unicast Reverse Path Forwarding (EFP-uRPF) [<a href="https://datatracker.ietf.org/doc/rfc8704/">RFC8704</a>], have been proposed for a long time, some ASes have not deployed SAV due to the problems of existing SAV mechanism, such as inaccurate validation, misaligned incentive, or other overhead concerns. This document specifically explains the misaligned incentive problem of existing SAV mechanisms and clarifies the direct incentive that a new SAV mechanism should achieve.</p>
+
+<p><strong>3.4 Intra-domain Source Address Validation (SAVNET) Architecture</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-savnet-intra-domain-architecture/">https://datatracker.ietf.org/doc/html/draft-li-savnet-intra-domain-architecture/</a></p>
+
+<p>Introduction:</p>
+
+<p>Intra-domain source address validation (SAV) plays an important role in defending against source address spoofing attacks in intra-domain networks. However, existing intra-domain SAV mechanisms have the problems of inaccurate validation, high operational overhead, and limited protection. To overcome these problems and improve intra-domain SAV, this document proposes an overall architecture of source address validation in intra-domain network (named as Intra-domain SAVNET). Intra-domain SAVNET discovers the real data-plane forwarding path via hop-by-hop message propagation and helps intra-domain routers generate accurate SAV tables.</p>
+
+<p><strong>3.5 Inter-domain Source Address Validation (SAVNET) Architecture</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-wu-savnet-inter-domain-architecture/">https://datatracker.ietf.org/doc/html/draft-wu-savnet-inter-domain-architecture/</a></p>
+
+<p>Introduction:</p>
+
+<p>Source address validation (SAV) plays a significant role in defending against various attacks based on source IP address spoofing. BCP84 [<a href="https://datatracker.ietf.org/doc/rfc3704/">RFC3704</a>][<a href="https://datatracker.ietf.org/doc/rfc8704/">RFC8704</a>] provides practical SAV mechanisms, i.e., uRPF-based approaches, for inter-domain scenarios. However, current uRPF-based SAV mechanisms have limitations in accuracy and incentive [<a href="https://datatracker.ietf.org/doc/html/draft-wu-savnet-inter-domain-problem-statement/">draft-wu-savnet-inter-domain-problem-statement</a>]. This document provides an architecture of inter-domain SAVNET which actively advertises AS paths to other ASes for generating accurate SAV rules and improving incentive.</p>
+
+<p><strong>3.6 Source Address Validation Using BGP UPDATEs, ASPA, and ROA (BAR-SAV)</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-bar-sav/">https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-bar-sav/</a></p>
+
+<p>Introduction:</p>
+
+<p>Designing an efficient source address validation (SAV) filter requires minimizing false positives (i.e., avoiding dropping legitimate traffic) while maintaining directionality (see RFC8704). This document advances the technology for SAV filter design through a method that makes use of BGP UPDATE messages, Autonomous System Provider Authorization (ASPA), and Route Origin Authorization (ROA). The proposed method’s name is abbreviated as BAR-SAV. BAR-SAV can be used by network operators to derive more robust SAV filters and thus improve network resilience.</p>
+
+<p><strong>3.7 Source Address Validation Table Abstraction and Application</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-huang-savnet-sav-table/">https://datatracker.ietf.org/doc/html/draft-huang-savnet-sav-table/</a></p>
+
+<p>Introduction:</p>
+
+<p>Source address validation (SAV) table consists of SAV rules that are manually configured or automatically generated. The table will take effect in data plane for checking the validity of source addresses. SAV mechanisms may enable SAV tables in data plane using different methods (e.g., ACL or FIB), and these tables are suitable for different application scenarios. This document aims to provide a systematic view of existing SAV tables, which makes it convenient for engineers or operators to improve existing SAV mechanisms or properly apply SAV on routers. The document first examines existing forms of SAV tables and provides a unified abstraction. Then, four validation modes are concluded as well as suggestions for application scenarios. Finally, diversified actions for each validity state are introduced for compliance of different operation requirements.</p>
+
+<p><strong>3.8 Intra-domain SAVNET method</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-lin-savnet-lsr-intra-domain-method/">https://datatracker.ietf.org/doc/html/draft-lin-savnet-lsr-intra-domain-method/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document proposes a method of Source Address Validation in Intra-domain, which can be applied to OSPF and IS-IS protocols. By extending IGP and adding the protocol calculation procedure, the SAV information can be accurately calculated to realize the source address verification.</p>
+
+<p><strong>3.9 Analysis of Source Address Validation Data Plane Performance</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-li-savnet-dataplane-performance/">https://datatracker.ietf.org/doc/html/draft-li-savnet-dataplane-performance/</a></p>
+
+<p>Introduction:</p>
+
+<p>Source address validation (SAV) is one important way to mitigate source address spoofing attacks. However, there may be concern about whether the source address check action of the data plane would cause a great performance loss and even affect SAV deployment. This document provides an analysis of data plane implementation of SAV mechanisms, including the existing mechanisms and a new mechanism using independent SAV table. The data plane performances of different mechanisms are tested respectively.</p>
+
+<p><strong>3.10 SAVA-based Anti-DDoS Architecture</strong></p>
+
+<p>Publication URL: <a href="https://datatracker.ietf.org/doc/html/draft-cui-savnet-anti-ddos/">https://datatracker.ietf.org/doc/html/draft-cui-savnet-anti-ddos/</a></p>
+
+<p>Introduction:</p>
+
+<p>This document proposes the SAVA-based Anti-DDoS Architecture (SADA), which can efficiently detect, mitigate, and traceback Denial-of-Service (DDoS) attacks that spoof source addresses. The SADA consists of a distributed DDoS detection mechanism based on honeynets, a multi-stage DDoS mitigation mechanism, and a suspect-based DDoS traceback mechanism. By adopting the Source Address Validation Architecture (SAVA) of SAVNET and introducing the data plane and the control plane, the SADA makes minor changes to the SAVA while providing major benefits.</p>
+
             </article>
 
 
@@ -399,7 +479,7 @@
   </a>
 </div>
             <footer>
-	<p>IPv6+ Community 2020 - 2022</p>
+	<p>IPv6+ Community 2020 - 2023</p>
 </footer>
 <script src="/assets/js/main.js"></script>
 
@@ -443,7 +523,7 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
   console.log("Welcome to IPv6+ :)")
-  console.log("Last publish 2022-06-23T09:16:10+08:00")
+  console.log("Last publish 2022-12-30T17:30:10+08:00")
 })();
 </script>
 
