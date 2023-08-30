@@ -5,15 +5,15 @@
     <description>IPv6+</description>
     <link>https://www.ipv6plus.net/</link>
     <atom:link href="https://www.ipv6plus.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Dec 2022 16:20:45 +0800</pubDate>
-    <lastBuildDate>Fri, 30 Dec 2022 16:20:45 +0800</lastBuildDate>
+    <pubDate>Wed, 30 Aug 2023 16:12:11 +0800</pubDate>
+    <lastBuildDate>Wed, 30 Aug 2023 16:12:11 +0800</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
 
     
       <item>
         <title>SRv6 Overview</title>
         <description>Segment Routing over IPv6.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase1/SRv6-Overview/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase1/SRv6-Overview/</guid>
         
@@ -23,7 +23,7 @@
       <item>
         <title>SRv6 BE</title>
         <description>Evolve from IPv6 to SRv6 smoothly.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase1/SRv6-Best-Effort/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase1/SRv6-Best-Effort/</guid>
         
@@ -33,7 +33,7 @@
       <item>
         <title>SRv6 TE</title>
         <description>Steer packets into SRv6 Policy.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase1/SRv6-Traffic-Engineering/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase1/SRv6-Traffic-Engineering/</guid>
         
@@ -43,7 +43,7 @@
       <item>
         <title>SRv6 VPN</title>
         <description>SRv6-based BGP services including L3VPN, EVPN and Internet services.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase1/SRv6-VPN/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase1/SRv6-VPN/</guid>
         
@@ -53,7 +53,7 @@
       <item>
         <title>SRv6 E2E Protection</title>
         <description>Providing continuous SRv6 service when node/link failure happens.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase1/SRv6-E2E-Protection/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase1/SRv6-E2E-Protection/</guid>
         
@@ -63,7 +63,7 @@
       <item>
         <title>SRv6 YANG</title>
         <description>YANG models for SRv6.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase1/SRv6-YANG/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase1/SRv6-YANG/</guid>
         
@@ -75,7 +75,7 @@
       <item>
         <title>Network Slicing</title>
         <description>Provide IP Network Slicing via VPN and TE Enhancements.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/Network-Slicing/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/Network-Slicing/</guid>
         
@@ -85,7 +85,7 @@
       <item>
         <title>IFIT</title>
         <description>New fashion data plane telemetry technique and framework.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/IFIT/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/IFIT/</guid>
         
@@ -95,7 +95,7 @@
       <item>
         <title>MSR6 &amp; BIERv6</title>
         <description>Stateless multicast solution over IPv6 domain.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/MSR6-BIERv6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/MSR6-BIERv6/</guid>
         
@@ -105,7 +105,7 @@
       <item>
         <title>OAM</title>
         <description>SRv6 Operations, Administration, and Maintenance (OAM).</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/OAM/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/OAM/</guid>
         
@@ -115,7 +115,7 @@
       <item>
         <title>Path Segment</title>
         <description>Path Segment identifies an/a set of SR/SRv6 Path.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/Path-Segment/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/Path-Segment/</guid>
         
@@ -125,7 +125,7 @@
       <item>
         <title>DetNet</title>
         <description>Deterministic Networking with zero loss and bounded latency.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/DetNet/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/DetNet/</guid>
         
@@ -135,7 +135,7 @@
       <item>
         <title>SFC</title>
         <description>Service Function Chain: enable value-add services.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/SFC/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/SFC/</guid>
         
@@ -145,7 +145,7 @@
       <item>
         <title>SRv6 Compression</title>
         <description>SRv6 Compression mechnism supports to encode compressed SIDs(C-SID) in an SRH to reduce the size of SRH.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/SRv6-Compression/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/SRv6-Compression/</guid>
         
@@ -155,7 +155,7 @@
       <item>
         <title>Path MTU</title>
         <description>Guarantee non-fragmentation.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase2/Path-MTU/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase2/Path-MTU/</guid>
         
@@ -167,7 +167,7 @@
       <item>
         <title>APN6</title>
         <description>Application-aware IPv6 Networking.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase3/apn6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase3/apn6/</guid>
         
@@ -177,7 +177,7 @@
       <item>
         <title>CFN / CAN</title>
         <description>Computing First Networking/Computing Aware Networking.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Phase3/cfn/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Phase3/cfn/</guid>
         
@@ -189,7 +189,7 @@
       <item>
         <title>GIP6</title>
         <description>Generalized IPv6 Tunnel.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Generalized-IPv6/GIP6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Generalized-IPv6/GIP6/</guid>
         
@@ -199,7 +199,7 @@
       <item>
         <title>ACH6</title>
         <description>New programming space for IPv6 control and management planes.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Generalized-IPv6/ACH6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Generalized-IPv6/ACH6/</guid>
         
@@ -209,7 +209,7 @@
       <item>
         <title>SD-WAN / CON</title>
         <description>IPv6-based SD-WAN and Cloud-Oriented Networking.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Generalized-IPv6/SD-WAN_CON/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Generalized-IPv6/SD-WAN_CON/</guid>
         
@@ -219,7 +219,7 @@
       <item>
         <title>DCN</title>
         <description>SRv6 can be deployed in Data Center.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Generalized-IPv6/DCN/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Generalized-IPv6/DCN/</guid>
         
@@ -231,7 +231,7 @@
       <item>
         <title>Metaverse Networking</title>
         <description>Networking designed for Metaverse</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/future/metaverse/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/future/metaverse/</guid>
         
@@ -241,7 +241,7 @@
       <item>
         <title>Blockchain Network</title>
         <description>Design better network for blockchain and use blockchain technology to improve the network.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/future/Blockchain-Network/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/future/Blockchain-Network/</guid>
         
@@ -251,7 +251,7 @@
       <item>
         <title>NTN</title>
         <description>Non-Terrestrial Network.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/future/NTN/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/future/NTN/</guid>
         
@@ -261,7 +261,7 @@
       <item>
         <title>Green Networking</title>
         <description>Green networking is the practice of selecting energy-efficient networking technologies and products, and minimizing resource use whenever possible.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/future/Green-Networking/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/future/Green-Networking/</guid>
         
@@ -273,7 +273,7 @@
       <item>
         <title>Data Plane</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/1-data-plane/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/1-data-plane/</guid>
         
@@ -283,7 +283,7 @@
       <item>
         <title>SRv6</title>
         <description>Segment Routing over IPv6</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/2-srv6/</guid>
         
@@ -293,7 +293,7 @@
       <item>
         <title>Path Segment</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/3-path-segment/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/3-path-segment/</guid>
         
@@ -303,7 +303,7 @@
       <item>
         <title>IFIT</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/4-ifit/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/4-ifit/</guid>
         
@@ -313,7 +313,7 @@
       <item>
         <title>VPN+</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/5-vpn-plus/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/5-vpn-plus/</guid>
         
@@ -323,7 +323,7 @@
       <item>
         <title>SFC</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/6-sfc/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/6-sfc/</guid>
         
@@ -333,7 +333,7 @@
       <item>
         <title>BIERv6 / BIER+</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/7-bierv6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/7-bierv6/</guid>
         
@@ -343,7 +343,7 @@
       <item>
         <title>DetNet</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/8-detnet/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/8-detnet/</guid>
         
@@ -353,7 +353,7 @@
       <item>
         <title>G-SRv6</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/9-g-srv6/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/9-g-srv6/</guid>
         
@@ -363,7 +363,7 @@
       <item>
         <title>Path MTU</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/91-path-mtu/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/91-path-mtu/</guid>
         
@@ -373,7 +373,7 @@
       <item>
         <title>APN</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/92-apn/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/IPv6_Plus/92-apn/</guid>
         
@@ -383,7 +383,7 @@
       <item>
         <title>Starting Point</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/1-starting-point/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/1-starting-point/</guid>
         
@@ -393,7 +393,7 @@
       <item>
         <title>P2MP TE Enhancement</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/2-p2mp-te-enhancement/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/2-p2mp-te-enhancement/</guid>
         
@@ -403,7 +403,7 @@
       <item>
         <title>MRT FRR</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/3-mrt-frr/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/MPLS_Enhancement/3-mrt-frr/</guid>
         
@@ -413,7 +413,7 @@
       <item>
         <title>Framework</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/1-framework/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/1-framework/</guid>
         
@@ -423,7 +423,7 @@
       <item>
         <title>Auto Path Calculation</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/2-auto-path-calculation/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/2-auto-path-calculation/</guid>
         
@@ -433,7 +433,7 @@
       <item>
         <title>L3VPN OAM</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/3-l3vpn-oam/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/3-l3vpn-oam/</guid>
         
@@ -443,7 +443,7 @@
       <item>
         <title>Service-Driven Tunnel</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/4-service-driven-tunnel/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/4-service-driven-tunnel/</guid>
         
@@ -453,7 +453,7 @@
       <item>
         <title>Proxy TE</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/5-proxy-te/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/5-proxy-te/</guid>
         
@@ -463,7 +463,7 @@
       <item>
         <title>TraceRoute Enhancement</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/6-traceroute-enhancement/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/6-traceroute-enhancement/</guid>
         
@@ -473,7 +473,7 @@
       <item>
         <title>BER Notification</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/7-ber-notification/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/7-ber-notification/</guid>
         
@@ -483,7 +483,7 @@
       <item>
         <title>Green TE</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/8-green-te/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Mobile_Backhaul/8-green-te/</guid>
         
@@ -493,7 +493,7 @@
       <item>
         <title>Framework</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/1-framework/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/1-framework/</guid>
         
@@ -503,7 +503,7 @@
       <item>
         <title>MPLS+</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/2-mpls-plus/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/2-mpls-plus/</guid>
         
@@ -513,7 +513,7 @@
       <item>
         <title>BGP</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/3-bgp/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/3-bgp/</guid>
         
@@ -523,7 +523,7 @@
       <item>
         <title>PCEP</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/4-pcep/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/4-pcep/</guid>
         
@@ -533,7 +533,7 @@
       <item>
         <title>Netconf/YANG</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/5-netconf-yang/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/SDN_Transition/5-netconf-yang/</guid>
         
@@ -543,7 +543,7 @@
       <item>
         <title>Framework</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Telemetry/1-framework/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Telemetry/1-framework/</guid>
         
@@ -553,7 +553,7 @@
       <item>
         <title>Data Plane Telemety</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Telemetry/2-data-plane-telemetry/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Telemetry/2-data-plane-telemetry/</guid>
         
@@ -563,7 +563,7 @@
       <item>
         <title>Control Plane Telemetry</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Telemetry/3-control-plane-telemetry/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Telemetry/3-control-plane-telemetry/</guid>
         
@@ -573,7 +573,7 @@
       <item>
         <title>Management Plane Telemety</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/Telemetry/4-management-plane-telemetry/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/Telemetry/4-management-plane-telemetry/</guid>
         
@@ -583,7 +583,7 @@
       <item>
         <title>VPN</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/1-vpn/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/1-vpn/</guid>
         
@@ -593,7 +593,7 @@
       <item>
         <title>EVPN</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/2-evpn/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/2-evpn/</guid>
         
@@ -603,7 +603,7 @@
       <item>
         <title>MVPN</title>
         <description></description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/3-mvpn/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ZhenbinLi/VPN_Enhancement/3-mvpn/</guid>
         
@@ -615,7 +615,7 @@
       <item>
         <title>IP Basic YANG Models (Southbound) | IETF YANG Models</title>
         <description>IP Basic YANG Models (Southbound)</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/YANG-Models/YANG-Models-IP-Basics/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/YANG-Models/YANG-Models-IP-Basics/</guid>
         
@@ -625,7 +625,7 @@
       <item>
         <title>Northbound YANG Models | IETF YANG Models</title>
         <description>Northbound YANG Models</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/YANG-Models/YANG-Models-NBI/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/YANG-Models/YANG-Models-NBI/</guid>
         
@@ -637,7 +637,7 @@
       <item>
         <title>The 1st Chinese IETF Meetup workshop</title>
         <description>The 1st Chinese IETF Meetup workshop was held on Sep. 29, 2021 in Beijing, China.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/IP-Hordes/Chinese-First-IETF-Meetup/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/IP-Hordes/Chinese-First-IETF-Meetup/</guid>
         
@@ -650,7 +650,7 @@
       <item>
         <title>IPv6+ | IPv6+</title>
         <description>A New Era of IP Networks for 5G and Cloud.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/ipv6plus/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/ipv6plus/</guid>
       </item>
@@ -658,7 +658,7 @@
       <item>
         <title>Routing Service YANG Models (Southbound) | IETF YANG Models | IPv6+</title>
         <description>Routing Service YANG Models (Southbound)</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/YANG-Models/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/YANG-Models/</guid>
       </item>
@@ -666,7 +666,7 @@
       <item>
         <title>SRv6 Book | IPv6+</title>
         <description>SRv6 Network Programming: Ushering in a New Era of IP Networks</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/SRv6-Book/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/SRv6-Book/</guid>
       </item>
@@ -674,7 +674,7 @@
       <item>
         <title>IPv6 Basics | IPv6+ | IPv6 Plus</title>
         <description>Introduce IPv6 basic technologies and classify IETF RFCs about IPv6 to five sections</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/IPv6-Basics/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/IPv6-Basics/</guid>
       </item>
@@ -682,7 +682,7 @@
       <item>
         <title>IPv6+ eBooks | IPv6+</title>
         <description>The eBooks for IPv6+ technologies, English and Chinese version.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/eBook/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/eBook/</guid>
       </item>
@@ -690,7 +690,7 @@
       <item>
         <title>The Innovation of Protocols | IPv6+ | IPv6 Plus</title>
         <description>The innovation and standardization work of protocols.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/Protocols/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/Protocols/</guid>
       </item>
@@ -698,7 +698,7 @@
       <item>
         <title>Chinese IETF Hordes | IPv6+ | IPv6 Plus</title>
         <description>The 1st Chinese IETF Meetup workshop was held on Sep. 29, 2021 in Beijing, China.</description>
-        <pubDate>2022-12-30 16:20:45 +0800</pubDate>
+        <pubDate>2023-08-30 16:12:11 +0800</pubDate>
         <link>https://www.ipv6plus.net/IP-Hordes/</link>
         <guid isPermaLink="true">https://www.ipv6plus.net/IP-Hordes/</guid>
       </item>
