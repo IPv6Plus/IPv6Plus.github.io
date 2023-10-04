@@ -39,7 +39,8 @@ jobs:
           repository: 'ipv6plus-src'
           branch: 'master'
           access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
-          
+      
+      - run: ls -al
       - name: Remove embeded assets
         working-directory: ./ipv6plus-src/
         run: rm -rf assets
