@@ -90,14 +90,13 @@ jobs:
         working-directory: ./_site/
         run: find
 
-      
+      # - name: set release date
+      #   run: echo "TIME_NOW=$(date +%Y-%m-%d-%H.%M.%S)" >> ${GITHUB_ENV}
       - name: Prepare website
         run: cp -rf ./_site/* ./.npm-release-binary/
       - name: Pre-release website artifact
         working-directory: ./.npm-release-binary/
-        env:
-          TIME: "${{ steps.current-time.outputs.time }}"
-        run: npm version prerelease --preid C-$TIME
+        run: npm version prerelease --preid C-$(date +%Y-%m-%d-%H.%M.%S)
       - name: Publish Github Package
         run: npm publish
         working-directory: ./.npm-release-binary/
