@@ -31,6 +31,7 @@ jobs:
         with:
           owner: 'IPv6Plus'
           repository: 'ipv6plus-src'
+          branch: 'master'
           access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
           
       - name: Remove embeded assets
@@ -45,6 +46,7 @@ jobs:
         with:
           owner: 'IPv6Plus'
           repository: 'IPv6Plus.github.io-assets'
+          branch: 'master'
           access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
       - name: Integrate assets 2 (PRIVATE repository)
         run: mv IPv6Plus.github.io-assets ./ipv6plus-src/assets/
@@ -54,6 +56,7 @@ jobs:
         with:
           owner: 'IPv6Plus'
           repository: 'IPv6Plus.github.io-resources'
+          branch: 'master'
           access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
       - name: Integrate resources 2 (PRIVATE repository)
         run: mv IPv6Plus.github.io-resources ./ipv6plus-src/resources/
