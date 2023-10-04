@@ -90,7 +90,7 @@ jobs:
         working-directory: ./_site/
         run: find
 
-      - run: ls -al
+      - run: find
       - name: Prepare website
         run: cp -rf ./_site/* ./.npm-release-binary/
       - run: ls -al
