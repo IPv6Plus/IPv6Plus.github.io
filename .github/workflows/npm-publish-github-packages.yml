@@ -6,7 +6,7 @@ name: Node.js Package
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["manual-operation-for-seperated-repository"]
+    branches: ["master"]
   workflow_dispatch:
 
 jobs:
