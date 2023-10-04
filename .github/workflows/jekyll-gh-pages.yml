@@ -95,10 +95,16 @@ jobs:
         run: cp -rf ./_site/* ./.npm-release-binary/
       - name: Pre-release website artifact
         working-directory: ./.npm-release-binary/
-        run: npm version prerelease --preid -${{ steps.current-time.outputs.time }}
+        env:
+          TIME: "${{ steps.current-time.outputs.time }}"
+        run: npm version prerelease --preid -$TIME
       - name: find
         working-directory: ./.npm-release-binary/
         run: find
+      - name: Use current time
+        env:
+          TIME: "${{ steps.current-time.outputs.time }}"
+        run: echo $TIME
       - name: Publish Github Package
         run: npm publish
         working-directory: ./.npm-release-binary/
