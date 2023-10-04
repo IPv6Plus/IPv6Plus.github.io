@@ -26,6 +26,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      
       - name: Get current time
         uses: gerred/actions/current-time@master
         id: current-time
@@ -88,13 +90,13 @@ jobs:
         run: find
 
       - name: Prepare website
-        run: cp -rf ./_site/* ./ipv6plus-src/.npm-release-binary/
+        run: cp -rf ./_site/* ./.npm-release-binary/
       - name: Pre-release website artifact
-        working-directory: ./ipv6plus-src/.npm-release-binary/
+        working-directory: ./.npm-release-binary/
         run: npm version prerelease --preid -${{ steps.current-time.outputs.time }}
       - name: Publish Github Package
         run: npm publish
-        working-directory: ./ipv6plus-src/.npm-release-binary/
+        working-directory: ./.npm-release-binary/
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
