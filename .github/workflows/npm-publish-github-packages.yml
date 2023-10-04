@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - name: Pre-release website artifact
-        working-directory: ./.npm-release-binary/
-        run: npm version prerelease --preid C-$(date +%Y-%m-%d-%H.%M.%S)
+      # - name: Pre-release website artifact
+      #   working-directory: ./.npm-release-binary/
+      #   run: npm version prerelease --preid C-$(date +%Y-%m-%d-%H.%M.%S)
       - run: npm publish
         working-directory: ./.npm-release-binary/
         env:
