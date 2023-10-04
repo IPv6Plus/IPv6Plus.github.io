@@ -84,7 +84,7 @@ jobs:
         run: find
         
       - name: Reposition the site directory
-        run: mv ./ipv6plus-src/_site/ ./_site/
+        run: mv ./ipv6plus-src/_site/ ./
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
