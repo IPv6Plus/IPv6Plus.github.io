@@ -26,23 +26,38 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone source repository
-        run: git clone https://ipv6plus@outlook.com:{{secrets.IPV6PLUS_CLONE_KEY}}@github.com/IPv6Plus/ipv6plus-src.git
-        
+      - name: Clone source repository (PRIVATE repository)
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.2
+        with:
+          owner: 'IPv6Plus'
+          repository: 'ipv6plus-src'
+          access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
+          
       - name: Remove embeded assets
         working-directory: ./ipv6plus-src/
         run: rm -rf assets
       - name: Remove embeded resources
         working-directory: ./ipv6plus-src/
         run: rm -rf resources
-      
-      - name: Integrate assets
-        working-directory: ./ipv6plus-src/
-        run: git clone https://ipv6plus@outlook.com:{{secrets.IPV6PLUS_CLONE_KEY}}@github.com/IPv6Plus/IPv6Plus.github.io-resources.git assets
-      - name: Integrate resources
-        working-directory: ./ipv6plus-src/
-        run: git clone https://ipv6plus@outlook.com:{{secrets.IPV6PLUS_CLONE_KEY}}@github.com/IPv6Plus/IPv6Plus.github.io-assets.git resources
 
+      - name: Integrate assets 1 (PRIVATE repository)
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.2
+        with:
+          owner: 'IPv6Plus'
+          repository: 'IPv6Plus.github.io-assets'
+          access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
+      - name: Integrate assets 2 (PRIVATE repository)
+        run: mv IPv6Plus.github.io-assets ./ipv6plus-src/assets/
+          
+      - name: Integrate resources (PRIVATE repository)
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.2
+        with:
+          owner: 'IPv6Plus'
+          repository: 'IPv6Plus.github.io-resources'
+          access-token: ${{ secrets.IPV6PLUS_CLONE_KEY }}
+      - name: Integrate resources 2 (PRIVATE repository)
+        run: mv IPv6Plus.github.io-resources ./ipv6plus-src/resources/
+        
       - name: Show Directories of Source
         working-directory: ./ipv6plus-src/
         run: ls -al
