@@ -97,7 +97,7 @@ jobs:
         working-directory: ./.npm-release-binary/
         env:
           TIME: "${{ steps.current-time.outputs.time }}"
-        run: npm version prerelease --preid -$TIME
+        run: npm version prerelease --preid C-$TIME
       - name: Publish Github Package
         run: npm publish
         working-directory: ./.npm-release-binary/
