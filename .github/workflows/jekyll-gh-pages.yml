@@ -30,18 +30,24 @@ jobs:
         run: git clone https://github.com/IPv6Plus/ipv6plus-src.git
         
       - name: Remove embeded assets
+        working-directory: ./ipv6plus-src/
         run: rm -rf assets
       - name: Remove embeded resources
+        working-directory: ./ipv6plus-src/
         run: rm -rf resources
       
       - name: Integrate assets
+        working-directory: ./ipv6plus-src/
         run: git clone https://github.com/IPv6Plus/IPv6Plus.github.io-resources.git assets
       - name: Integrate resources
+        working-directory: ./ipv6plus-src/
         run: git clone https://github.com/IPv6Plus/IPv6Plus.github.io-assets.git resources
 
       - name: Show Directories of Source
+        working-directory: ./ipv6plus-src/
         run: ls -al
       - name: Show All Files of Source
+        working-directory: ./ipv6plus-src/
         run: find
         
       - name: Setup Pages
@@ -49,14 +55,14 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
-          destination: ./_site
+          source: ./ipv6plus-src/
+          destination: ./ipv6plus-src/_site
         
       - name: Mao Show Directories of Product
-        working-directory: ./_site/
+        working-directory: ./ipv6plus-src/_site/
         run: ls -al
       - name: Mao Show All Files Product
-        working-directory: ./_site/
+        working-directory: ./ipv6plus-src/_site/
         run: find
         
       - name: Upload artifact
