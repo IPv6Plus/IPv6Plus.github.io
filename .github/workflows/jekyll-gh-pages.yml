@@ -76,10 +76,10 @@ jobs:
           source: ./ipv6plus-src/
           destination: ./ipv6plus-src/_site
         
-      - name: Mao Show Directories of Product
+      - name: Show Directories of Product
         working-directory: ./ipv6plus-src/_site/
         run: ls -al
-      - name: Mao Show All Files Product
+      - name: Show All Files Product
         working-directory: ./ipv6plus-src/_site/
         run: find
         
