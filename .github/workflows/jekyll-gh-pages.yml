@@ -28,10 +28,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Get current time
-        uses: gerred/actions/current-time@master
-        id: current-time
-        
       - name: Clone source repository (PRIVATE repository)
         uses: GuillaumeFalourd/clone-github-repo-action@v2.2
         with:
@@ -90,8 +86,10 @@ jobs:
         working-directory: ./_site/
         run: find
 
-      # - name: set release date
-      #   run: echo "TIME_NOW=$(date +%Y-%m-%d-%H.%M.%S)" >> ${GITHUB_ENV}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
       - name: Prepare website
         run: cp -rf ./_site/* ./.npm-release-binary/
       - name: Pre-release website artifact
