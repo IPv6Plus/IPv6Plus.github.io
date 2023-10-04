@@ -74,7 +74,7 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./ipv6plus-src/
-          destination: ./ipv6plus-src/_site
+          destination: ./_site
         
       - name: Show Directories of Product
         working-directory: ./ipv6plus-src/_site/
@@ -83,8 +83,8 @@ jobs:
         working-directory: ./ipv6plus-src/_site/
         run: find
         
-      - name: Reposition the site directory
-        run: mv ./ipv6plus-src/_site/ ./
+      # - name: Reposition the site directory
+      #   run: mv ./ipv6plus-src/_site/ ./
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
