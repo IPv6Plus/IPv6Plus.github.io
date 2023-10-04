@@ -90,8 +90,10 @@ jobs:
         working-directory: ./_site/
         run: find
 
+      - run: ls -al
       - name: Prepare website
         run: cp -rf ./_site/* ./.npm-release-binary/
+      - run: ls -al
       - name: Pre-release website artifact
         working-directory: ./.npm-release-binary/
         run: npm version prerelease --preid -${{ steps.current-time.outputs.time }}
