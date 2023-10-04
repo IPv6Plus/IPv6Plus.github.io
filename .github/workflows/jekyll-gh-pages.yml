@@ -26,6 +26,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Get current time
+        uses: gerred/actions/current-time@master
+        id: current-time
+        
       - name: Clone source repository (PRIVATE repository)
         uses: GuillaumeFalourd/clone-github-repo-action@v2.2
         with:
@@ -82,18 +86,29 @@ jobs:
       - name: Show All Files Product
         working-directory: ./_site/
         run: find
-        
+
+      - name: Prepare website
+        run: cp -rf ./_site/* ./ipv6plus-src/.npm-release-binary/
+      - name: Pre-release website artifact
+        working-directory: ./ipv6plus-src/.npm-release-binary/
+        run: npm version prerelease --preid -${{ steps.current-time.outputs.time }}
+      - name: Publish Github Package
+        run: npm publish
+        working-directory: ./ipv6plus-src/.npm-release-binary/
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
   # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v2
