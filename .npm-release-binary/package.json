@@ -1,5 +1,5 @@
 {
-  "name": "ipv6plus-website-publish-package-artifact",
+  "name": "@ipv6plus/ipv6plus-website-publish-package-artifact",
   "version": "1.0.0",
   "description": "There are artifacts of the www.ipv6plus.net website for the history of versions, since 2023.10.01",
   "main": "index.html",
