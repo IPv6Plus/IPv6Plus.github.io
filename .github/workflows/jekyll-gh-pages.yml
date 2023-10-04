@@ -77,10 +77,10 @@ jobs:
           destination: ./_site
         
       - name: Show Directories of Product
-        working-directory: ./ipv6plus-src/_site/
+        working-directory: ./_site/
         run: ls -al
       - name: Show All Files Product
-        working-directory: ./ipv6plus-src/_site/
+        working-directory: ./_site/
         run: find
         
       # - name: Reposition the site directory
