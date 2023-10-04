@@ -8,7 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IPv6Plus/IPv6Plus.github.io.git"
+    "url": "https://github.com/IPv6Plus/IPv6Plus.github.io.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "ipv6",
