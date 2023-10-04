@@ -4,8 +4,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["manual-operation-for-seperated-repository"]
   workflow_dispatch:
 
 jobs:
