@@ -6,6 +6,7 @@ name: Node.js Package
 on:
   release:
     types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,8 +16,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
 
   publish-gpr:
     needs: build
@@ -32,5 +31,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
       - run: npm publish
+        working-directory: ./.npm-release-binary/
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
