@@ -2,7 +2,7 @@
 name: Deploy static content (backup)
 on:
   push:
-    branches: [ "probe" ]
+    branches: [ "manual-operation" ]
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
