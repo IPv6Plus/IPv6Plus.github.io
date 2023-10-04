@@ -1,0 +1,75 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Build and Deploy Website (seperated repos)
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["manual-operation-for-seperated-repository"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone source repository
+        run: git clone https://github.com/IPv6Plus/ipv6plus-src.git
+        
+      - name: Remove embeded assets
+        run: rm -rf assets
+      - name: Remove embeded resources
+        run: rm -rf resources
+      
+      - name: Integrate assets
+        run: git clone https://github.com/IPv6Plus/IPv6Plus.github.io-resources.git assets
+      - name: Integrate resources
+        run: git clone https://github.com/IPv6Plus/IPv6Plus.github.io-assets.git resources
+
+      - name: Show Directories of Source
+        run: ls -al
+      - name: Show All Files of Source
+        run: find
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+        
+      - name: Mao Show Directories of Product
+        working-directory: ./_site/
+        run: ls -al
+      - name: Mao Show All Files Product
+        working-directory: ./_site/
+        run: find
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+
+  # Deployment job
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v2
