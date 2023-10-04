@@ -1,0 +1,29 @@
+{
+  "name": "ipv6plus-website-publish-package-artifact",
+  "version": "1.0.0",
+  "description": "There are artifacts of the www.ipv6plus.net website for the history of versions, since 2023.10.01",
+  "main": "index.html",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IPv6Plus/IPv6Plus.github.io.git"
+  },
+  "keywords": [
+    "ipv6",
+    "ipv6-plus",
+    "ipv6plus",
+    "ipv6+",
+    "apn6",
+    "apn",
+    "srv6",
+    "cats"
+  ],
+  "author": "www.ipv6plus.net",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IPv6Plus/IPv6Plus.github.io/issues"
+  },
+  "homepage": "https://www.ipv6plus.net/"
+}
